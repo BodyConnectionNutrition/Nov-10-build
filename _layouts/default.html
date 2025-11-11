@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="icon" href="{{ '/assets/favicon.png' | relative_url }}" type="image/png">
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}" />
+
+  <!-- Google tag (gtag.js) - replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="{{ '/' | relative_url }}" class="brand">
+        <img src="{{ '/assets/logo.png' | relative_url }}" alt="Practice logo" class="logo" width="56" height="56">
+        <div class="brand-text">
+          <span class="brand-name">Harmony-Focused Coaching</span>
+          <span class="brand-tagline">Mind · Body · Metabolism</span>
+        </div>
+      </a>
+
+      <!-- Mobile nav toggle -->
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation"
+              onclick="document.body.classList.toggle('nav-open');">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}#services">Services</a></li>
+          <li><a href="{{ '/philosophy' | relative_url }}">Philosophy</a></li>
+          <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/subscribe' | relative_url }}">Subscribe</a></li>
+          <li><a href="{{ '/' | relative_url }}#book">Book</a></li>
+          <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+
+    {% if page.collection == 'posts' %}
+    <section class="section tint post-cta">
+      <div class="container prose">
+        <h2>Ready to bring this into your real life?</h2>
+        <p>
+          If this chapter resonated with you, we can turn insight into gentle,
+          sustainable change—through nutrition, nervous-system support, and
+          mind–body–metabolism work that fits your actual life.
+        </p>
+        <div class="post-cta-buttons">
+          <a href="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell"
+             class="btn btn-primary" rel="noopener">
+            Book a visit with Nourish
+          </a>
+          <a href="{{ '/subscribe' | relative_url }}" class="btn btn-ghost">
+            Subscribe for new chapters
+          </a>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Jennifer Nickell, MS, RD. | <a href="{{ '/privacy' | relative_url }}">Privacy &amp; Disclaimer</a></p>
+    </div>
+  </footer>
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.site-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        document.body.classList.remove('nav-open');
+      });
+    });
+  </script>
+</body>
+</html>

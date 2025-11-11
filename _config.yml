@@ -1,0 +1,22 @@
+title: "Harmony-Focused Coaching"
+description: "Mind–body–metabolism nutrition coaching with Jennifer Nickell, MS, RD."
+url: "https://example.netlify.app"
+baseurl: ""
+
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
