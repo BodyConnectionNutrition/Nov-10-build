@@ -1,0 +1,43 @@
+title: "Harmony-Focused Nutrition Therapy"
+tagline: "Don't just change your diet, change your mind."
+description: "Nutrition therapy connecting mind, body, and metabolism with evidence-based guidance rooted in behavior change and neuroscience."
+url: "https://example.netlify.app"
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+author:
+  name: "Jennifer Nickell, MS, RD"
+  email: ""
+  url: "https://example.netlify.app"
+
+logo: "/assets/logo.png"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
