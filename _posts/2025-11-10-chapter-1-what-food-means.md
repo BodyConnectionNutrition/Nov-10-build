@@ -4,11 +4,6 @@ title: "Chapter 1 · What Food Means"
 date: 2025-11-10
 excerpt: "We often talk about food as fuel, but food is also relationship: to our bodies, to each other, and to the living world."
 ---
-
-Here’s a revised version of your blog post that functions as a clear and inviting introduction to the **“Food as Consciousness”** book. It frames the phenomenological foundation, deepens the invitation to the reader, and includes tangible tasks to prepare them for the journey.
-
----
-
 ## ✨ Introduction: Before You Take Another Bite
 
 We often talk about food as fuel. But food is also relationship: to our bodies, to each other, and to the living world. Every bite is a portal—through it, the universe becomes you. Your cells, your thoughts, your intentions: all arise from the metabolic alchemy of earth transformed within flesh.
