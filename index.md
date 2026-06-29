@@ -1,11 +1,13 @@
-title: "Body Connection Nutrition"
-description: "Mind–body–metabolism nutrition coaching with Jennifer Nickell, MS, RD."
-url: "https://example.netlify.app"
-baseurl: ""
-markdown: kramdown
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: default
+---
+layout: default
+title: Home
+description: Teaching the mind–body–metabolism connection through nutrition, behavior change, and compassionate science.
+permalink: /
+---
+<section class="hero"><div class="container"><h1>Mind, Body, Metabolism — Connected.</h1><p>Your symptoms aren’t random—they’re your body’s language. I help you decode that language through personalized nutrition, nervous-system literacy, and behavior change grounded in science and compassion.</p><div class="cta-row"><a href="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell" class="btn btn-primary">Schedule on Nourish</a><a href="{{ '/philosophy' | relative_url }}" class="btn btn-ghost">Explore the Philosophy</a></div><p class="insurance-note">Visits are covered by most insurance providers through Nourish.</p><div class="social-links"><a href="https://www.instagram.com/bodyconnectionnutrition/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61591713410368" target="_blank" rel="noopener">Facebook</a><a href="https://www.youtube.com/@BodyConnectionNutrition" target="_blank" rel="noopener">YouTube</a></div></div></section>
+<section id="start" class="section tint"><div class="container"><h2>Start Here</h2><div class="cards"><article class="card"><h3>Learn</h3><p>Read essays on nutrition, behavior, and metabolism.</p><a href="{{ '/blog' | relative_url }}" class="btn btn-ghost">Read the Blog</a></article><article class="card"><h3>Work With Me</h3><p>Schedule care through Nourish.</p><a href="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell" class="btn btn-primary">Book with Nourish</a></article><article class="card"><h3>Watch</h3><p>Follow along on YouTube.</p><a href="https://www.youtube.com/@BodyConnectionNutrition" class="btn btn-ghost">Visit YouTube</a></article></div></div></section>
+<section id="services" class="section"><div class="container"><h2>Services</h2><div class="cards"><article class="card"><h3>Metabolic Mindfulness</h3><p>Learn how stress, sleep, and thought patterns interact with hormones and blood sugar.</p></article><article class="card"><h3>Digestive Resilience</h3><p>Explore the gut–brain axis and support digestion.</p></article><article class="card"><h3>Repatterning Food Narratives</h3><p>Restore trust in your body’s signals.</p></article></div></div></section>
+<section id="about" class="section tint"><div class="container"><h2>About Jennifer Nickell, MS, RD</h2><p>I’m a Registered Dietitian and educator specializing in the mind–body–metabolism connection. My work is rooted in neuroscience, adult learning theory, and compassionate behavior change.</p></div></section>
+<section id="follow" class="section"><div class="container"><h2>Follow Along</h2><p>Connect with Body Connection Nutrition for videos, essays, and practical reflections.</p><div class="social-links"><a href="https://www.instagram.com/bodyconnectionnutrition/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61591713410368" target="_blank" rel="noopener">Facebook</a><a href="https://www.youtube.com/@BodyConnectionNutrition" target="_blank" rel="noopener">YouTube</a></div></div></section>
+<section id="book" class="section tint"><div class="container"><h2>Book with Nourish</h2><p>If the embedded scheduler doesn’t load, <a href="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell">open the booking page</a>.</p><div class="iframe-wrap"><iframe src="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell" title="Nourish scheduling for Jennifer Nickell, RD" loading="lazy" sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe></div></div></section>
+<section id="contact" class="section"><div class="container"><h2>Contact</h2><p>The quickest way to get started is to schedule through Nourish.</p></div></section>

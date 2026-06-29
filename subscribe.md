@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Philosophy — Metabolism as Communication
-permalink: /philosophy
+title: Subscribe
+permalink: /subscribe
 ---
-<section class="section"><div class="container prose"><h1>Philosophy — Metabolism as Communication</h1><p>Metabolism isn’t just chemistry. It’s relationship—between your thoughts, your meals, your hormones, and your environment.</p><h2>Mind</h2><p>Attention and expectation shape physiology.</p><h2>Body</h2><p>Hormones, blood sugar, sleep, and movement drive how you feel.</p><h2>Environment</h2><p>Your routines, pantry, and social context are the scaffolding for change.</p></div></section>
+<section class="section"><div class="container"><h1>Subscribe</h1><p>Get new chapters and practical tools straight to your inbox.</p><form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks" class="form"><input type="hidden" name="form-name" value="subscribe"><p style="display:none;"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p><div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div><button class="btn btn-primary" type="submit">Subscribe</button></form></div></section>

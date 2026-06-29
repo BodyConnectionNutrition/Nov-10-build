@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
-permalink: /blog
+title: Privacy & Disclaimer
+permalink: /privacy
 ---
-<section class="section"><div class="container"><h1>Blog</h1><p>Chapters and essays on nutrition, attention, and the embodied universe.</p><div class="post-grid">{% for post in site.posts %}<article class="post-card"><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3><p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p><p>{{ post.excerpt | strip_html | truncate: 140 }}</p></article>{% endfor %}</div></div></section>
+<section class="section"><div class="container prose"><h1>Privacy & Disclaimer</h1><h2>Privacy Policy</h2><p>This website does not collect personal health information (PHI). The subscribe form collects only your name and email address for communication purposes.</p><h2>Disclaimer</h2><p>Content on this site is educational and does not replace individualized medical care.</p></div></section>
