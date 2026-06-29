@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>{{ site.url }}{{ site.baseurl }}/</loc></url>
-<url><loc>{{ site.url }}{{ site.baseurl }}/philosophy</loc></url>
+<url><loc>{{ site.url }}{{ site.baseurl }}/learn</loc></url>
 <url><loc>{{ site.url }}{{ site.baseurl }}/blog</loc></url>
+<url><loc>{{ site.url }}{{ site.baseurl }}/academy</loc></url>
 <url><loc>{{ site.url }}{{ site.baseurl }}/media</loc></url>
-<url><loc>{{ site.url }}{{ site.baseurl }}/resources</loc></url>
+<url><loc>{{ site.url }}{{ site.baseurl }}/work-with-me</loc></url>
 <url><loc>{{ site.url }}{{ site.baseurl }}/subscribe</loc></url>
-<url><loc>{{ site.url }}{{ site.baseurl }}/privacy</loc></url>
 </urlset>

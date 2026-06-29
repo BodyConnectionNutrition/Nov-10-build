@@ -1,37 +1,11 @@
-backend:
-  name: git-gateway
-  branch: main
-media_folder: "assets"
-public_folder: "/assets"
-collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "index.md"
-        label: "Home"
-        name: "home"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "philosophy.md"
-        label: "Philosophy"
-        name: "philosophy"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "blog.md"
-        label: "Blog Index"
-        name: "blog"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-  - name: "posts"
-    label: "Posts"
-    folder: "_posts"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+---
+layout: post
+title: "What Food Means"
+date: 2026-06-28
+excerpt: "Food is more than fuel. It is relationship: to the body, the environment, and the living world."
+---
+We often talk about food as fuel, but food is also relationship: to our bodies, to each other, and to the living world.
+
+Nutrition is not separate from lived experience. Every meal arrives with context: time, money, stress, culture, family, access, memory, hunger, fatigue, and belief.
+
+When we understand food only as calories, we miss the rest of the conversation.

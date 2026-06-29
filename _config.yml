@@ -1,12 +1,43 @@
-title: "Body Connection Nutrition"
-description: "Evidence-based nutrition education at the intersection of mind, body, metabolism, and misinformation."
-url: "https://bodyconnectionnutrition.com"
-baseurl: ""
-markdown: kramdown
-permalink: /blog/:title/
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: default
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets"
+public_folder: "/assets"
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "learn.md"
+        label: "Learn"
+        name: "learn"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "academy.md"
+        label: "Academy"
+        name: "academy"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "work-with-me.md"
+        label: "Work With Me"
+        name: "work"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "posts"
+    label: "Articles"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

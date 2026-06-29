@@ -1,13 +1,112 @@
 ---
 layout: default
 title: "Home"
-description: "Teaching the mind–body–metabolism connection through evidence-based nutrition and critical thinking."
+description: "Learn how your body actually works. Evidence-based nutrition education for mind, body, metabolism, and misinformation resilience."
 permalink: /
 ---
-<section class="hero"><div class="container hero-grid"><div><p class="kicker">Evidence-based nutrition education</p><h1>Teaching the Mind · Body · Metabolism Connection</h1><p class="lede">Nutrition is not a set of food rules. It is the language of the body—hormones, hunger, energy, digestion, stress, sleep, and lived experience all speaking at once.</p><div class="cta-row"><a href="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell" class="btn btn-primary" target="_blank" rel="noopener">Work with me through Nourish</a><a href="https://www.youtube.com/@BodyConnectionNutrition" class="btn btn-ghost" target="_blank" rel="noopener">Watch on YouTube</a></div><div class="insurance-pill">✓ Most insurance accepted through Nourish</div></div><div class="hero-card"><img src="{{ '/assets/logo.png' | relative_url }}" alt="Body Connection Nutrition logo"></div></div></section>
-<section class="section alt"><div class="container"><div class="section-heading"><p class="kicker">Start here</p><h2>Choose your next step</h2><p>Learn the science, schedule care, or follow along as we debunk misinformation and rebuild trust in the body.</p></div><div class="start-grid"><article class="start-card"><div class="big">🧠</div><h3>Learn</h3><p>Read essays on metabolism, hormones, behavior change, and nutrition misinformation.</p><a href="{{ '/blog' | relative_url }}" class="btn btn-ghost">Read the blog</a></article><article class="start-card"><div class="big">🥗</div><h3>Work with me</h3><p>Schedule individualized nutrition care through Nourish.</p><a href="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell" class="btn btn-primary" target="_blank" rel="noopener">Book with Nourish</a></article><article class="start-card"><div class="big">🎥</div><h3>Watch</h3><p>Follow Body Connection Nutrition on YouTube.</p><a href="https://www.youtube.com/@BodyConnectionNutrition" class="btn btn-ghost" target="_blank" rel="noopener">Visit YouTube</a></article></div></div></section>
-<section id="services" class="section"><div class="container"><div class="section-heading"><p class="kicker">Practice focus</p><h2>Nutrition care that connects physiology with real life</h2></div><div class="cards"><article class="card"><div class="card-icon">⟳</div><h3>Metabolic Mindfulness</h3><p>Learn how stress, sleep, blood sugar, hormones, and food patterns interact.</p></article><article class="card"><div class="card-icon">〰</div><h3>Digestive Resilience</h3><p>Explore the gut–brain axis and practical nutrition support for digestion and hormonal transitions.</p></article><article class="card"><div class="card-icon">✦</div><h3>Food Narrative Repair</h3><p>Move beyond shame, confusion, and diet rules with compassionate behavior change.</p></article></div></div></section>
-<section class="section alt"><div class="container split"><div><p class="kicker">About Jennifer</p><h2>Registered Dietitian, educator, and professional myth-debunker</h2><p class="lede">I help people understand how their bodies actually work. My work combines nutrition science, adult learning, neurodevelopment, motivational interviewing, and respect for lived experience.</p></div><div class="panel"><ul class="feature-list"><li><span class="check">✓</span><span>Evidence-based nutrition without perfectionism.</span></li><li><span class="check">✓</span><span>Mind–body–metabolism education translated into practical change.</span></li><li><span class="check">✓</span><span>Critical thinking about nutrition misinformation, AI, and quick-fix claims.</span></li></ul></div></div></section>
-<section class="section"><div class="container split"><div><p class="kicker">Latest education</p><h2>Watch Body Connection Nutrition</h2><p class="lede">Videos are where I talk through nutrition myths, metabolism, AI misinformation, and health claims.</p><div class="cta-row"><a href="https://www.youtube.com/@BodyConnectionNutrition" class="btn btn-primary" target="_blank" rel="noopener">Go to YouTube</a><a href="{{ '/media' | relative_url }}" class="btn btn-ghost">Media page</a></div></div><div class="video-wrap"><iframe src="https://www.youtube.com/embed/rajMVlEDsc4" title="Body Connection Nutrition YouTube video" allowfullscreen></iframe></div></div></section>
-<section class="section alt"><div class="container"><div class="section-heading"><p class="kicker">Follow along</p><h2>Connect with Body Connection Nutrition</h2></div><div class="social-card-grid"><a class="social-card" href="https://www.instagram.com/bodyconnectionnutrition/" target="_blank" rel="noopener"><span class="icon-link">◎</span><span><strong>Instagram</strong><br><small>Short reflections and updates</small></span></a><a class="social-card" href="https://www.facebook.com/profile.php?id=61591713410368" target="_blank" rel="noopener"><span class="icon-link">f</span><span><strong>Facebook</strong><br><small>Community posts and links</small></span></a><a class="social-card" href="https://www.youtube.com/@BodyConnectionNutrition" target="_blank" rel="noopener"><span class="icon-link">▶</span><span><strong>YouTube</strong><br><small>Educational videos</small></span></a></div></div></section>
-<section id="book" class="section"><div class="container"><div class="section-heading"><p class="kicker">Schedule</p><h2>Book with Nourish</h2><p>If the embedded scheduler does not load, <a href="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell" target="_blank" rel="noopener">open the booking page directly</a>.</p></div><div class="iframe-wrap"><iframe src="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell" title="Nourish scheduling for Jennifer Nickell, RD" loading="lazy" sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe></div></div></section>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="kicker">Body Connection Nutrition</p>
+      <h1>Learn how your body actually works.</h1>
+      <p class="lede">Nutrition has become noisy. I help you replace confusion with understanding, so food feels less like a test and more like a relationship with your body.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="{{ '/learn' | relative_url }}">Start learning</a>
+        <a class="btn btn-ghost" href="https://www.youtube.com/@BodyConnectionNutrition" target="_blank" rel="noopener">Watch on YouTube</a>
+        <a class="btn btn-clay" href="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell" target="_blank" rel="noopener">Work with me</a>
+      </div>
+      <div class="insurance-pill">Clinical care through Nourish · Most insurance accepted</div>
+    </div>
+    <div class="hero-card">
+      <img src="{{ '/assets/logo.png' | relative_url }}" alt="Body Connection Nutrition logo">
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-heading">
+      <p class="kicker">Choose your path</p>
+      <h2>This is more than a scheduling website.</h2>
+      <p>Appointments are one way to learn. The larger mission is helping people become resilient to misinformation and confident in how they feed their bodies.</p>
+    </div>
+    <div class="start-grid pathway">
+      <article class="start-card">
+        <h3>Read</h3>
+        <p>Articles that explain nutrition, metabolism, hormones, behavior change, and critical thinking.</p>
+        <a class="btn btn-ghost" href="{{ '/blog' | relative_url }}">Explore articles</a>
+      </article>
+      <article class="start-card">
+        <h3>Watch</h3>
+        <p>Videos that debunk common myths and explain the science in plain language.</p>
+        <a class="btn btn-ghost" href="https://www.youtube.com/@BodyConnectionNutrition" target="_blank" rel="noopener">Visit YouTube</a>
+      </article>
+      <article class="start-card">
+        <h3>Learn deeply</h3>
+        <p>The future home for courses, workshops, and structured education beyond one-on-one appointments.</p>
+        <a class="btn btn-ghost" href="{{ '/academy' | relative_url }}">View academy</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <p class="kicker">Audience</p>
+      <h2>For people who are tired of the nutrition firehose.</h2>
+      <p class="lede">You do not need another food rule. You need someone who can explain why recommendations work, what context matters, and how to stop being pulled around by every new headline, influencer, or AI-generated answer.</p>
+    </div>
+    <div class="panel">
+      <ul class="feature-list">
+        <li><span class="check">✓</span><span>You want valid nutrition information from someone who can explain the why.</span></li>
+        <li><span class="check">✓</span><span>You feel overwhelmed by conflicting online nutrition advice.</span></li>
+        <li><span class="check">✓</span><span>You want less anxiety around food and more confidence feeding your body.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section green">
+  <div class="container">
+    <div class="section-heading">
+      <p class="kicker">Core promise</p>
+      <h2>I help people understand their bodies so they can stop being manipulated by misinformation.</h2>
+      <p>Nutrition education should not make you more anxious. It should make your body make more sense.</p>
+    </div>
+    <div class="cards">
+      <article class="card dark"><div class="card-icon">🧠</div><h3>Think clearly</h3><p>Learn how to evaluate claims, trends, and AI answers.</p></article>
+      <article class="card dark"><div class="card-icon">🥗</div><h3>Feed confidently</h3><p>Understand the principles behind sustainable nutrition.</p></article>
+      <article class="card dark"><div class="card-icon">🌿</div><h3>Trust your body</h3><p>Rebuild a relationship with hunger, fullness, energy, and digestion.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container split">
+    <div>
+      <p class="kicker">Latest education</p>
+      <h2>AI is confident. That does not make it correct.</h2>
+      <p class="lede">A companion article and video on nutrition misinformation, AI, and why medical-sounding answers can still miss critical physiology.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="{{ '/articles/ai-is-confident-that-doesnt-make-it-correct/' | relative_url }}">Read article</a>
+        <a class="btn btn-ghost" href="https://www.youtube.com/@BodyConnectionNutrition" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+    </div>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/rajMVlEDsc4" title="Body Connection Nutrition video" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="kicker">Individual care</p>
+      <h2>Work with me through Nourish.</h2>
+      <p>Nourish handles insurance, scheduling, and the telehealth platform. This is the best path for individualized nutrition care based on your medical history, symptoms, labs, and goals.</p>
+      <a class="btn btn-primary" href="https://www.usenourish.com/providers/jennifer-nickell?referralSource=Nourish+dietitian&referralName=Jennifer+Nickell&utm_source=Nourish_dietitian&utm_term=Jennifer_Nickell" target="_blank" rel="noopener">Schedule through Nourish</a>
+    </div>
+  </div>
+</section>
