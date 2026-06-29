@@ -1,24 +1,10 @@
----
-layout: default
-title: "Blog"
-description: "Chapters and essays on nutrition, attention, and the embodied universe—how food becomes experience."
-permalink: /blog
----
-
-<section class="section">
-  <div class="container">
-    <h1 class="section-title">Blog</h1>
-    <p class="prose">Chapters and essays on nutrition, attention, and the embodied universe—how food becomes experience.</p>
-    <div class="post-grid">
-      {% for post in site.posts %}
-      <article class="post-card">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-        {% if post.excerpt %}
-        <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
-        {% endif %}
-      </article>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+:root{--primary:#6A7E5D;--secondary:#D8BFA5;--bg:#FAF7F2;--text:#2E2B27;--muted:#83796F;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--text);background:var(--bg);line-height:1.65}.container{width:min(1100px,92%);margin:auto}
+.site-header{background:#ffffffdd;position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(0,0,0,.08)}.header-inner{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.6rem 0}.brand{display:flex;gap:.75rem;align-items:center;text-decoration:none;color:inherit}.logo{border-radius:.5rem}.brand-name{font-weight:800}.brand-tagline{display:block;color:var(--muted);font-size:.9rem}
+.site-nav ul{display:flex;list-style:none;gap:.75rem;margin:0;padding:0;flex-wrap:wrap}.site-nav a{text-decoration:none;color:var(--text);padding:.4rem .6rem;border-radius:.4rem}.site-nav a:hover{background:rgba(0,0,0,.05)}
+.nav-toggle{display:none;background:none;border:0;padding:.25rem;cursor:pointer}.nav-toggle-bar{display:block;width:22px;height:2px;border-radius:99px;background:var(--text)}.nav-toggle-bar+.nav-toggle-bar{margin-top:4px}
+.section{padding:3.2rem 0}.section.tint{background:#fff}.hero{padding:4rem 0;text-align:center;background:linear-gradient(180deg,#D8BFA533,#FAF7F2)}.section-title{margin-top:0}.btn{display:inline-block;text-decoration:none;padding:.65rem .95rem;border-radius:.55rem;border:1px solid var(--primary)}.btn-primary{background:var(--primary);color:white}.btn-ghost{color:var(--primary);background:transparent}.cta-row,.social-links{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}.social-links{margin-top:1rem}.social-links a{font-weight:700;color:var(--primary);text-decoration:none}
+.cards{display:grid;gap:1rem;grid-template-columns:repeat(3,1fr)}.card,.post-card{background:var(--card);border:1px solid rgba(0,0,0,.08);border-radius:.75rem;padding:1rem}.insurance-note{font-weight:700;color:var(--primary)}
+.iframe-wrap{position:relative;width:100%;padding-top:62.5%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:.75rem;overflow:hidden}.iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.site-footer{text-align:center;background:#fff;border-top:1px solid rgba(0,0,0,.08);padding:1rem;color:var(--muted)}
+.post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.post-meta{color:var(--muted);font-size:.9rem}.form{max-width:560px;margin:auto;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:.75rem;padding:1rem}.field{margin-bottom:.9rem}label{display:block;font-weight:700}input{width:100%;padding:.6rem;border:1px solid rgba(0,0,0,.2);border-radius:.5rem}.post-cta-buttons{display:flex;gap:.75rem;flex-wrap:wrap}
+@media(max-width:768px){.site-nav{position:fixed;inset:0 0 0 auto;width:min(260px,75%);background:#fff;box-shadow:-12px 0 30px rgba(0,0,0,.08);padding:4rem 1.25rem 1.5rem;transform:translateX(100%);transition:.25s;z-index:20}body.nav-open .site-nav{transform:translateX(0)}.site-nav ul{flex-direction:column;align-items:flex-start}.nav-toggle{display:inline-flex;flex-direction:column;align-items:center;gap:4px}.cards,.post-grid{grid-template-columns:1fr}}

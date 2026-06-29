@@ -1,14 +1,6 @@
 ---
 layout: default
-title: "Thank You"
-description: "Thank you for subscribing."
-permalink: /thanks
+title: Privacy & Disclaimer
+permalink: /privacy
 ---
-
-<section class="section">
-  <div class="container prose" style="text-align:center;">
-    <h1>You're subscribed ✔</h1>
-    <p>Welcome! You’ll receive new chapters and practical tools as they’re published.</p>
-    <p><a class="btn" href="{{ '/blog' | relative_url }}">Read the latest</a> or <a class="btn btn-primary" href="{{ '/' | relative_url }}">Return home</a></p>
-  </div>
-</section>
+<section class="section"><div class="container prose"><h1>Privacy & Disclaimer</h1><h2>Privacy Policy</h2><p>This website does not collect personal health information (PHI). The subscribe form collects only your name and email address for communication purposes.</p><h2>Disclaimer</h2><p>Content on this site is educational and does not replace individualized medical care.</p></div></section>
