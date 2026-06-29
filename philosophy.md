@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Philosophy — Metabolism as Communication
+title: "Philosophy"
 permalink: /philosophy
 ---
-<section class="section"><div class="container prose"><h1>Philosophy — Metabolism as Communication</h1><p>Metabolism isn’t just chemistry. It’s relationship—between your thoughts, your meals, your hormones, and your environment.</p><h2>Mind</h2><p>Attention and expectation shape physiology.</p><h2>Body</h2><p>Hormones, blood sugar, sleep, and movement drive how you feel.</p><h2>Environment</h2><p>Your routines, pantry, and social context are the scaffolding for change.</p></div></section>
+<section class="section"><div class="container prose"><p class="kicker">Philosophy</p><h1>Metabolism as Communication</h1><p>Metabolism is not just chemistry. It is relationship: between your thoughts, meals, hormones, sleep, stress, and environment.</p><h2>Mind</h2><p>Attention, expectation, belief, and stress shape physiology. This does not mean symptoms are “all in your head.” It means the brain and body are never separate systems.</p><h2>Body</h2><p>Hormones, blood sugar, digestion, inflammation, sleep, and movement all influence how you feel and how your body responds to food.</p><h2>Environment</h2><p>Behavior change is easier when the environment supports it. We do not shame the person; we study the system and build better scaffolding.</p></div></section>

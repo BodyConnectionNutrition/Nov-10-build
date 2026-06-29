@@ -1,4 +1,3 @@
 source "https://rubygems.org"
-
-# Jekyll site for Harmony-Focused Coaching
 gem "jekyll", "~> 4.4"
+gem "webrick", "~> 1.8"

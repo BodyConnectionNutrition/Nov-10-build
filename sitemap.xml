@@ -3,6 +3,8 @@
 <url><loc>{{ site.url }}{{ site.baseurl }}/</loc></url>
 <url><loc>{{ site.url }}{{ site.baseurl }}/philosophy</loc></url>
 <url><loc>{{ site.url }}{{ site.baseurl }}/blog</loc></url>
+<url><loc>{{ site.url }}{{ site.baseurl }}/media</loc></url>
+<url><loc>{{ site.url }}{{ site.baseurl }}/resources</loc></url>
 <url><loc>{{ site.url }}{{ site.baseurl }}/subscribe</loc></url>
 <url><loc>{{ site.url }}{{ site.baseurl }}/privacy</loc></url>
 </urlset>
