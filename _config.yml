@@ -1,14 +1,16 @@
-title: "Body Connection Nutrition"
-description: "Learn how your body actually works. Evidence-based nutrition education for mind, body, metabolism, and misinformation resilience."
-url: "https://bodyconnectionnutrition.com"
-baseurl: ""
-
-markdown: kramdown
-permalink: /articles/:title/
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets"
+public_folder: "/assets"
+collections:
+  - name: "posts"
+    label: "Reflections"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

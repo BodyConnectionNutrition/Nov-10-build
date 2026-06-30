@@ -1,0 +1,6 @@
+---
+layout: default
+title: "Begin Here"
+permalink: /begin-here
+---
+<section class="section"><div class="container split"><div><p class="kicker">Begin Here</p><h1>What if your body has been communicating instead of betraying you?</h1><p class="lede">This page is not a quiz. It is an invitation to begin a different relationship with your body.</p></div><div class="panel"><p class="invitation">When was the last time you felt at peace with your body?</p><p class="invitation">What have you been taught to fear?</p><p class="invitation">What would change if curiosity replaced judgment?</p><p class="invitation">What if nutrition became an expression of care?</p></div></div></section><section class="section white"><div class="container"><div class="section-heading"><h2>Choose the next gentle step.</h2><p>Read a reflection, learn the science, watch a video, or seek individualized care.</p><div class="cta-row" style="justify-content:center"><a class="btn btn-primary" href="{{ '/reflections' | relative_url }}">Read Reflections</a><a class="btn btn-ghost" href="{{ '/learning-library' | relative_url }}">Learning Library</a><a class="btn btn-ghost" href="{{ '/work-with-me' | relative_url }}">Work With Me</a></div></div></div></section>
