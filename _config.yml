@@ -1,16 +1,14 @@
-backend:
-  name: git-gateway
-  branch: main
-media_folder: "assets"
-public_folder: "/assets"
-collections:
-  - name: "posts"
-    label: "Reflections"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+title: "Body Connection Nutrition"
+description: "A path to peace with your body through nutrition, embodiment, and compassion."
+url: "https://bodyconnectionnutrition.com"
+baseurl: ""
+
+markdown: kramdown
+permalink: /reflections/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
