@@ -1,6 +1,0 @@
----
-layout: default
-title: "A Way of Seeing"
-permalink: /a-way-of-seeing
----
-<section class="section"><div class="container prose"><p class="kicker">A Way of Seeing</p><h1>Understanding invites less fear and more compassion.</h1><p>For years, I thought I was teaching nutrition. Over time, I realized I was often helping people untangle fear: fear of food, fear of bodies, fear of illness, fear of getting it wrong.</p><p>I do not believe your body is something to conquer. I believe it is something to understand.</p><p>Our bodies are not separate from nature. They are nature: breathing, metabolizing, adapting, sensing, learning, and relating. Every meal is an exchange with the living world. Every symptom is information. Every behavior has context.</p><p>When we understand our embodied place in the world, fear gives way to compassion.</p><h2>Nutrition is the doorway.</h2><p>Food is practical and immediate. It touches energy, digestion, hormones, blood sugar, family, culture, stress, memory, and identity. But the deeper invitation is relationship: learning to meet the body with curiosity rather than judgment.</p></div></section>

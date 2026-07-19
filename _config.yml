@@ -1,14 +1,13 @@
-title: "Body Connection Nutrition"
-description: "A path to peace with your body through nutrition, embodiment, and compassion."
-url: "https://bodyconnectionnutrition.com"
+title: Body Connection Nutrition
+description: Evidence-based nutrition education connecting mind, body, metabolism, development, and environment.
+url: https://bodyconnectionnutrition.com
 baseurl: ""
-
 markdown: kramdown
-permalink: /reflections/:title/
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post
+permalink: /blog/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

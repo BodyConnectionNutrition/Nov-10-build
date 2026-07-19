@@ -1,6 +1,16 @@
 ---
-layout: default
-title: "Privacy & Disclaimer"
-permalink: /privacy
+layout: page
+permalink: /privacy/
+title: Privacy & Disclaimer
+eyebrow: Important information
+intro: Educational content on this site is not a substitute for individualized medical care.
 ---
-<section class="section"><div class="container prose"><h1>Privacy & Disclaimer</h1><h2>Privacy</h2><p>This website does not collect personal health information. The subscribe form collects your name and email address for communication purposes.</p><p>Scheduling and medical nutrition therapy services are conducted through Nourish, which maintains its own privacy policies and HIPAA-compliant systems.</p><h2>Disclaimer</h2><p>Content on this site is for general educational purposes only and does not replace individualized medical nutrition therapy, medical care, diagnosis, or treatment.</p><p>If you are experiencing a medical emergency, call 911 or seek immediate care.</p></div></section>
+## Medical disclaimer
+
+The information on this website is provided for general educational purposes. It does not establish a dietitian–client relationship and should not be used to diagnose, treat, or manage a medical condition. Discuss personal health decisions with a qualified healthcare professional who can evaluate your full history.
+
+## Privacy
+
+This website may use basic analytics to understand traffic and improve content. Do not submit protected health information through general website forms, social media, or email. Clinical communication should occur through the secure platform provided for established clients.
+
+External websites linked from this site have their own privacy policies and practices.

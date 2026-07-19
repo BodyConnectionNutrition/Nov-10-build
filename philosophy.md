@@ -1,6 +1,24 @@
 ---
-layout: default
-title: "Philosophy"
-permalink: /philosophy
+layout: page
+permalink: /philosophy/
+title: The Philosophy Behind the Work
+eyebrow: Mind • Body • Environment
+intro: We do not become healthy through information alone. We become what our bodies, histories, relationships, and environments make possible.
 ---
-<section class="section"><div class="container prose"><p class="kicker">Philosophy</p><h1>Metabolism as Communication</h1><p>Metabolism is not just chemistry. It is relationship: between your thoughts, meals, hormones, sleep, stress, and environment.</p><h2>Mind</h2><p>Attention, expectation, belief, and stress shape physiology. This does not mean symptoms are “all in your head.” It means the brain and body are never separate systems.</p><h2>Body</h2><p>Hormones, blood sugar, digestion, inflammation, sleep, and movement all influence how you feel and how your body responds to food.</p><h2>Environment</h2><p>Behavior change is easier when the environment supports it. We do not shame the person; we study the system and build better scaffolding.</p></div></section>
+## The body is not separate from the person
+
+Thought, emotion, hunger, behavior, and meaning all emerge through a living body in continuous relationship with its environment. Nutrition is therefore not merely a matter of nutrients entering a machine. Food becomes energy, tissue, hormones, immune function, sensation, memory, and consciousness.
+
+## Behavior is not a character verdict
+
+What people call willpower is influenced by sleep, stress, neurodevelopment, scarcity, habit, social expectations, learned beliefs, and the energy available to the brain and body. Recognizing these constraints does not make change impossible. It tells us where change must occur.
+
+Instead of asking, “Why can’t I make myself do this?” we can ask, “What conditions would make this action easier, safer, or more meaningful?”
+
+## Understanding can reduce fear
+
+A body that changes weight, becomes hungry, seeks comfort, protects energy, or reacts to stress is not defective. It is responding. Accurate science can help us interpret those responses without turning them into moral failures.
+
+## Compassion is practical
+
+Compassion is not pretending everything is fine. It is seeing causes clearly enough to respond effectively. When we understand that people are embodied and environmentally shaped, blame becomes less useful—and building better conditions becomes more urgent.

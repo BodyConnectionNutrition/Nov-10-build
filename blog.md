@@ -1,6 +1,12 @@
 ---
-layout: default
-title: "Blog"
-permalink: /blog
+layout: page
+permalink: /blog/
+title: Articles & Videos
+eyebrow: Learn the science behind the recommendations
+intro: Nutrition, metabolism, behavior change, development, and the systems that shape what people believe about their bodies.
 ---
-<section class="section"><div class="container"><div class="section-heading"><p class="kicker">Blog</p><h1>Essays, video companions, and future book chapters</h1><p>Writing on nutrition, metabolism, behavior change, AI misinformation, and the mind–body connection.</p></div><div class="post-grid">{% for post in site.posts %}<article class="post-card"><p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3><p>{{ post.excerpt | strip_html | truncate: 165 }}</p><a class="btn btn-ghost" href="{{ post.url | relative_url }}">Read article</a></article>{% endfor %}</div></div></section>
+<div class="cards">
+{% for post in site.posts %}
+<article class="card post-card"><p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3><p>{{ post.excerpt | strip_html | truncate: 180 }}</p></article>
+{% endfor %}
+</div>
