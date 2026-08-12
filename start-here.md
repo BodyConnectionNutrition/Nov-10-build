@@ -59,6 +59,20 @@ The free experience is designed to let you feel the power of this approach. The 
 
 **Free gives you a meaningful beginning. Paid gives you the structure, depth, teaching, and guidance to continue.**
 
+## Continue with Why Am I Eating?
+
+<p class="post-meta">Paid awareness experience · $29</p>
+
+Take one real eating moment and examine what was actually shaping it. **Why Am I Eating?** creates an Eating Drivers Map across biology, reward, emotion, habit, environment, learned food rules, and social context.
+
+The goal is not to find one excuse or one failure. It is to make a complex behavior visible enough to study.
+
+<div class="card" style="margin:2rem 0">
+  <h3>Why Am I Eating? · $29</h3>
+  <p>One-time purchase · ongoing access · repeat the experience with different eating moments and begin identifying patterns.</p>
+  <p><a class="button" href="/why-am-i-eating/">Explore the paid experience →</a></p>
+</div>
+
 ## Education, not therapy
 
 Serious reflection is also serious learning.
