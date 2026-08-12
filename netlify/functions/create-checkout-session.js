@@ -1,4 +1,3 @@
-const PRICE_ID = "price_1U3eEaB7qdigyVpmTNkB4K97";
 const SITE = "https://bodyconnectionnutrition.com";
 
 exports.handler = async (event) => {
@@ -7,11 +6,15 @@ exports.handler = async (event) => {
   }
 
   const key = process.env.STRIPE_SECRET_KEY;
-  if (!key) return { statusCode: 500, body: "Stripe is not configured." };
+  const priceId = process.env.STRIPE_PRICE_ID;
+  if (!key || !priceId) {
+    console.error("Stripe is not fully configured", { hasKey: Boolean(key), hasPriceId: Boolean(priceId) });
+    return { statusCode: 500, body: "Stripe is not configured." };
+  }
 
   const body = new URLSearchParams();
   body.set("mode", "payment");
-  body.set("line_items[0][price]", PRICE_ID);
+  body.set("line_items[0][price]", priceId);
   body.set("line_items[0][quantity]", "1");
   body.set("customer_creation", "always");
   body.set("success_url", `${SITE}/why-am-i-eating/thank-you/?session_id={CHECKOUT_SESSION_ID}`);
