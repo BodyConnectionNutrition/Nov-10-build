@@ -9,8 +9,11 @@ intro: Take one real eating moment apart and see the biological, emotional, envi
 <p class="eyebrow">One-time purchase · ongoing access</p>
 <h2>$29</h2>
 <p>This is not a quiz that tells you whether you were “good” or “bad.” It is a structured awareness experience that helps you study one eating moment without reducing it to willpower.</p>
-<p><a class="button" href="https://buy.stripe.com/test_00weVcfzWbME4buczCgw000">Buy Why Am I Eating? — $29 →</a></p>
-<p class="trust-line">Secure checkout powered by Stripe · Test mode while we finish the access system</p>
+<form method="post" action="/.netlify/functions/create-checkout-session" style="margin:1.2rem 0">
+  <button class="button" type="submit">Buy Why Am I Eating? — $29 →</button>
+</form>
+<p><a class="text-link" href="/why-am-i-eating/access/">Already purchased? Open your saved access →</a></p>
+<p class="trust-line">Secure checkout powered by Stripe · Checkout is currently in Stripe test mode</p>
 </div>
 
 ## What you will do
@@ -63,7 +66,9 @@ This is **education, not psychotherapy**. The tool does not diagnose an eating d
 
 <div class="cta" style="margin-top:3rem">
   <div><p class="eyebrow">One-time purchase</p><h2>Why Am I Eating? · $29</h2><p>Take one eating moment apart. See what was really operating.</p></div>
-  <a class="button" href="https://buy.stripe.com/test_00weVcfzWbME4buczCgw000">Buy now — $29 →</a>
+  <form method="post" action="/.netlify/functions/create-checkout-session">
+    <button class="button" type="submit">Buy now — $29 →</button>
+  </form>
 </div>
 
-<p class="trust-line" style="margin-top:1rem">Checkout is currently in Stripe test mode while the secure purchaser-access layer is completed. No live charges are being accepted yet.</p>
+<p class="trust-line" style="margin-top:1rem">After checkout, Body Connection Nutrition verifies the completed Stripe purchase before issuing access to the paid experience. No live charges are being accepted while Stripe remains in test mode.</p>
