@@ -1,5 +1,4 @@
 const crypto = require("crypto");
-const PRICE_ID = "price_1U3eEaB7qdigyVpmTNkB4K97";
 const PRODUCT_SLUG = "why-am-i-eating";
 
 async function stripeGet(path) {
@@ -30,10 +29,20 @@ exports.handler = async (event) => {
     };
   }
 
+  const priceId = process.env.STRIPE_PRICE_ID;
+  if (!priceId) {
+    console.error("Stripe price is not configured");
+    return {
+      statusCode: 500,
+      headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
+      body: JSON.stringify({ ok: false, error: "Verification is temporarily unavailable." })
+    };
+  }
+
   try {
     const session = await stripeGet(`/v1/checkout/sessions/${encodeURIComponent(sessionId)}`);
     const items = await stripeGet(`/v1/checkout/sessions/${encodeURIComponent(sessionId)}/line_items?limit=10`);
-    const hasProduct = Array.isArray(items.data) && items.data.some(item => item.price && item.price.id === PRICE_ID);
+    const hasProduct = Array.isArray(items.data) && items.data.some(item => item.price && item.price.id === priceId);
 
     if (session.status !== "complete" || session.payment_status !== "paid" || !hasProduct) {
       return {
