@@ -2,7 +2,6 @@ const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 
-const PRICE_ID = "price_1U3eEaB7qdigyVpmTNkB4K97";
 const PRODUCT_SLUG = "why-am-i-eating";
 
 function verifyToken(token) {
@@ -36,6 +35,9 @@ async function stripeGet(apiPath) {
 
 exports.handler = async (event) => {
   try {
+    const priceId = process.env.STRIPE_PRICE_ID;
+    if (!priceId) throw new Error("Stripe price is not configured");
+
     const token = event.queryStringParameters && event.queryStringParameters.token;
     const payload = verifyToken(token);
     if (!payload) {
@@ -48,7 +50,7 @@ exports.handler = async (event) => {
 
     const session = await stripeGet(`/v1/checkout/sessions/${encodeURIComponent(payload.sid)}`);
     const items = await stripeGet(`/v1/checkout/sessions/${encodeURIComponent(payload.sid)}/line_items?limit=10`);
-    const hasProduct = Array.isArray(items.data) && items.data.some(item => item.price && item.price.id === PRICE_ID);
+    const hasProduct = Array.isArray(items.data) && items.data.some(item => item.price && item.price.id === priceId);
 
     if (session.payment_status !== "paid" || session.status !== "complete" || !hasProduct) {
       return {
