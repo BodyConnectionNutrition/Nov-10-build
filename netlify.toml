@@ -15,6 +15,16 @@
   status = 200
 
 [[redirects]]
+  from = "/patient-tools/why-am-i-eating"
+  to = "/.netlify/functions/patient-why-am-i-eating"
+  status = 200
+
+[[redirects]]
+  from = "/patient-tools/why-am-i-eating/"
+  to = "/.netlify/functions/patient-why-am-i-eating"
+  status = 200
+
+[[redirects]]
   from = "/patient-tools"
   to = "/.netlify/functions/patient-tools?path="
   status = 200
