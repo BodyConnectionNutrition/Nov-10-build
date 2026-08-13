@@ -10,6 +10,11 @@
   included_files = ["netlify/functions/private/**"]
 
 [[redirects]]
+  from = "/patient-tools/login"
+  to = "/.netlify/functions/patient-login"
+  status = 200
+
+[[redirects]]
   from = "/patient-tools"
   to = "/.netlify/functions/patient-tools?path="
   status = 200
