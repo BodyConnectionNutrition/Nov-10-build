@@ -58,11 +58,11 @@ function loginPage(error = "") {
 
 function hubPage() {
   return shell(`<p class="eye">Patient learning space</p><h1>Body Connection tools</h1><p class="lead">These tools are available to you as part of your work with Body Connection Nutrition. They are designed to help you notice patterns, examine influences, and develop a more complete understanding of food and body experiences.</p><div class="note"><b>You do not need to complete these in order.</b> Use the tool that connects most directly to what you are working on. You can also bring anything you notice into a future appointment.</div><div class="grid">
-  <article class="card"><p class="meta">Notice body signals</p><h3>Can You Hear Your Body?</h3><p>Explore signal, interpretation, and permission—the space between what your body communicates and what happens next.</p><a class="button" href="/patient-tools/can-you-hear-your-body">Open tool →</a></article>
+  <article class="card"><p class="meta">Notice body signals</p><h3>Can You Hear Your Body?</h3><p>Explore signal, interpretation, and permission—the space between what your body communicates and what happens next.</p><a class="button" href="/tools/can-you-hear-your-body/">Open tool →</a></article>
   <article class="card"><p class="meta">Examine an eating moment</p><h3>Why Am I Eating?</h3><p>Take one real food decision apart and explore the biological, learned, emotional, relational, and environmental forces shaping it.</p><a class="button" href="/patient-tools/why-am-i-eating">Open tool →</a></article>
-  <article class="card"><p class="meta">Map food influences</p><h3>Who Taught You to Eat?</h3><p>Build a picture of the people, environments, systems, and experiences that have shaped how you eat across your life.</p><a class="button" href="/patient-tools/who-taught-you-to-eat">Open tool →</a></article>
-  <article class="card"><p class="meta">Map body-image influences</p><h3>How Was My Body Image Created?</h3><p>Trace the family, peer, cultural, media, healthcare, and lived-body influences that contributed to body image.</p><a class="button" href="/patient-tools/how-was-my-body-image-created">Open tool →</a></article>
-  <article class="card"><p class="meta">Examine one idea</p><h3>Deconstructing a Belief</h3><p>Take one food or body belief apart and trace how it became familiar, convincing, and influential.</p><a class="button" href="/patient-tools/deconstructing-a-belief">Open tool →</a></article>
+  <article class="card"><p class="meta">Map food influences</p><h3>Who Taught You to Eat?</h3><p>Build a picture of the people, environments, systems, and experiences that have shaped how you eat across your life.</p><a class="button" href="/tools/who-taught-you-to-eat/">Open tool →</a></article>
+  <article class="card"><p class="meta">Map body-image influences</p><h3>How Was My Body Image Created?</h3><p>Trace the family, peer, cultural, media, healthcare, and lived-body influences that contributed to body image.</p><a class="button" href="/tools/how-was-my-body-image-created/">Open tool →</a></article>
+  <article class="card"><p class="meta">Examine one idea</p><h3>Deconstructing a Belief</h3><p>Take one food or body belief apart and trace how it became familiar, convincing, and influential.</p><a class="button" href="/tools/deconstructing-a-belief/">Open tool →</a></article>
 </div><p><a href="/patient-tools/logout">Sign out of patient tools</a></p>`, "Patient Tools");
 }
 
@@ -98,14 +98,6 @@ exports.handler = async (event) => {
   }
 
   if (!route) return { statusCode: 200, headers: headers(), body: hubPage() };
-
-  const publicTools = {
-    "can-you-hear-your-body": "/tools/can-you-hear-your-body/",
-    "who-taught-you-to-eat": "/tools/who-taught-you-to-eat/",
-    "how-was-my-body-image-created": "/tools/how-was-my-body-image-created/",
-    "deconstructing-a-belief": "/tools/deconstructing-a-belief/"
-  };
-  if (publicTools[route]) return redirect(publicTools[route]);
 
   if (route === "why-am-i-eating") {
     try {
