@@ -8,3 +8,18 @@
 
 [functions]
   included_files = ["netlify/functions/private/**"]
+
+[[redirects]]
+  from = "/patient-tools"
+  to = "/.netlify/functions/patient-tools?path="
+  status = 200
+
+[[redirects]]
+  from = "/patient-tools/"
+  to = "/.netlify/functions/patient-tools?path="
+  status = 200
+
+[[redirects]]
+  from = "/patient-tools/*"
+  to = "/.netlify/functions/patient-tools?path=:splat"
+  status = 200
