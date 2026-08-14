@@ -21,22 +21,22 @@
 
 [[redirects]]
   from = "/patient-tools/why-am-i-eating"
-  to = "/.netlify/functions/patient-tool?product=why-am-i-eating"
+  to = "/.netlify/functions/patient-tools?path=why-am-i-eating"
   status = 200
 
 [[redirects]]
   from = "/patient-tools/who-taught-you-to-eat"
-  to = "/.netlify/functions/patient-tool?product=who-taught-you-to-eat"
+  to = "/.netlify/functions/patient-tools?path=who-taught-you-to-eat"
   status = 200
 
 [[redirects]]
   from = "/patient-tools/how-was-my-body-image-created"
-  to = "/.netlify/functions/patient-tool?product=how-was-my-body-image-created"
+  to = "/.netlify/functions/patient-tools?path=how-was-my-body-image-created"
   status = 200
 
 [[redirects]]
   from = "/patient-tools/deconstructing-a-belief"
-  to = "/.netlify/functions/patient-tool?product=deconstructing-a-belief"
+  to = "/.netlify/functions/patient-tools?path=deconstructing-a-belief"
   status = 200
 
 [[redirects]]
