@@ -28,8 +28,9 @@ exports.handler = async (event) => {
   const key = process.env.STRIPE_SECRET_KEY;
   const priceId = process.env[config.priceEnv];
   if (!key || !priceId) {
-    console.error("Paid tool is not fully configured", { product, hasKey: Boolean(key), hasPriceId: Boolean(priceId) });
-    return { statusCode: 500, body: "This checkout is not configured yet." };
+    const missing = [!key ? "STRIPE_SECRET_KEY" : null, !priceId ? config.priceEnv : null].filter(Boolean).join(", ");
+    console.error("Paid tool is not fully configured", { product, missing });
+    return { statusCode: 500, headers: { "Content-Type": "text/plain; charset=utf-8" }, body: `Checkout configuration is missing: ${missing}` };
   }
 
   const body = new URLSearchParams();
@@ -54,11 +55,12 @@ exports.handler = async (event) => {
     const data = await response.json();
     if (!response.ok || !data.url) {
       console.error("Stripe checkout error", data);
-      return { statusCode: 502, body: "Unable to start checkout." };
+      const message = data && data.error && data.error.message ? data.error.message : "Unable to start checkout.";
+      return { statusCode: 502, headers: { "Content-Type": "text/plain; charset=utf-8" }, body: `Stripe checkout error: ${message}` };
     }
     return { statusCode: 303, headers: { Location: data.url, "Cache-Control": "no-store" }, body: "" };
   } catch (error) {
     console.error(error);
-    return { statusCode: 500, body: "Unable to start checkout." };
+    return { statusCode: 500, headers: { "Content-Type": "text/plain; charset=utf-8" }, body: `Checkout error: ${error && error.message ? error.message : "Unable to start checkout."}` };
   }
 };
