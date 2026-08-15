@@ -1,342 +1,59 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#FBF7EF" />
-  <title>Can You Hear Your Body? | Body Connection Nutrition</title>
-  <meta name="description" content="A five-minute Body Connection Nutrition awareness experience exploring body signals, interpretation, and learned rules." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-:root{
-  --moss:#566B4F;
-  --dark:#31412F;
-  --sage:#8FA690;
-  --clay:#C89468;
-  --ivory:#FBF7EF;
-  --paper:#FFFDF8;
-  --ink:#2E2B27;
-  --muted:#6F665D;
-  --line:rgba(46,43,39,.14);
-  --soft:rgba(143,166,144,.16);
-  --shadow:0 22px 65px rgba(49,65,47,.12);
-  --radius:26px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  background:
-    radial-gradient(circle at top left, rgba(200,148,104,.10), transparent 34%),
-    radial-gradient(circle at bottom right, rgba(143,166,144,.12), transparent 36%),
-    var(--ivory);
-  color:var(--ink);
-  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  min-height:100vh;
-}
-button,input,textarea{font:inherit}
-button{cursor:pointer}
-.shell{width:min(940px,92%);margin:0 auto;padding:24px 0 32px}
-.site-header{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
-.brand-mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:var(--ivory);font-family:"DM Serif Display",Georgia,serif;font-size:18px;letter-spacing:.02em}
-.brand-name{font-weight:700;color:var(--dark);font-size:15px}
-.brand-tagline{font-size:12px;color:var(--muted);margin-top:2px}
-.app-card{background:rgba(255,253,248,.92);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;min-height:650px}
-.progress-wrap{padding:18px 24px 0}
-.progress-meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted);margin-bottom:8px}
-.progress-track{height:7px;background:rgba(86,107,79,.10);border-radius:999px;overflow:hidden}
-.progress-bar{height:100%;background:linear-gradient(90deg,var(--sage),var(--moss));border-radius:999px;transition:width .35s ease}
-.screen{padding:44px 52px 48px;animation:fade .26s ease}
-@keyframes fade{from{opacity:.35;transform:translateY(4px)}to{opacity:1;transform:none}}
-.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);margin-bottom:12px}
-h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;color:var(--dark);font-weight:400;margin:0}
-h1{font-size:clamp(42px,6vw,66px);line-height:.98;letter-spacing:-.02em;max-width:730px}
-h2{font-size:clamp(32px,4vw,46px);line-height:1.05;max-width:760px}
-h3{font-size:26px;line-height:1.08}
-.lead{font-size:19px;line-height:1.7;max-width:720px;margin:24px 0;color:#443f39}
-.body-copy{font-size:16px;line-height:1.75;color:#49423c;max-width:760px}
-.body-copy p{margin:0 0 14px}
-.callout{margin:26px 0;padding:22px 24px;border-left:4px solid var(--clay);background:rgba(200,148,104,.08);border-radius:0 16px 16px 0;font-size:17px;line-height:1.65}
-.actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:32px;flex-wrap:wrap}
-.actions.right{justify-content:flex-end}
-.btn{border:0;border-radius:999px;padding:13px 22px;background:var(--dark);color:white;font-weight:700;transition:transform .15s ease,opacity .15s ease}
-.btn:hover{transform:translateY(-1px)}
-.btn:disabled{opacity:.35;cursor:not-allowed;transform:none}
-.secondary{background:transparent;color:var(--dark);border:1px solid rgba(49,65,47,.24)}
-.ghost{background:transparent;color:var(--moss);border:0;font-weight:700;padding:10px}
-.small{font-size:13px}.hidden{display:none!important}
-.question-list{display:grid;gap:22px;margin-top:30px}
-.question{padding:20px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.6)}
-.question-text{font-size:16px;line-height:1.5;font-weight:600;margin-bottom:14px}
-.option-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
-.option{border:1px solid var(--line);background:white;border-radius:13px;padding:11px 8px;text-align:center;color:#4d463f;min-height:48px;display:grid;place-items:center;font-size:13px;line-height:1.25}
-.option:hover{border-color:var(--sage)}
-.option.selected{background:var(--dark);border-color:var(--dark);color:white}
-.multi-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:22px}
-.chip{border:1px solid var(--line);background:white;border-radius:999px;padding:11px 14px;text-align:center;font-size:14px}
-.chip.selected{background:var(--soft);border-color:var(--moss);color:var(--dark);font-weight:700}
-.input-group{display:grid;gap:14px;margin-top:25px}
-.sentence-row{display:grid;grid-template-columns:185px 1fr;align-items:center;gap:12px}
-.sentence-row label{font-weight:700;color:var(--dark);font-size:14px}
-.text-input,textarea{width:100%;border:1px solid var(--line);border-radius:14px;background:white;padding:13px 14px;color:var(--ink);outline:none}
-.text-input:focus,textarea:focus{border-color:var(--moss);box-shadow:0 0 0 3px rgba(86,107,79,.08)}
-.voice-card{padding:18px;border:1px solid var(--line);border-radius:18px;background:white;margin-top:14px}
-.voice-answer{font-family:"DM Serif Display",Georgia,serif;font-size:21px;color:var(--dark);margin-bottom:10px}
-.voice-grid{display:flex;flex-wrap:wrap;gap:7px}
-.voice-option{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 11px;font-size:12px}
-.voice-option.selected{background:var(--dark);color:white;border-color:var(--dark)}
-.timer-wrap{text-align:center;padding:30px 0 10px}
-.timer{width:150px;height:150px;border-radius:50%;margin:0 auto;display:grid;place-items:center;border:10px solid rgba(143,166,144,.22);font-family:"DM Serif Display",Georgia,serif;font-size:48px;color:var(--dark);background:white}
-.timer-note{color:var(--muted);margin-top:16px}
-.result-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:28px}
-.result-card{border:1px solid var(--line);border-radius:20px;padding:20px;background:white}
-.result-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.11em;font-weight:800;color:var(--moss)}
-.result-name{font-family:"DM Serif Display",Georgia,serif;font-size:28px;color:var(--dark);margin:6px 0 14px}
-.axis{height:10px;border-radius:999px;background:linear-gradient(90deg,rgba(143,166,144,.25),rgba(200,148,104,.22));position:relative;margin:14px 0 8px}
-.axis-dot{width:18px;height:18px;border-radius:50%;background:var(--dark);position:absolute;top:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 4px rgba(49,65,47,.10)}
-.axis-labels{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:11px}
-.result-explain{font-size:13px;line-height:1.55;color:#514b45;margin-top:12px}
-.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:24px 0}
-.flow span{background:rgba(143,166,144,.15);color:var(--dark);border-radius:999px;padding:9px 12px;font-size:13px;font-weight:700}
-.flow b{color:var(--clay)}
-.reflection-box{margin-top:24px;padding:24px;border-radius:20px;background:rgba(143,166,144,.12);border:1px solid rgba(86,107,79,.15)}
-.print-only{display:none}
-.site-footer{text-align:center;color:var(--muted);font-size:12px;margin-top:18px}
-.note{font-size:13px;color:var(--muted);line-height:1.55;margin-top:12px}
-.center{text-align:center}.center .lead,.center .body-copy{margin-left:auto;margin-right:auto}
-.divider{height:1px;background:var(--line);margin:28px 0}
-@media(max-width:760px){
-  .shell{width:min(96%,940px);padding-top:12px}
-  .brand-tagline{display:none}
-  .screen{padding:34px 22px 38px}
-  .progress-wrap{padding:16px 18px 0}
-  .option-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .multi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .sentence-row{grid-template-columns:1fr;gap:6px}
-  .result-grid{grid-template-columns:1fr}
-  .app-card{min-height:600px}
-}
-@media print{
-  body{background:white}
-  .site-header,.site-footer,.actions,.progress-wrap,.no-print{display:none!important}
-  .shell{width:100%;padding:0}
-  .app-card{box-shadow:none;border:0;min-height:auto}
-  .screen{padding:0}
-  .print-only{display:block}
-}
-
-
-.header-actions{display:flex;align-items:center;gap:10px}.home-link{text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.home-return{margin-top:28px;padding-top:24px;border-top:1px solid var(--line);text-align:center}.home-return p{margin:0 0 12px}.home-return .btn{display:inline-flex;text-decoration:none;align-items:center;justify-content:center}@media(max-width:620px){.header-actions{gap:6px}.home-link{font-size:.82rem;padding:8px 10px}.brand-tagline{display:none}}
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#FBF7EF">
+<title>Can You Hear Your Body? | Body Connection Nutrition</title>
+<meta name="description" content="A Body Connection Nutrition guided experience for noticing body signals and separating sensation from interpretation.">
+<style>
+:root{--dark:#31412f;--moss:#566b4f;--sage:#8fa690;--clay:#c89468;--ivory:#fbf7ef;--paper:#fffdf8;--ink:#2e2b27;--muted:#6f665d;--line:rgba(46,43,39,.14);--soft:rgba(143,166,144,.16)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top left,rgba(200,148,104,.10),transparent 34%),radial-gradient(circle at bottom right,rgba(143,166,144,.12),transparent 36%),var(--ivory);color:var(--ink);font:16px/1.68 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.shell{width:min(960px,92%);margin:auto;padding:24px 0 34px}.head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}.brand{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none}.mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--dark);color:white;font-family:Georgia,serif}.brand strong{display:block;color:var(--dark)}.brand small{color:var(--muted)}.home{color:var(--moss);text-decoration:none;font-weight:700}.app{background:rgba(255,253,248,.94);border:1px solid var(--line);border-radius:26px;box-shadow:0 22px 65px rgba(49,65,47,.12);overflow:hidden;min-height:650px}.progress{padding:18px 24px 0}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:8px}.track{height:7px;background:rgba(86,107,79,.10);border-radius:999px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--sage),var(--moss));transition:width .25s ease}.screen{padding:44px 52px 48px}.eye{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);margin-bottom:12px}h1,h2,h3{font-family:Georgia,serif;color:var(--dark);font-weight:400;margin:0}h1{font-size:clamp(42px,6vw,66px);line-height:1}h2{font-size:clamp(31px,4vw,46px);line-height:1.08}h3{font-size:24px}.lead{font-size:19px;line-height:1.7;color:#443f39;max-width:760px;margin:22px 0}.copy{max-width:760px;color:#49423c}.copy p{margin:0 0 14px}.callout{margin:24px 0;padding:21px 23px;border-left:4px solid var(--clay);background:rgba(200,148,104,.08);border-radius:0 16px 16px 0}.actions{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:30px}.btn{border:1px solid var(--dark);background:var(--dark);color:white;border-radius:999px;padding:12px 20px;font-weight:800;cursor:pointer}.btn.alt{background:transparent;color:var(--dark)}.btn:disabled{opacity:.35;cursor:not-allowed}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}.choice{border:1px solid var(--line);background:white;border-radius:15px;padding:13px;text-align:left;cursor:pointer;color:#49423c}.choice.sel{border-color:var(--moss);background:var(--soft);color:var(--dark);font-weight:700}.section-card{border:1px solid var(--line);border-radius:20px;background:white;padding:20px;margin:20px 0}.section-card h3{margin-bottom:8px}.signal-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chip{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:9px 12px;cursor:pointer}.chip.sel{background:var(--dark);border-color:var(--dark);color:white}.timer-wrap{text-align:center;padding:28px 0 8px}.timer{width:150px;height:150px;border-radius:50%;margin:auto;display:grid;place-items:center;border:10px solid rgba(143,166,144,.22);font-family:Georgia,serif;font-size:48px;background:white;color:var(--dark)}textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:14px;padding:13px 14px;font:inherit}.pair{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;gap:12px;margin:22px 0}.pairbox{background:white;border:1px solid var(--line);border-radius:20px;padding:20px}.pairbox .label{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--moss);margin-bottom:8px}.arrow{display:grid;place-items:center;color:var(--clay);font-size:26px}.map{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px 0}.map-card{border:1px solid var(--line);border-radius:20px;background:white;padding:20px}.map-card h3{margin-bottom:6px}.map-card p{color:var(--muted);font-size:14px}.tag{display:inline-block;border-radius:999px;background:rgba(200,148,104,.12);padding:5px 8px;margin:3px;font-size:12px}.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:24px 0}.flow span{background:var(--soft);color:var(--dark);border-radius:999px;padding:9px 12px;font-weight:700}.flow b{color:var(--clay)}.final-note{background:var(--dark);color:white;border-radius:22px;padding:24px;margin-top:24px}.final-note h3{color:white;margin-bottom:8px}.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:16px}@media(max-width:740px){.screen{padding:34px 22px 38px}.grid,.map,.pair{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.brand small{display:none}.app{min-height:600px}}@media print{body{background:white}.head,.progress,.actions,.footer{display:none!important}.shell{width:100%;padding:0}.app{box-shadow:none;border:0;min-height:0}.screen{padding:0}}
 </style>
 </head>
 <body>
-  <div class="shell">
-    <header class="site-header">
-      <a class="brand" href="https://bodyconnectionnutrition.com/" aria-label="Return to Body Connection Nutrition home">
-        <div class="brand-mark" aria-hidden="true">BC</div>
-        <div>
-          <div class="brand-name">Body Connection Nutrition</div>
-          <div class="brand-tagline">A path to peace with your body</div>
-        </div>
-      </a>
-      <div class="header-actions"><a class="ghost small home-link" href="https://bodyconnectionnutrition.com/">← Home site</a><button id="restartTop" class="ghost small hidden" type="button">Start over</button></div>
-    </header>
-
-    <main id="app" class="app-card" aria-live="polite"></main>
-
-    <footer class="site-footer">
-      <span>Educational experience • Not medical or mental health treatment</span>
-    </footer>
-  </div>
-  <script>
-const app = document.getElementById('app');
-const restartTop = document.getElementById('restartTop');
-
-const state = {
-  step: 0,
-  signal: {},
-  interpretation: {},
-  permission: {},
-  sentences: {},
-  voices: {},
-  bodySignals: [],
-  reactions: [],
-  reflection: ''
+<div class="shell">
+<header class="head"><a class="brand" href="https://bodyconnectionnutrition.com/"><span class="mark">BC</span><span><strong>Body Connection Nutrition</strong><small>A path to peace with your body</small></span></a><a class="home" href="https://bodyconnectionnutrition.com/">← Home site</a></header>
+<main class="app" id="app"></main>
+<div class="footer">Educational experience • Not medical or mental health treatment</div>
+</div>
+<script>
+const app=document.getElementById('app');
+const signalGroups={
+  fuel:['Hunger','Food thoughts','Appetite','Energy drop','Fading concentration','Weakness'],
+  eating:['Fullness','Satisfaction','Pleasure','Desire for more','Loss of interest in food','Digestive discomfort'],
+  regulation:['Tension','Agitation','Calm','Restlessness','Breathing changes','Heartbeat changes'],
+  physical:['Thirst','Fatigue','Sleepiness','Pain','Temperature','Need to move','Need to stop moving'],
+  positive:['Comfort','Warmth','Ease','Strength','Steadiness','Physical pleasure']
 };
-
-const signalQs = [
-  "I can tell when I'm beginning to get hungry.",
-  "I notice when hunger is becoming urgent.",
-  "I can feel when I'm beginning to become satisfied during a meal.",
-  "I notice when I've had enough food before becoming physically uncomfortable.",
-  "I recognize when I'm thirsty.",
-  "I notice when my energy is beginning to drop.",
-  "I can tell when my body needs rest.",
-  "I notice physical tension building in my body.",
-  "I can recognize when I need to move or change position.",
-  "I notice when something physically feels good or comfortable."
-];
-const interpQs = [
-  "Hunger and wanting to taste something pleasurable.",
-  "Hunger and anxiety or stress.",
-  "Hunger and fatigue.",
-  "Hunger and thirst.",
-  "Physical fullness and the thought that I should stop eating.",
-  "Physical satisfaction and simply having finished the amount served.",
-  "Wanting food because my body is asking for it and wanting food because it's available.",
-  "Physical discomfort and judgment about my body.",
-  "Needing rest and simply wanting to avoid something.",
-  "Feeling physically energized versus feeling mentally stimulated."
-];
-const permissionQs = [
-  "I question whether I should trust it.",
-  "I decide whether I'm allowed to respond to it.",
-  "I compare it with a rule I've learned about health.",
-  "I override it because there isn't time.",
-  "I override it because other people's needs come first.",
-  "I worry that responding to it means I'm being undisciplined.",
-  "I look outside myself for confirmation of what I should do.",
-  "I judge myself for having the need at all."
-];
-const responsiveQs = [
-  "I can notice a body signal without immediately judging it.",
-  "I am curious about what the signal might mean.",
-  "I can respond to a need even when it wasn't part of my plan.",
-  "I can change my response if I realize I interpreted the signal incorrectly."
-];
-const sentencePrompts = [
-  "When I'm hungry, I should",
-  "When I'm full, I should",
-  "If I eat too much, I should",
-  "If I'm tired, I should",
-  "A healthy person should",
-  "A healthy body looks",
-  "Exercise counts when",
-  "I deserve rest when",
-  "I can trust my body when"
-];
-const voiceOptions = ["Mine","Parent/family","Healthcare","Diet culture","Fitness culture","Social media","Friends/partners","Religion/culture","Advertising","I don't know"];
-const bodySignalOptions = ["Hunger","Fullness","Thirst","Tension","Temperature","Fatigue","Energy","Pain","Comfort","Restlessness","Breathing","Heartbeat","Digestion","Nothing obvious","Something else"];
-const reactionOptions = ["I became curious.","I wanted to respond to it.","I questioned it.","I judged it.","I tried to explain it.","I wanted it to go away.","I didn't know what it meant.","Nothing in particular."];
-
-const steps = [intro, signalPart1, signalPart2, interpretationIntro, interpretationPart1, interpretationPart2, permissionIntro, permissionPart1, permissionPart2, outsideVoices, voiceSources, experimentIntro, experimentTimer, experimentSignals, experimentReaction, results, education, boundary, reflection];
-
-function render(){
-  window.scrollTo({top:0,behavior:'smooth'});
-  restartTop.classList.toggle('hidden', state.step === 0);
-  app.innerHTML = steps[state.step]();
-  bind();
-}
-
-function progress(label){
-  if(state.step === 0 || state.step >= 15) return '';
-  const pct = Math.round((state.step / 14) * 100);
-  return `<div class="progress-wrap"><div class="progress-meta"><span>${label}</span><span>${pct}%</span></div><div class="progress-track"><div class="progress-bar" style="width:${pct}%"></div></div></div>`;
-}
-function nextButton(label='Continue', disabled=false){return `<button class="btn" data-next ${disabled?'disabled':''}>${label}</button>`}
-function backButton(){return state.step>0?`<button class="secondary btn" data-back>Back</button>`:''}
-function esc(s=''){return s.replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
-
-function intro(){return `
-<section class="screen center">
-  <div class="eyebrow">A 5-minute awareness experience</div>
-  <h1>Can You Hear Your Body?</h1>
-  <p class="lead">Your body is communicating all the time. Hunger. Fullness. Fatigue. Tension. Thirst. Comfort. Pain. Energy. Restlessness. Satisfaction.</p>
-  <div class="body-copy"><p>But hearing a signal and knowing what it means are different skills.</p><p>Most of us have also spent years receiving instructions about what our bodies <em>should</em> need, what they <em>should</em> look like, when they <em>should</em> eat, and which signals should be ignored.</p></div>
-  <div class="callout"><strong>This isn't a test of how well you take care of yourself.</strong><br>It's an experiment: how clearly can you hear your body right now?</div>
-  <div class="actions right">${nextButton('Begin')}</div>
-</section>`}
-
-function likertSection(title, subtitle, questions, storeName, start, end, labels){
-  const slice = questions.slice(start,end);
-  return `${progress(title)}<section class="screen"><div class="eyebrow">${title}</div><h2>${subtitle}</h2><div class="question-list">${slice.map((q,i)=>{
-    const idx=start+i, val=state[storeName][idx];
-    return `<div class="question"><div class="question-text">${idx+1}. ${q}</div><div class="option-grid">${labels.map((l,j)=>`<button type="button" class="option ${val===j?'selected':''}" data-store="${storeName}" data-index="${idx}" data-value="${j}">${l}</button>`).join('')}</div></div>`
-  }).join('')}</div><div class="actions">${backButton()}${nextButton()}</div></section>`
-}
-function signalPart1(){return likertSection('Part 1 · Hearing the signal','When your body sends these signals, how easily do you notice them?',signalQs,'signal',0,5,["Usually clear","Sometimes clear","Hard to notice","I'm not sure"])}
-function signalPart2(){return likertSection('Part 1 · Hearing the signal','Keep noticing—not judging.',signalQs,'signal',5,10,["Usually clear","Sometimes clear","Hard to notice","I'm not sure"])}
-function interpretationIntro(){return `${progress('Part 2 · Understanding the signal')}<section class="screen"><div class="eyebrow">Part 2 · Understanding the signal</div><h2>Noticing a sensation doesn't necessarily mean we know what caused it.</h2><div class="callout">Your brain doesn't receive neatly labeled messages saying:<br><br><strong>HUNGER: 63% &nbsp; FATIGUE: 22% &nbsp; STRESS: 15%</strong><br><br>It receives information and interprets it. And interpretation is learned.</div><div class="actions">${backButton()}${nextButton()}</div></section>`}
-function interpretationPart1(){return likertSection('Part 2 · Understanding the signal','How often can you distinguish between these experiences?',interpQs,'interpretation',0,5,["Usually","Sometimes","Rarely","I'm not sure"])}
-function interpretationPart2(){return likertSection('Part 2 · Understanding the signal','A few more distinctions.',interpQs,'interpretation',5,10,["Usually","Sometimes","Rarely","I'm not sure"])}
-function permissionIntro(){return `${progress('Part 3 · What happens next?')}<section class="screen"><div class="eyebrow">Part 3 · What happens next?</div><h2>Imagine that you clearly recognize a body signal.</h2><p class="lead">What happens between noticing the signal and deciding what to do?</p><div class="actions">${backButton()}${nextButton()}</div></section>`}
-function permissionPart1(){return likertSection('Part 3 · What happens next?','How often do these things happen?',permissionQs,'permission',0,8,["Often","Sometimes","Rarely","Never"])}
-function permissionPart2(){return likertSection('Part 3 · What happens next?','And how often can you respond this way?',responsiveQs,'permissionResponsive',0,4,["Often","Sometimes","Rarely","Never"])}
-
-function outsideVoices(){
-  return `${progress('Part 4 · The outside voices')}<section class="screen"><div class="eyebrow">Part 4 · The outside voices</div><h2>Finish these sentences quickly.</h2><p class="lead">Don't overthink them. We're interested in the answer that arrives first.</p><div class="input-group">${sentencePrompts.map((p,i)=>`<div class="sentence-row"><label for="s${i}">${p}…</label><input id="s${i}" class="text-input" data-sentence="${i}" value="${esc(state.sentences[i]||'')}" placeholder="Complete the sentence"></div>`).join('')}</div><div class="actions">${backButton()}${nextButton()}</div></section>`
-}
-function voiceSources(){
-  const answered = sentencePrompts.map((p,i)=>({p,answer:state.sentences[i]})).filter(x=>x.answer&&x.answer.trim());
-  return `${progress('Part 4 · Whose voice is that?')}<section class="screen"><div class="eyebrow">Part 4 · Whose voice is that?</div><h2>Where might those answers have come from?</h2><p class="lead">Choose as many influences as seem relevant. “I don't know” is a useful answer too.</p>${answered.length?answered.map((x,i)=>{
-    const originalIndex=sentencePrompts.indexOf(x.p); const selected=state.voices[originalIndex]||[];
-    return `<div class="voice-card"><div class="voice-answer">“${esc(x.p)} ${esc(x.answer)}.”</div><div class="voice-grid">${voiceOptions.map(v=>`<button class="voice-option ${selected.includes(v)?'selected':''}" data-voice-index="${originalIndex}" data-voice="${esc(v)}">${v}</button>`).join('')}</div></div>`
-  }).join(''):`<div class="callout">You didn't complete any of the sentences. That's okay. Noticing that nothing came quickly can be information too.</div>`}<div class="actions">${backButton()}${nextButton()}</div></section>`
-}
-function experimentIntro(){return `${progress('Part 5 · The experiment')}<section class="screen center"><div class="eyebrow">Part 5 · The experiment</div><h2>Find one signal.</h2><p class="lead">For the next 30 seconds, don't change anything. Don't fix your posture. Don't take a drink. Don't eat. Don't take a deep breath.</p><div class="callout"><strong>Just notice.</strong><br>What is your body doing right now?</div><div class="actions right">${nextButton('Start 30 seconds')}</div></section>`}
-function experimentTimer(){return `${progress('Part 5 · The experiment')}<section class="screen center"><div class="eyebrow">Just notice</div><h2>Nothing to fix.</h2><div class="timer-wrap"><div class="timer" id="timer">30</div><div class="timer-note">Stay where you are. Notice whatever is already happening.</div></div><div class="actions right"><button class="btn" id="timerNext" disabled>Continue</button></div></section>`}
-function experimentSignals(){return `${progress('Part 5 · What did you notice?')}<section class="screen"><div class="eyebrow">Part 5 · The experiment</div><h2>What did you notice?</h2><p class="lead">Select anything that was present. There is no expected answer.</p><div class="multi-grid">${bodySignalOptions.map(v=>`<button class="chip ${state.bodySignals.includes(v)?'selected':''}" data-body-signal="${v}">${v}</button>`).join('')}</div><div class="actions">${backButton()}${nextButton()}</div></section>`}
-function experimentReaction(){return `${progress('Part 5 · What happened next?')}<section class="screen"><div class="eyebrow">Part 5 · The experiment</div><h2>What happened immediately after you noticed it?</h2><div class="multi-grid">${reactionOptions.map(v=>`<button class="chip ${state.reactions.includes(v)?'selected':''}" data-reaction="${esc(v)}">${v}</button>`).join('')}</div><div class="actions">${backButton()}${nextButton('See my Body Signal Map')}</div></section>`}
-
-function avg(obj, maxIndex, reverse=false){
-  const vals=Object.values(obj).map(Number).filter(n=>Number.isFinite(n));
-  if(!vals.length) return 50;
-  const mean=vals.reduce((a,b)=>a+b,0)/vals.length;
-  const pct=(mean/maxIndex)*100;
-  return reverse?100-pct:pct;
-}
-function calcResults(){
-  const sig=100-avg(state.signal,3,false); // low choice = clear = high score
-  const intr=100-avg(state.interpretation,3,false);
-  const override=avg(state.permission,3,true); // often=0 means more override
-  const responsive=avg(state.permissionResponsive||{},3,true); // often=0 means more responsive
-  const perm=(responsive + (100-override))/2;
-  return {sig:clamp(sig),intr:clamp(intr),perm:clamp(perm)}
-}
-function clamp(n){return Math.max(5,Math.min(95,n))}
-function descriptor(value, good, middle, low){return value>=68?good:value>=40?middle:low}
-function results(){
-  const r=calcResults();
-  const sDesc=descriptor(r.sig,'Signals feel relatively clear','Signals vary by situation','Some signals may be faint');
-  const iDesc=descriptor(r.intr,'Interpretation often feels distinct','Interpretation is mixed','Meaning can be hard to separate');
-  const pDesc=descriptor(r.perm,'There is room to respond','Response depends on context','Needs may be frequently overridden');
-  return `<section class="screen"><div class="eyebrow">Your Body Signal Map</div><h2>Your body isn't silent.</h2><p class="lead">The question may be how much has accumulated between the signal and your response.</p><div class="result-grid">
-    ${resultCard('Signal',sDesc,r.sig,'Faint','Clear','How easily you tend to notice what is happening in your body.')}
-    ${resultCard('Interpretation',iDesc,r.intr,'Uncertain','Distinct','How easily you can tell one possible meaning from another.')}
-    ${resultCard('Permission',pDesc,r.perm,'Overridden','Responsive','How much room there is to respond once you notice a need.')}
-  </div><div class="callout"><strong>This is not a score.</strong> These are three different places where body connection can become clearer, noisier, easier, or harder depending on context.</div><div class="actions">${backButton()}${nextButton('What this means')}</div></section>`
-}
-function resultCard(kicker,name,pct,left,right,explain){return `<div class="result-card"><div class="result-kicker">${kicker}</div><div class="result-name">${name}</div><div class="axis"><div class="axis-dot" style="left:${pct}%"></div></div><div class="axis-labels"><span>${left}</span><span>${right}</span></div><div class="result-explain">${explain}</div></div>`}
-
-function education(){return `<section class="screen"><div class="eyebrow">The educational reveal</div><h2>A body signal is only the beginning of the conversation.</h2><div class="flow"><span>Body signal</span><b>→</b><span>Sensation</span><b>→</b><span>Interpretation</span><b>→</b><span>Learned rules</span><b>→</b><span>Environment</span><b>→</b><span>Judgment</span><b>→</b><span>Decision</span><b>→</b><span>Behavior</span></div><div class="body-copy"><p>You weren't born with most of those middle layers.</p><p>Over time, biological signals become surrounded by information: family, culture, experience, healthcare, advertising, dieting, relationships, productivity, and ideas about what a “good” body or a “good” person should do.</p><p>Some of those frameworks are useful. Some were useful once. Some may never have been true.</p></div><div class="callout"><strong>Most of us have never been given an opportunity to examine them.</strong></div><div class="actions">${backButton()}${nextButton()}</div></section>`}
-function boundary(){return `<section class="screen"><div class="eyebrow">Why this isn't therapy</div><h2>This is education.</h2><div class="body-copy"><p>Learning isn't only acquiring new information. Sometimes learning requires examining the frameworks through which we interpret information we already have.</p><p>Critical reflection asks us to notice our assumptions, investigate where they came from, compare them with evidence and experience, and decide whether they still make sense.</p><p>You don't need to diagnose yourself, process trauma, or explain your childhood to do that work.</p></div><div class="callout"><strong>Two different questions:</strong><br>What did my body tell me?<br>What did I tell myself it meant?</div><p class="note">This experience is educational and is not psychotherapy, mental health treatment, diagnosis, or individualized medical care. If reflection brings up distress or concerns that require clinical support, an appropriate licensed professional can help with that work.</p><div class="actions">${backButton()}${nextButton('Final reflection')}</div></section>`}
-function reflection(){const r=calcResults();return `<section class="screen"><div class="eyebrow">Final reflection</div><h2>What is one signal from your body that you would like to become more curious about?</h2><div class="reflection-box"><textarea id="reflection" rows="5" placeholder="Write anything you want to remember…">${esc(state.reflection)}</textarea></div><div class="callout"><strong>Don't try to fix it this week.</strong><br>Notice it. When does it appear? What does it feel like? What do you immediately think it means? What rules appear? What happens next?</div><h3>Curiosity comes before change.</h3><div class="divider"></div><div class="result-grid print-only">${resultCard('Signal','Your map',r.sig,'Faint','Clear','')}${resultCard('Interpretation','Your map',r.intr,'Uncertain','Distinct','')}${resultCard('Permission','Your map',r.perm,'Overridden','Responsive','')}</div><div class="actions"><button class="secondary btn" data-back>Back</button><button class="secondary btn" id="printBtn">Print / Save Map</button><button class="btn" id="restartBtn">Start over</button></div><div class="home-return"><p>Ready to return to Body Connection Nutrition?</p><a class="btn" href="https://bodyconnectionnutrition.com/">Continue to Body Connection Nutrition →</a></div><p class="note">Body Connection Nutrition • A path to peace with your body</p></section>`}
-
-function bind(){
-  document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>{saveInputs(); if(state.step<steps.length-1){state.step++;render()}}));
-  document.querySelectorAll('[data-back]').forEach(b=>b.addEventListener('click',()=>{saveInputs(); if(state.step>0){state.step--;render()}}));
-  document.querySelectorAll('[data-store]').forEach(b=>b.addEventListener('click',()=>{const s=b.dataset.store; if(!state[s])state[s]={}; state[s][b.dataset.index]=Number(b.dataset.value); const parent=b.closest('.option-grid'); parent.querySelectorAll('.option').forEach(x=>x.classList.remove('selected')); b.classList.add('selected')}));
-  document.querySelectorAll('[data-voice]').forEach(b=>b.addEventListener('click',()=>toggleArrayNested('voices',b.dataset.voiceIndex,b.dataset.voice,b)));
-  document.querySelectorAll('[data-body-signal]').forEach(b=>b.addEventListener('click',()=>toggleArray('bodySignals',b.dataset.bodySignal,b)));
-  document.querySelectorAll('[data-reaction]').forEach(b=>b.addEventListener('click',()=>toggleArray('reactions',b.dataset.reaction,b)));
-  document.querySelectorAll('[data-sentence]').forEach(i=>i.addEventListener('input',()=>state.sentences[i.dataset.sentence]=i.value));
-  const reflection=document.getElementById('reflection'); if(reflection)reflection.addEventListener('input',()=>state.reflection=reflection.value);
-  const printBtn=document.getElementById('printBtn'); if(printBtn)printBtn.addEventListener('click',()=>{saveInputs();window.print()});
-  const restartBtn=document.getElementById('restartBtn'); if(restartBtn)restartBtn.addEventListener('click',restart);
-  if(state.step===12) startTimer();
-}
-function saveInputs(){document.querySelectorAll('[data-sentence]').forEach(i=>state.sentences[i.dataset.sentence]=i.value); const r=document.getElementById('reflection'); if(r)state.reflection=r.value}
-function toggleArray(key,value,button){const arr=state[key];const i=arr.indexOf(value);if(i>=0)arr.splice(i,1);else arr.push(value);button.classList.toggle('selected')}
-function toggleArrayNested(key,index,value,button){if(!state[key][index])state[key][index]=[];const arr=state[key][index];const i=arr.indexOf(value);if(i>=0)arr.splice(i,1);else arr.push(value);button.classList.toggle('selected')}
-function startTimer(){let n=30; const el=document.getElementById('timer'); const next=document.getElementById('timerNext'); const id=setInterval(()=>{n--;if(el)el.textContent=n;if(n<=0){clearInterval(id); if(el)el.textContent='✓'; if(next){next.disabled=false;next.textContent='Continue';next.addEventListener('click',()=>{state.step++;render()})}}},1000)}
-function restart(){Object.assign(state,{step:0,signal:{},interpretation:{},permission:{},permissionResponsive:{},sentences:{},voices:{},bodySignals:[],reactions:[],reflection:''});render()}
-restartTop.addEventListener('click',restart);
+const allSignals=Object.values(signalGroups).flat();
+const state={step:0,easy:[],late:[],hard:[],noticed:[],meaning:'',reaction:[],reflection:''};
+const steps=[intro,easySignals,lateSignals,hardSignals,experimentIntro,experimentTimer,whatNoticed,whatMeant,seeGap,response,mapScreen,reveal,carry];
+function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function progress(){if(state.step===0||state.step===steps.length-1)return'';const pct=Math.round((state.step/(steps.length-1))*100);return `<div class="progress"><div class="meta"><span>Body Signal Map</span><span>${pct}%</span></div><div class="track"><div class="fill" style="width:${pct}%"></div></div></div>`}
+function nav(next='Continue'){return `<div class="actions">${state.step?'<button class="btn alt" data-back>Back</button>':'<span></span>'}<button class="btn" data-next>${next}</button></div>`}
+function render(){scrollTo(0,0);app.innerHTML=progress()+steps[state.step]();bind()}
+function intro(){return `<section class="screen"><div class="eye">A Body Connection awareness experience</div><h1>Can You Hear Your Body?</h1><p class="lead">Your body produces information. Hunger, fullness, fatigue, tension, thirst, comfort, pain, energy, restlessness, satisfaction, and more.</p><div class="copy"><p>But a sensation and the explanation we give that sensation are not the same event. Often they happen so quickly together that they feel like one thing.</p><p>This experience is designed to help you notice the space between <strong>what your body communicates</strong> and <strong>what your mind decides that communication means</strong>.</p></div><div class="callout"><strong>This is not a test of whether you read your body correctly.</strong><br>There is no universal body-signal dictionary here. “I don't know yet” is useful information.</div>${nav('Begin')}</section>`}
+function chipsFor(arr,key){return `<div class="signal-list">${arr.map(x=>`<button class="chip ${state[key].includes(x)?'sel':''}" data-array="${key}" data-value="${esc(x)}">${x}</button>`).join('')}</div>`}
+function groupBlocks(key){return Object.entries(signalGroups).map(([g,items])=>`<div class="section-card"><h3>${({fuel:'Fuel & energy',eating:'Eating experience',regulation:'Arousal & regulation',physical:'Physical needs',positive:'Comfort & positive sensation'})[g]}</h3>${chipsFor(items,key)}</div>`).join('')}
+function easySignals(){return `<section class="screen"><div class="eye">1 · What do you notice?</div><h2>Which signals are usually fairly easy for you to notice?</h2><p class="lead">Choose signals you tend to recognize without needing them to become intense first. This is about familiarity, not performance.</p>${groupBlocks('easy')}${nav()}</section>`}
+function lateSignals(){return `<section class="screen"><div class="eye">2 · What arrives late?</div><h2>Which signals tend to become obvious only after they get stronger?</h2><p class="lead">A signal can be present before it reaches conscious attention. Select anything you often notice only when it is already pronounced.</p>${groupBlocks('late')}${nav()}</section>`}
+function hardSignals(){return `<section class="screen"><div class="eye">3 · What is hard to interpret?</div><h2>Which signals are difficult to make sense of?</h2><p class="lead">You may notice the sensation clearly and still be unsure what it means. That uncertainty is not failure; it is part of the map.</p>${groupBlocks('hard')}${nav('Try a 30-second experiment')}</section>`}
+function experimentIntro(){return `<section class="screen"><div class="eye">4 · The experiment</div><h2>For 30 seconds, don't solve anything.</h2><p class="lead">Stay where you are. Don't correct your posture, take a drink, eat, stretch, or deliberately change your breathing unless you need to for comfort or safety.</p><div class="callout"><strong>Just notice.</strong><br>What is already happening in your body?</div>${nav('Start 30 seconds')}</section>`}
+function experimentTimer(){return `<section class="screen"><div class="eye">Just notice</div><h2>Nothing to interpret yet.</h2><div class="timer-wrap"><div class="timer" id="timer">30</div><p>Notice sensation before explanation.</p></div><div class="actions"><button class="btn alt" data-back>Back</button><button class="btn" id="timerNext" disabled>Continue</button></div></section>`}
+function whatNoticed(){return `<section class="screen"><div class="eye">5 · What did your body say?</div><h2>What did you physically notice?</h2><p class="lead">Select anything that was present. You are recording sensation, not explaining it.</p>${chipsFor(allSignals.concat(['Nothing obvious','Something else']),'noticed')}${nav()}</section>`}
+function whatMeant(){const n=state.noticed.length?state.noticed.join(', '):'whatever you noticed';return `<section class="screen"><div class="eye">6 · What did your mind add?</div><h2>What did you immediately think it meant?</h2><p class="lead">You noticed: <strong>${esc(n)}</strong>.</p><div class="copy"><p>Now separate that from the explanation that arrived next. The explanation might be practical, judgmental, uncertain, compassionate, medical, habitual, or absent.</p><p>Examples: “I need rest.” “I shouldn't be tired.” “I probably need food.” “Something is wrong.” “I don't know.” “No interpretation appeared.”</p></div><textarea id="meaning" placeholder="What did you think the sensation meant?">${esc(state.meaning)}</textarea>${nav('See the gap')}</section>`}
+function seeGap(){const body=state.noticed.length?state.noticed.join(', '):'No clear signal selected';const meaning=state.meaning.trim()||'No immediate interpretation recorded';return `<section class="screen"><div class="eye">7 · Notice the gap</div><h2>These are related. They are not identical.</h2><div class="pair"><div class="pairbox"><div class="label">Body said</div><h3>${esc(body)}</h3><p>The sensation or body information you noticed.</p></div><div class="arrow">→</div><div class="pairbox"><div class="label">Mind added</div><h3>${esc(meaning)}</h3><p>The meaning, explanation, prediction, or judgment that followed.</p></div></div><div class="callout"><strong>The sensation happened. The interpretation is an inference about the sensation.</strong><br>It may be useful. It may be incomplete. It may change with context. You do not have to settle the question immediately.</div>${nav('What happened next?')}</section>`}
+const reactions=['I responded fairly directly.','I questioned the signal.','I waited for more evidence.','I compared it with a rule or plan.','I judged the signal or myself.','I ignored or postponed it.','My response depended on context.','I was not sure what to do.','Nothing in particular happened.'];
+function response(){return `<section class="screen"><div class="eye">8 · After meaning arrives</div><h2>What tended to happen next?</h2><p class="lead">This is intentionally brief. We are not analyzing the whole behavior chain yet; we are only noticing that interpretation can shape response.</p><div class="grid">${reactions.map(x=>`<button class="choice ${state.reaction.includes(x)?'sel':''}" data-array="reaction" data-value="${esc(x)}">${x}</button>`).join('')}</div>${nav('Build my Body Signal Map')}</section>`}
+function tags(arr){return arr.length?arr.map(x=>`<span class="tag">${esc(x)}</span>`).join(''):'<span class="tag">Nothing selected</span>'}
+function mapScreen(){return `<section class="screen"><div class="eye">Your Body Signal Map</div><h2>Patterns matter more than scores.</h2><p class="lead">This map shows where body information tends to be easy to notice, late to arrive in awareness, difficult to interpret, or quickly surrounded by meaning.</p><div class="map"><div class="map-card"><h3>Easy for me to notice</h3><p>Signals that tend to enter awareness readily.</p>${tags(state.easy)}</div><div class="map-card"><h3>I tend to notice these late</h3><p>Signals that often become obvious only after growing stronger.</p>${tags(state.late)}</div><div class="map-card"><h3>Hard for me to interpret</h3><p>Sensations I may notice without being sure what they mean.</p>${tags(state.hard)}</div><div class="map-card"><h3>Meaning arrives quickly here</h3><p>Your experiment showed how quickly a sensation can acquire an explanation.</p><span class="tag">Body: ${esc(state.noticed.join(', ')||'No clear signal')}</span><span class="tag">Meaning: ${esc(state.meaning.trim()||'No interpretation recorded')}</span></div></div><div class="callout"><strong>This is not an interoception score.</strong><br>Signals can be clearer or harder to notice depending on stress, illness, medication, sleep, neurodivergence, attention, past experience, environment, and the signal itself.</div>${nav('What this means')}</section>`}
+function reveal(){return `<section class="screen"><div class="eye">The educational reveal</div><h2>A body signal is information. Interpretation is an inference.</h2><div class="flow"><span>BODY SIGNAL</span><b>→</b><span>WHAT I NOTICE</span><b>→</b><span>WHAT I THINK IT MEANS</span><b>→</b><span>WHAT HAPPENS NEXT</span></div><div class="copy"><p>Sometimes the interpretation is straightforward. Sometimes several explanations are plausible at once. Sometimes the most accurate answer is simply, “I don't know yet.”</p><p>The goal is not to distrust your body or distrust your mind. It is to notice that sensation and explanation are two different kinds of information.</p><p>That small separation creates room for curiosity before certainty.</p></div><div class="final-note"><h3>Two questions can now travel together.</h3><p><strong>What was my body communicating?</strong><br><strong>What was my framework telling me that signal meant?</strong></p></div>${nav('Carry it with you')}</section>`}
+function carry(){return `<section class="screen"><div class="eye">Carry it with you</div><h2>Choose one signal to notice this week.</h2><p class="lead">You do not need to fix it, respond perfectly, or determine its single true meaning.</p><div class="section-card"><h3>When it appears, ask three questions:</h3><p><strong>1. What did I physically notice?</strong></p><p><strong>2. What did I immediately think it meant?</strong></p><p><strong>3. What happened next?</strong></p></div><textarea id="reflection" placeholder="Optional: which signal would you like to notice with more curiosity?">${esc(state.reflection)}</textarea><div class="callout"><strong>“I don't know yet” is allowed.</strong><br>Curiosity is not a promise that every signal will become obvious. It is a way to keep interpretation from masquerading as the signal itself.</div><p style="color:var(--muted);font-size:13px">This experience is educational and does not diagnose symptoms or replace individualized medical or mental-health care. New, severe, persistent, or concerning physical symptoms deserve appropriate medical assessment.</p><div class="actions"><button class="btn alt" data-back>Back</button><button class="btn alt" onclick="window.print()">Print / Save Map</button><button class="btn" id="restart">Start again</button></div></section>`}
+function saveText(){const m=document.getElementById('meaning');if(m)state.meaning=m.value;const r=document.getElementById('reflection');if(r)state.reflection=r.value}
+function toggle(key,val,btn){const arr=state[key],i=arr.indexOf(val);if(i>=0)arr.splice(i,1);else arr.push(val);btn.classList.toggle('sel')}
+function bind(){document.querySelectorAll('[data-next]').forEach(b=>b.onclick=()=>{saveText();if(state.step<steps.length-1){state.step++;render()}});document.querySelectorAll('[data-back]').forEach(b=>b.onclick=()=>{saveText();if(state.step>0){state.step--;render()}});document.querySelectorAll('[data-array]').forEach(b=>b.onclick=()=>toggle(b.dataset.array,b.dataset.value,b));const m=document.getElementById('meaning');if(m)m.oninput=()=>state.meaning=m.value;const r=document.getElementById('reflection');if(r)r.oninput=()=>state.reflection=r.value;const restart=document.getElementById('restart');if(restart)restart.onclick=()=>{Object.assign(state,{step:0,easy:[],late:[],hard:[],noticed:[],meaning:'',reaction:[],reflection:''});render()};if(state.step===5)startTimer()}
+function startTimer(){let n=30;const el=document.getElementById('timer'),next=document.getElementById('timerNext');const id=setInterval(()=>{n--;if(el)el.textContent=n;if(n<=0){clearInterval(id);if(el)el.textContent='✓';if(next){next.disabled=false;next.onclick=()=>{state.step++;render()}}}},1000)}
 render();
-
 </script>
 </body>
 </html>
