@@ -1,96 +1,21 @@
-const crypto = require("crypto");
-
-const COOKIE_NAME = "bcn_patient_tools";
-
-function getSecret() {
-  return process.env.PATIENT_TOOLS_PASSWORD || "";
-}
-
-function expectedToken() {
-  const secret = getSecret();
-  if (!secret) return "";
-  return crypto
-    .createHmac("sha256", secret)
-    .update("body-connection-patient-tools-v1")
-    .digest("base64url");
-}
-
-function parseCookies(header) {
-  const result = {};
-  String(header || "").split(";").forEach((part) => {
-    const item = part.trim();
-    if (!item) return;
-    const index = item.indexOf("=");
-    if (index === -1) return;
-    result[item.slice(0, index)] = decodeURIComponent(item.slice(index + 1));
-  });
-  return result;
-}
-
-function isAuthenticated(event) {
-  const expected = expectedToken();
-  if (!expected) return false;
-  const cookieHeader = (event.headers && (event.headers.cookie || event.headers.Cookie)) || "";
-  const actual = parseCookies(cookieHeader)[COOKIE_NAME] || "";
-  const a = Buffer.from(actual);
-  const b = Buffer.from(expected);
-  return a.length > 0 && a.length === b.length && crypto.timingSafeEqual(a, b);
-}
-
-function htmlHeaders() {
-  return {
-    "Content-Type": "text/html; charset=utf-8",
-    "Cache-Control": "private, no-store, max-age=0",
-    "X-Robots-Tag": "noindex, nofollow"
-  };
-}
-
-function page(body) {
-  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Patient Tools | Body Connection Nutrition</title><style>:root{--d:#31412f;--c:#c89468;--bg:#fbf7ef;--line:#ded8ce}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#2e2b27;font:16px/1.6 system-ui}.wrap{width:min(980px,92%);margin:auto;padding:4rem 0}h1,h2,h3{font-family:Georgia,serif;color:var(--d)}h1{font-size:clamp(2.5rem,6vw,4.5rem)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.card,.note{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.3rem}.note{border-left:4px solid var(--c);margin:1.5rem 0}.meta{color:var(--c);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.76rem}.btn{display:inline-block;background:var(--d);color:#fff;text-decoration:none;border-radius:999px;padding:.75rem 1rem;font-weight:800}@media(max-width:700px){.grid{grid-template-columns:1fr}}</style></head><body><main class="wrap">' + body + '</main></body></html>';
-}
-
-exports.handler = async (event) => {
-  const query = event.queryStringParameters || {};
-
-  if (query.logout === "1") {
-    return {
-      statusCode: 302,
-      headers: {
-        Location: "/patient-tools/",
-        "Set-Cookie": COOKIE_NAME + "=; Path=/patient-tools; Max-Age=0; HttpOnly; Secure; SameSite=Lax",
-        "Cache-Control": "no-store"
-      },
-      body: ""
-    };
-  }
-
-  if (!isAuthenticated(event)) {
-    return {
-      statusCode: 302,
-      headers: {
-        Location: "/.netlify/functions/patient-tools?path=",
-        "Cache-Control": "no-store"
-      },
-      body: ""
-    };
-  }
-
-  const body = '<p class="meta">Patient learning space</p>' +
-    '<h1>Body Connection tools</h1>' +
-    '<p>These tools are available to you as part of your work with Body Connection Nutrition.</p>' +
-    '<div class="note"><b>You do not need to complete these in order.</b> Use the tool that connects most directly to what you are working on.</div>' +
-    '<div class="grid">' +
-      '<article class="card"><p class="meta">Notice</p><h3>Can You Hear Your Body?</h3><p>Explore signal, interpretation, and permission.</p><a class="btn" href="/tools/can-you-hear-your-body/">Open →</a></article>' +
-      '<article class="card"><p class="meta">Eating moment</p><h3>Why Am I Eating?</h3><p>Examine one food decision in context.</p><a class="btn" href="/patient-tools/why-am-i-eating">Open →</a></article>' +
-      '<article class="card"><p class="meta">Food influences</p><h3>Who Taught You to Eat?</h3><p>Map influences on everyday eating.</p><a class="btn" href="/patient-tools/who-taught-you-to-eat">Open →</a></article>' +
-      '<article class="card"><p class="meta">Body-image influences</p><h3>How Was My Body Image Created?</h3><p>Map influences on body image.</p><a class="btn" href="/patient-tools/how-was-my-body-image-created">Open →</a></article>' +
-      '<article class="card"><p class="meta">One belief</p><h3>Deconstructing a Belief</h3><p>Trace how one belief became convincing.</p><a class="btn" href="/patient-tools/deconstructing-a-belief">Open →</a></article>' +
-    '</div>' +
-    '<p><a href="/patient-tools/logout">Sign out</a></p>';
-
-  return {
-    statusCode: 200,
-    headers: htmlHeaders(),
-    body: page(body)
-  };
-};
+const crypto=require("crypto");
+const COOKIE_NAME="bcn_patient_tools";
+function getSecret(){return process.env.PATIENT_TOOLS_PASSWORD||"";}
+function expectedToken(){const secret=getSecret();return secret?crypto.createHmac("sha256",secret).update("body-connection-patient-tools-v1").digest("base64url"):"";}
+function parseCookies(header){const result={};String(header||"").split(";").forEach(part=>{const item=part.trim();if(!item)return;const i=item.indexOf("=");if(i!==-1)result[item.slice(0,i)]=decodeURIComponent(item.slice(i+1));});return result;}
+function isAuthenticated(event){const expected=expectedToken();if(!expected)return false;const actual=parseCookies((event.headers&&(event.headers.cookie||event.headers.Cookie))||"")[COOKIE_NAME]||"";const a=Buffer.from(actual),b=Buffer.from(expected);return a.length>0&&a.length===b.length&&crypto.timingSafeEqual(a,b);}
+function htmlHeaders(){return{"Content-Type":"text/html; charset=utf-8","Cache-Control":"private, no-store, max-age=0","X-Robots-Tag":"noindex, nofollow"};}
+function page(body){return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Patient Tools | Body Connection Nutrition</title><style>:root{--d:#31412f;--c:#c89468;--bg:#fbf7ef;--line:#ded8ce}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#2e2b27;font:16px/1.6 system-ui}.wrap{width:min(1100px,92%);margin:auto;padding:4rem 0}h1,h2,h3{font-family:Georgia,serif;color:var(--d)}h1{font-size:clamp(2.5rem,6vw,4.5rem)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.card,.note{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.3rem}.note{border-left:4px solid var(--c);margin:1.5rem 0}.meta{color:var(--c);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.76rem}.btn{display:inline-block;background:var(--d);color:#fff;text-decoration:none;border-radius:999px;padding:.75rem 1rem;font-weight:800}@media(max-width:700px){.grid{grid-template-columns:1fr}}</style></head><body><main class="wrap">'+body+'</main></body></html>';}
+const cards=[
+['Notice','Can You Hear Your Body?','Separate body signal from interpretation.','/tools/can-you-hear-your-body/'],
+['Eating moment','Why Am I Eating?','See the multiple forces participating in one eating moment.','/patient-tools/why-am-i-eating'],
+['Food history','Who Taught You to Eat?','Map the influences that shaped your food framework.','/patient-tools/who-taught-you-to-eat'],
+['Body-image history','How Was My Body Image Created?','Map the influences that shaped how you learned to see your body.','/patient-tools/how-was-my-body-image-created'],
+['Belief inquiry','Deconstructing a Belief','Examine one food- or body-related belief without forcing a verdict.','/patient-tools/deconstructing-a-belief'],
+['Behavior pathway','Behavior Sequence','Restore the conditions and events surrounding one food-related behavior.','/patient-tools/behavior-sequence'],
+['Scarcity & permission','Permission & Scarcity','Explore whether availability and permission change attention or urgency.','/patient-tools/permission-and-scarcity'],
+['Behavior function','What Is This Doing for Me?','Explore what a recurring pattern may provide or accomplish.','/patient-tools/what-is-this-doing-for-me'],
+['Choice context','Choice Has Conditions','Map the conditions that narrow or widen what is realistically available.','/patient-tools/choice-has-conditions'],
+['Integration','My Food & Body Framework','Bring the major parts of your food-and-body framework into one working map.','/patient-tools/my-food-and-body-framework']
+];
+exports.handler=async(event)=>{const query=event.queryStringParameters||{};if(query.logout==="1")return{statusCode:302,headers:{Location:"/patient-tools/","Set-Cookie":COOKIE_NAME+"=; Path=/patient-tools; Max-Age=0; HttpOnly; Secure; SameSite=Lax","Cache-Control":"no-store"},body:""};if(!isAuthenticated(event))return{statusCode:302,headers:{Location:"/.netlify/functions/patient-tools?path=","Cache-Control":"no-store"},body:""};const grid=cards.map(c=>'<article class="card"><p class="meta">'+c[0]+'</p><h3>'+c[1]+'</h3><p>'+c[2]+'</p><a class="btn" href="'+c[3]+'">Open →</a></article>').join('');const body='<p class="meta">Patient learning space</p><h1>Body Connection tools</h1><p>These tools are available to you as part of your work with Body Connection Nutrition.</p><div class="note"><b>You do not need to complete these in order.</b> Use the tool that connects most directly to what you are working on.</div><div class="grid">'+grid+'</div><p><a href="/patient-tools/logout">Sign out</a></p>';return{statusCode:200,headers:htmlHeaders(),body:page(body)};};
