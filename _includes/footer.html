@@ -4,8 +4,25 @@
       <a class="brand footer-brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/brand-mark.png' | relative_url }}" alt="" width="48" height="48"><span><strong>Body Connection</strong><small>Nutrition</small></span></a>
       <p>Evidence-based nutrition education for people who want to understand their bodies—not fight them.</p>
     </div>
-    <div><h2>Explore</h2><a href="{{ '/start-here/' | relative_url }}">Start Here</a><a href="{{ '/about/' | relative_url }}">About Jen</a><a href="{{ '/services/' | relative_url }}">Nutrition care</a><a href="{{ '/blog/' | relative_url }}">Articles</a><a href="{{ '/videos/' | relative_url }}">Videos</a><a href="{{ '/philosophy/' | relative_url }}">Philosophy</a></div>
+    <div><h2>Explore</h2><a href="{{ '/start-here/' | relative_url }}">Start Here</a><a href="{{ '/tools/' | relative_url }}">Tools</a><a href="{{ '/about/' | relative_url }}">About Jen</a><a href="{{ '/services/' | relative_url }}">Nutrition care</a><a href="{{ '/blog/' | relative_url }}">Articles</a><a href="{{ '/videos/' | relative_url }}">Videos</a><a href="{{ '/philosophy/' | relative_url }}">Philosophy</a></div>
     <div><h2>Connect</h2><a href="https://www.youtube.com/@BodyConnectionNutrition" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/bodyconnectionnutrition" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></div>
   </div>
+
+  <div class="container" style="margin-top:2.25rem">
+    <div class="card" style="max-width:760px;margin:0 auto;padding:1.4rem 1.5rem">
+      <p class="eyebrow">Stay connected</p>
+      <h2 style="margin-top:.2rem">New tools, courses, and useful nutrition science.</h2>
+      <p>Join the Body Connection Nutrition email list for new educational tools, course updates, articles, and practical science placed in context.</p>
+      <form name="body-connection-email-list" method="POST" action="/email-thank-you/" data-netlify="true" netlify-honeypot="bot-field" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.7rem;align-items:end;margin-top:1rem">
+        <input type="hidden" name="form-name" value="body-connection-email-list">
+        <p hidden><label>Do not fill this out: <input name="bot-field"></label></p>
+        <label style="display:block"><span style="display:block;font-weight:700;margin-bottom:.35rem">Email address</span><input type="email" name="email" autocomplete="email" required placeholder="you@example.com" style="width:100%;min-height:46px;padding:.75rem .85rem;border:1px solid #d9d2c7;border-radius:10px;background:#fff;font:inherit"></label>
+        <button class="button" type="submit" style="min-height:46px">Join the list →</button>
+        <label style="grid-column:1/-1;display:flex;gap:.55rem;align-items:flex-start;font-size:.9rem;line-height:1.4"><input type="checkbox" name="consent" value="yes" required style="margin-top:.2rem"><span>I agree to receive educational and promotional emails from Body Connection Nutrition. I can unsubscribe at any time.</span></label>
+      </form>
+      <p class="trust-line" style="margin-bottom:0">No health information is requested. Your email is used only for Body Connection Nutrition communications.</p>
+    </div>
+  </div>
+
   <div class="container footer-bottom"><span>© {{ 'now' | date: '%Y' }} Body Connection Nutrition</span><span><a href="{{ '/privacy/' | relative_url }}">Privacy & Disclaimer</a></span></div>
 </footer>
