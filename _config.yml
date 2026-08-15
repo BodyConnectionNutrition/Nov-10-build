@@ -1,12 +1,29 @@
 title: Body Connection Nutrition
-description: Evidence-based nutrition education connecting mind, body, metabolism, development, and environment.
+description: Evidence-based nutrition education, interactive food and body tools, and virtual registered dietitian care that connect nutrition science with behavior, learning, and real-life conditions.
 url: https://bodyconnectionnutrition.com
 baseurl: ""
+lang: en-US
+logo: /assets/images/brand-mark.png
+author:
+  name: Jennifer Nickell, RD
+  url: https://bodyconnectionnutrition.com/about/
+social:
+  name: Body Connection Nutrition
+  links:
+    - https://www.youtube.com/@BodyConnectionNutrition
+    - https://www.instagram.com/bodyconnectionnutrition
 markdown: kramdown
 permalink: /blog/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: page
+      author: Jennifer Nickell, RD
 exclude:
   - README.md
   - Gemfile

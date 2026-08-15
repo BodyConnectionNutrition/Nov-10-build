@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /services/
-title: Work With Me
+title: Virtual Registered Dietitian Nutrition Counseling
+description: Virtual nutrition counseling with registered dietitian Jennifer Nickell for food relationships, disordered eating recovery support, appetite, ADHD, family nutrition, and practical eating strategies.
 eyebrow: Individual nutrition care
-intro: Evidence-based support for people who are tired of conflicting advice, rigid food rules, and feeling as though their bodies have betrayed them.
+intro: Evidence-based virtual nutrition counseling for people who are tired of conflicting advice, rigid food rules, and feeling as though their bodies have betrayed them.
 ---
 ## Nutrition counseling through Nourish
 
@@ -25,4 +26,4 @@ We begin with your experience rather than a preset plan. Early visits focus on a
 
 You will not be graded on adherence. We use what happens between sessions as information.
 
-<p><a class="button" href="https://www.usenourish.com/providers/jennifer-nickell" target="_blank" rel="noopener">Check insurance and schedule</a></p>
+<p><a class="button" href="https://www.usenourish.com/providers/jennifer-nickell" target="_blank" rel="noopener">Check insurance and schedule a virtual dietitian visit</a></p>

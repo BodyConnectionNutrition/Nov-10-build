@@ -1,7 +1,8 @@
 ---
 layout: page
 permalink: /about/
-title: About Jen
+title: Jennifer Nickell, RD | Registered Dietitian & Nutrition Educator
+description: Meet Jennifer Nickell, RD, a registered dietitian and educator whose work connects nutrition science, human development, adult learning, behavior, and real-life conditions.
 eyebrow: Registered Dietitian • Educator • Systems Thinker
 intro: I help people understand how bodies, minds, relationships, and environments work together—so health feels less like a personal failure and more like something we can thoughtfully support.
 ---

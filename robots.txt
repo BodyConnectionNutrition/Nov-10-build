@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /
+Disallow: /patient-tools/
+Disallow: /.netlify/functions/
+Disallow: /tool-purchase/thank-you/
+Disallow: /tool-purchase/access/
+Disallow: /email-thank-you/
+
+Sitemap: {{ site.url }}/sitemap.xml
