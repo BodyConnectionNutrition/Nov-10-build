@@ -1,8 +1,9 @@
 ---
-layout: page
-title: "Why Facts Do Not Automatically Change Minds"
-eyebrow: "Critical thinking"
-intro: "A belief may appear to be about evidence while also protecting identity, belonging, or a coherent life story."
+layout: post
+title: "Why Facts Don't Always Change Minds"
+description: "Facts can collide with identity, belonging, prior commitments, and motivated reasoning. Learn why evidence alone may not change a belief—and what better critical thinking requires."
+eyebrow: Critical thinking
+cluster: Critical thinking
 ---
 If human thinking followed a simple scientific method, changing our minds would be straightforward.
 
@@ -12,7 +13,7 @@ Sometimes we do exactly that. Often we do not.
 
 People can encounter strong evidence against a belief and preserve the belief anyway. This is frequently described as stupidity, irrationality, or a lack of information. Those explanations are satisfying because they place the defect entirely inside the other person. They are less useful for understanding what belief is doing.
 
-## A belief can carry more than information
+## Why evidence can threaten more than one idea
 
 Beliefs help us predict the world, but they can also organize identity and belonging. A political belief may connect someone to family, region, religion, occupation, or social class. A nutrition belief may support an identity as disciplined, natural, informed, or morally responsible.
 
@@ -24,13 +25,9 @@ Research on motivated reasoning and misinformation describes several processes t
 
 Intelligence does not automatically protect us. Greater reasoning ability can sometimes provide more tools for defending a preferred conclusion.
 
-## Is changing a belief metabolically expensive?
+## Why changing a belief can feel costly
 
-I have often described difficult learning as **metabolically costly**. The phrase captures something real but needs careful boundaries.
-
-The brain is an energy-demanding organ. It uses a substantial share of the body’s resting energy, and neural activity depends on a continuous metabolic supply. Attention, memory, and learning are physical processes.
-
-But this does **not** mean that reconsidering a political belief burns a large, measurable number of extra calories or that people reject evidence because the body cannot spare the glucose. Most of the brain’s energy use supports ongoing activity, and the additional energy associated with a particular mental task is relatively modest.
+The brain is an energy-demanding organ. Attention, memory, inhibition, and learning are physical processes. But reconsidering a belief is not difficult simply because the brain needs extra calories.
 
 The more defensible meaning of “cost” is broader. Reconsidering a foundational belief requires attention, inhibition of familiar responses, tolerance of uncertainty, emotional regulation, and reconstruction of a coherent explanation. It may also carry social costs: conflict, exclusion, embarrassment, or grief.
 
@@ -49,9 +46,9 @@ A better approach begins with questions:
 - Is there a way to preserve dignity and belonging while revising the conclusion?
 - What discrepancy is small enough to examine without requiring the entire worldview to collapse at once?
 
-This is not manipulation, nor does it mean treating all claims as equally valid. Evidence still matters. Some conclusions are better supported than others. The point is to understand the conditions under which evidence can actually be considered.
+This does not mean treating all claims as equally valid. Evidence still matters. Some conclusions are better supported than others. The point is to understand the conditions under which evidence can actually be considered.
 
-## Critical thinking includes the self
+## Critical thinking includes our own beliefs
 
 It is easy to analyze motivated reasoning in people with whom we disagree. The harder task is to ask which of our own beliefs perform the same protective work.
 
@@ -66,4 +63,3 @@ Facts matter. But facts enter living people with histories, bodies, relationship
 - [Raichle and Gusnard, “Appraising the brain’s energy budget” (2002)](https://pmc.ncbi.nlm.nih.gov/articles/PMC124895/)
 - [Zhou et al., “Processing of misinformation as motivational and cognitive biases” (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11393549/)
 - [Rabb et al., “Cognitive cascades” (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8740964/)
-

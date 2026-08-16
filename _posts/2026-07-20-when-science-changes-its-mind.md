@@ -1,8 +1,9 @@
 ---
-layout: page
-title: "When Science Changes Its Mind, That Is Science Working"
-eyebrow: "Scientific literacy"
-intro: "A revised conclusion is not proof that science failed. It is evidence that the process can correct itself."
+layout: post
+title: "Why Scientific Advice Changes—and Why That Can Be a Good Sign"
+description: "Scientific conclusions change as evidence improves. Learn why updated nutrition guidance can reflect better methods, narrower claims, and science correcting itself rather than failing."
+eyebrow: Scientific literacy
+cluster: Critical thinking
 ---
 People often speak about science as if it were a reference book containing the final answer to every question. If the answer changes, they conclude that scientists were wrong before and therefore cannot be trusted now.
 
@@ -10,19 +11,17 @@ But science is not a collection of permanent answers. It is a method for produci
 
 That distinction matters in nutrition, where people understandably want clear guidance. They want to know whether a food is healthy, which diet is best, and what one behavior will prevent disease. A qualified answer can sound evasive beside a confident promise. Yet the qualification is often the more scientifically honest response.
 
-## What makes an idea scientific?
+## Why scientific conclusions change
 
-Karl Popper argued that a scientific claim must risk being wrong. If no imaginable evidence could count against a claim, the claim cannot be meaningfully tested.
+A scientific claim has to be testable. New evidence may reveal measurement error, bias, chance, a previously unrecognized condition, or limits on how broadly an earlier conclusion should be applied.
 
-That does not mean one contradictory observation should overthrow everything we know. An unexpected result may reflect measurement error, chance, bias, or a condition the original explanation did not consider. Scientists compare the new evidence with the larger body of evidence, look for confounders, repeat the work, and refine the explanation.
-
-Sometimes the original conclusion survives. Sometimes its boundaries become clearer. Sometimes it must be replaced.
+Scientists compare new evidence with the larger body of evidence, look for confounders, repeat the work, and refine the explanation. Sometimes the original conclusion survives. Sometimes its boundaries become clearer. Sometimes it must be replaced.
 
 This self-correction is not a defect added to science because human beings are imperfect. It is one of the features that makes scientific knowledge useful.
 
-## A lesson from fat cells
+## A nutrition example: fat cells
 
-The biology of fat tissue provides a good example of why careful wording matters. Older teaching often presented adult fat cells as fixed in number: after growth, existing cells could become larger or smaller, but adults did not meaningfully produce new ones.
+Older teaching often presented adult fat cells as fixed in number: after growth, existing cells could become larger or smaller, but adults did not meaningfully produce new ones.
 
 Research later gave us a more detailed picture. Fat cells are not inert storage containers. They turn over throughout life, with cells dying and being replaced. A landmark study found that roughly 10 percent of adult fat cells are renewed each year while the total number remains relatively stable for many adults. The study also found that substantial weight loss reduced the size of fat cells without necessarily reducing their total number.
 
@@ -30,9 +29,7 @@ That is more complicated than either “adults never make new fat cells” or �
 
 The lesson is not that nothing can be known. The lesson is that scientific explanations become more precise as methods improve and new conditions are studied.
 
-## Nutrition changes because the world changes
-
-Nutrition research has another complication: the environment in which human physiology operates does not remain still.
+## Nutrition findings depend on context
 
 Food production changes. Medications change. Work becomes more or less sedentary. Sleep, stress, tobacco use, infectious disease, food access, and life expectancy change. A biological process observed in one population and era may operate under very different conditions in another.
 
@@ -62,4 +59,3 @@ That is not perfect certainty. It is something better: a disciplined way to beco
 
 - [Popper, *The Logic of Scientific Discovery*](https://plato.stanford.edu/entries/popper/)
 - [Spalding et al., “Dynamics of fat cell turnover in humans,” *Nature* (2008)](https://www.nature.com/articles/nature06902)
-

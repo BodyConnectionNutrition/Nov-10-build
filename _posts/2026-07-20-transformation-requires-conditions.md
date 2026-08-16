@@ -1,8 +1,9 @@
 ---
-layout: page
-title: "Personal Transformation Requires Material Conditions"
-eyebrow: "Behavior change"
-intro: "We celebrate the person who changes while overlooking the time, safety, money, education, and care that made change possible."
+layout: post
+title: "Why Behavior Change Requires More Than Motivation"
+description: "Sustainable behavior change depends on more than deciding to try harder. Time, money, safety, support, access, health, and environment shape what changes are actually possible."
+eyebrow: Behavior change
+cluster: Food, body & behavior
 ---
 Stories about personal transformation usually have a hero and a decision.
 
@@ -12,7 +13,7 @@ This makes a good story. It is an incomplete account of change.
 
 People do not reconstruct their lives through insight alone. They need conditions that allow a new understanding to become livable.
 
-## Seeing differently is only the beginning
+## Understanding is only the beginning
 
 Adult learning theory describes transformation as a revision of the frames through which we interpret experience. A disruptive event or contradiction may expose the limits of an old belief. Reflection can then produce a more adequate understanding.
 
@@ -22,7 +23,7 @@ The old framework may persist because the world around it has not changed enough
 
 This is easy to miss from the far side of transformation. Once a new life becomes normal, the previous life can look like a series of obviously bad decisions. We forget how much information was unavailable, how narrow the options felt, and how much support had to accumulate before another path became visible.
 
-## The privilege hidden inside self-improvement
+## The hidden conditions behind self-improvement
 
 Education can provide language for experiences that previously felt confusing. Therapy can create protected time to examine beliefs without immediately acting on them. Stable income, transportation, healthcare, childcare, and safe housing can reduce the consequences of trying something new.
 
@@ -44,11 +45,9 @@ A supportive conversation can become part of that environment. So can a diagnosi
 
 Small supports matter because they alter the system producing the next action.
 
-This is a more useful understanding of agency. Agency is not proof that a person escaped causation. It is the capacity to act within real conditions—and that capacity can be expanded or restricted by how those conditions are designed.
+This is a more useful understanding of agency. Agency is the capacity to act within real conditions—and that capacity can be expanded or restricted by how those conditions are designed.
 
-## Compassion should change the question
-
-Compassion is sometimes treated as a warm feeling added after the serious work of analysis. In behavior change, compassion improves the analysis.
+## Better questions for behavior change
 
 Instead of asking, “Why won’t this person do what she knows she should do?” we can ask:
 
@@ -62,7 +61,7 @@ These questions do not guarantee transformation. They stop us from pretending th
 
 We celebrate people who change because transformation can require enormous effort. We should also recognize the teachers, therapists, friends, money, time, public programs, healthcare, and accidents of circumstance that helped carry that effort.
 
-No one transforms alone. The self-improvement story becomes more honest when the environment is allowed back into the frame.
+No one transforms alone. The self-improvement story becomes more accurate when the environment is allowed back into the frame.
 
 ### Sources
 

@@ -1,5 +1,10 @@
-# Food Is More Than Fuel
-
+---
+layout: post
+title: "Food Is More Than Fuel: Why Context, Culture and Access Matter"
+description: "Food provides energy and nutrients, but eating is also shaped by culture, memory, pleasure, access, relationships, stress, time, and environment. Nutrition advice works better when context stays in the picture."
+eyebrow: Food, body & behavior
+cluster: Food, body & behavior
+---
 We often talk about food as fuel. The comparison is useful to a point. Our bodies require energy, and food provides it. Carbohydrates, fats, and proteins move through metabolic pathways that allow us to breathe, think, move, repair tissue, regulate temperature, and remain alive.
 
 But food is also relationship: to our bodies, to each other, and to the living world.
@@ -8,7 +13,7 @@ When we reduce food to fuel, we begin to imagine the body as a machine. Food bec
 
 Human beings do not eat that way.
 
-## Every Meal Arrives With Context
+## Every meal arrives with context
 
 Nutrition is not separate from lived experience. Every meal arrives with context: time, money, stress, culture, family, access, memory, hunger, fatigue, and belief.
 
@@ -22,21 +27,17 @@ These meanings do not sit outside nutrition. They become part of the eating expe
 
 Two people can eat the same food and have entirely different experiences. One may taste comfort and familiarity. The other may experience anxiety because the food violates a rule they have been taught. The nutrients may be similar, but the meals are not the same.
 
-## Eating Connects the Body With the World
-
-Food also makes our relationship with the living world visible.
+## Food connects the body with the world
 
 Before food becomes part of us, it belongs to something beyond us. Plants capture energy from sunlight. Soil, water, microorganisms, insects, weather, farmers, food workers, transportation systems, and stores all participate in bringing food to the table.
 
 Then we eat it.
 
-The boundary between the body and the world becomes difficult to maintain. What was once a plant, animal, mineral, or drop of water enters the body and becomes part of its activity. It contributes to tissue, blood, movement, body heat, thought, and memory.
-
 Eating is not simply putting fuel into a machine. It is an ongoing exchange between an organism and its environment. The world becomes the body, and the body eventually returns its materials to the world.
 
-This does not require us to treat every meal as a profound spiritual event. Sometimes lunch is simply what we could find between appointments. But even the most ordinary meal reflects our dependence on biological and social systems larger than ourselves.
+This does not require us to treat every meal as a profound event. Sometimes lunch is simply what we could find between appointments. But even the most ordinary meal reflects our dependence on biological and social systems larger than ourselves.
 
-## Why Calorie Language Is Incomplete
+## Why calories cannot explain an eating experience
 
 Calories describe energy. They are a legitimate and sometimes useful measurement. But they cannot tell us everything we need to know about food or eating.
 
@@ -48,7 +49,7 @@ A person may eat frozen food because chronic pain makes cooking difficult. Someo
 
 If we look only at the food, we may believe we understand the behavior. When we look at the context, the behavior often makes much more sense.
 
-## Nutrition Advice Can Erase the Person
+## Nutrition advice can erase the person
 
 Much nutrition advice begins with an idealized eater: someone with sufficient money, predictable time, reliable access to food, adequate sleep, a usable kitchen, and enough mental energy to plan.
 
@@ -72,7 +73,7 @@ Instead of asking, “Why did I eat that?” with accusation, we can ask:
 
 These questions do not eliminate responsibility. They make responsibility more useful by identifying what can actually change.
 
-## The Rest of the Conversation
+## Food is biology and meaning at the same time
 
 Food provides energy, but it is not merely fuel. It is biology, culture, memory, labor, environment, pleasure, access, and relationship.
 
