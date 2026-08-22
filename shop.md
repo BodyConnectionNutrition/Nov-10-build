@@ -13,6 +13,13 @@ intro: Choose one useful question, follow a connected path, or get the complete 
   <a href="#start">Start here</a><a href="#collections">Collections</a><a href="#origins">Origins & beliefs</a><a href="#patterns">Eating patterns</a><a href="#integration">Integration</a><a href="#compare">Compare</a>
 </nav>
 
+<aside class="recommend" style="margin-top:0">
+  <p class="eyebrow">Where the shop fits</p>
+  <h2>These tools are the Examine stage of a larger path.</h2>
+  <p>Free experiences help you <strong>notice</strong> what is happening. The guided tools below help you <strong>examine</strong> the biology, beliefs, learning, relationships, and conditions shaping it. Workbooks, courses, workshops, and individual care help you <strong>rebuild</strong> what no longer fits.</p>
+  <a class="button button-secondary" href="/path/">See Notice → Examine → Rebuild →</a>
+</aside>
+
 <section id="start" class="recommend">
   <p class="eyebrow">Not sure where to begin?</p>
   <h2>Start with the question that feels most useful now.</h2>
