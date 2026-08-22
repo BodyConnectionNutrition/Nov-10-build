@@ -28,7 +28,11 @@ exports.handler = async event => {
   try {
     const response = await fetch("https://api.stripe.com/v1/checkout/sessions", { method: "POST", headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/x-www-form-urlencoded" }, body: body.toString() });
     const data = await response.json();
-    if (!response.ok || !data.url) return { statusCode: 502, body: "Unable to start checkout." };
+    if (!response.ok || !data.url) {
+      console.error("Stripe checkout error", data);
+      const message = data && data.error && data.error.message ? data.error.message : "Unable to start checkout.";
+      return { statusCode: 502, headers: { "Content-Type": "text/plain; charset=utf-8" }, body: `Stripe checkout error: ${message}` };
+    }
     return { statusCode: 303, headers: { Location: data.url, "Cache-Control": "no-store" }, body: "" };
   } catch (error) {
     console.error(error);
