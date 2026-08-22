@@ -16,6 +16,7 @@ exports.handler = async event => {
     body.set("line_items[0][price_data][currency]", "usd");
     body.set("line_items[0][price_data][unit_amount]", String(config.amount));
     body.set("line_items[0][price_data][product_data][name]", config.name || product);
+    body.set("line_items[0][price_data][product_data][tax_code]", "txcd_20060058");
     body.set("line_items[0][price_data][product_data][metadata][product_slug]", product);
   } else return { statusCode: 500, body: "Checkout price is not configured." };
   body.set("line_items[0][quantity]", "1");
