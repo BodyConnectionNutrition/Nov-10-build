@@ -19,7 +19,8 @@ sitemap: false
     'permission-and-scarcity':{name:'Permission & Scarcity',page:'/tools/permission-and-scarcity/',key:'bcn_paid_permission_scarcity'},
     'what-is-this-doing-for-me':{name:'What Is This Doing for Me?',page:'/tools/what-is-this-doing-for-me/',key:'bcn_paid_what_is_this_doing'},
     'choice-has-conditions':{name:'Choice Has Conditions',page:'/tools/choice-has-conditions/',key:'bcn_paid_choice_conditions'},
-    'my-food-and-body-framework':{name:'My Food & Body Framework',page:'/tools/my-food-and-body-framework/',key:'bcn_paid_food_body_framework'}
+    'my-food-and-body-framework':{name:'My Food & Body Framework',page:'/tools/my-food-and-body-framework/',key:'bcn_paid_food_body_framework'},
+    'values-clarification':{name:'Values Clarification',page:'/tools/values-clarification/',key:'bcn_paid_values_clarification'}
   };
   const title=document.getElementById('verify-title'),message=document.getElementById('verify-message'),action=document.getElementById('verify-action');
   const params=new URLSearchParams(location.search),product=params.get('product')||'',sessionId=params.get('session_id')||'',cfg=products[product];

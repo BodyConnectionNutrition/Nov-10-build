@@ -18,7 +18,8 @@ sitemap: false
     'permission-and-scarcity':{name:'Permission & Scarcity',page:'/tools/permission-and-scarcity/',key:'bcn_paid_permission_scarcity'},
     'what-is-this-doing-for-me':{name:'What Is This Doing for Me?',page:'/tools/what-is-this-doing-for-me/',key:'bcn_paid_what_is_this_doing'},
     'choice-has-conditions':{name:'Choice Has Conditions',page:'/tools/choice-has-conditions/',key:'bcn_paid_choice_conditions'},
-    'my-food-and-body-framework':{name:'My Food & Body Framework',page:'/tools/my-food-and-body-framework/',key:'bcn_paid_food_body_framework'}
+    'my-food-and-body-framework':{name:'My Food & Body Framework',page:'/tools/my-food-and-body-framework/',key:'bcn_paid_food_body_framework'},
+    'values-clarification':{name:'Values Clarification',page:'/tools/values-clarification/',key:'bcn_paid_values_clarification'}
   };
   const product=new URLSearchParams(location.search).get('product')||'',cfg=products[product];const title=document.getElementById('access-title'),message=document.getElementById('access-message'),action=document.getElementById('access-action');if(!cfg){title.textContent='Choose a tool from its product page.';message.textContent='This access page needs to know which tool you want to open.';return;}const token=localStorage.getItem(cfg.key);if(!token){title.textContent='No saved access was found in this browser.';message.textContent='If you purchased on another browser or device, use the secure access link you saved there or return to the product page.';action.innerHTML='<a class="button" href="'+cfg.page+'">Return to '+cfg.name+'</a>';return;}const url='/.netlify/functions/paid-tool?product='+encodeURIComponent(product)+'&token='+encodeURIComponent(token);title.textContent='Saved access found.';message.textContent='You can reopen '+cfg.name+' now.';action.innerHTML='<a class="button" href="'+url+'">Open '+cfg.name+' →</a>';
 })();
