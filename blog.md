@@ -52,6 +52,7 @@ intro: Clear science and deeper context for people who want to understand their 
     <p>Eating is never just a nutrient calculation. It develops inside culture, memory, material conditions, repeated experience, and the meanings we inherit.</p>
   </div>
   <div class="library-grid">
+    <a class="library-card" href="/blog/restriction-trap/"><span class="label">11-part series</span><h3>The Restriction Trap</h3><p>Why deprivation can make food louder, eating more urgent, and “control” increasingly difficult—and why that response is not a character flaw.</p></a>
     <a class="library-card" href="/blog/why-understanding-changes-behavior/"><span class="label">Learning</span><h3>Why Understanding Changes Behavior Better Than More Rules</h3><p>Another instruction rarely repairs the framework that made change difficult in the first place.</p></a>
     <a class="library-card" href="/blog/transformation-requires-conditions/"><span class="label">Behavior change</span><h3>Why Behavior Change Requires More Than Motivation</h3><p>Time, money, safety, access, health, and support shape which changes are actually possible.</p></a>
     <a class="library-card" href="/blog/food-is-more-than-fuel/"><span class="label">Food in context</span><h3>Food Is More Than Fuel</h3><p>Culture, memory, pleasure, access, stress, time, and relationships belong in the nutrition conversation.</p></a>
