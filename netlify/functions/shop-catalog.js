@@ -13,9 +13,9 @@ const TOOLS = {
 
 const PURCHASES = Object.fromEntries(Object.entries(TOOLS).map(([slug, config]) => [slug, { ...config, grants: [slug], returnPath: config.page }]));
 Object.assign(PURCHASES, {
-  "origins-beliefs-bundle": { priceId: "price_1U7OOQPfe7PZZ7IAuQ9NoPpR", returnPath: "/shop/#origins-beliefs", grants: ["who-taught-you-to-eat", "how-was-my-body-image-created", "deconstructing-a-belief", "values-clarification"] },
-  "eating-patterns-bundle": { priceId: "price_1U7OOcPfe7PZZ7IAR6TL5xpr", returnPath: "/shop/#eating-patterns", grants: ["why-am-i-eating", "behavior-sequence", "permission-and-scarcity", "what-is-this-doing-for-me", "choice-has-conditions"] },
-  "complete-toolkit-bundle": { priceId: "price_1U7OOdPfe7PZZ7IAGhWaTwZO", returnPath: "/shop/#complete-toolkit", grants: Object.keys(TOOLS) }
+  "origins-beliefs-bundle": { amount: 9900, name: "Origins & Beliefs Bundle", returnPath: "/shop/#origins-beliefs", grants: ["who-taught-you-to-eat", "how-was-my-body-image-created", "deconstructing-a-belief", "values-clarification"] },
+  "eating-patterns-bundle": { amount: 10900, name: "Eating Patterns Bundle", returnPath: "/shop/#eating-patterns", grants: ["why-am-i-eating", "behavior-sequence", "permission-and-scarcity", "what-is-this-doing-for-me", "choice-has-conditions"] },
+  "complete-toolkit-bundle": { amount: 21900, name: "Complete Body Connection Toolkit", returnPath: "/shop/#complete-toolkit", grants: Object.keys(TOOLS) }
 });
 
 function configuredPrice(config) {
