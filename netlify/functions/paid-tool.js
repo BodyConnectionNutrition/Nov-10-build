@@ -1,16 +1,52 @@
-const crypto=require("crypto");const fs=require("fs");const path=require("path");
-const PRODUCTS={
- "who-taught-you-to-eat":{priceEnv:"STRIPE_PRICE_WHO_TAUGHT_YOU_TO_EAT",file:"who-taught-you-to-eat.html",page:"/tools/who-taught-you-to-eat/"},
- "how-was-my-body-image-created":{priceEnv:"STRIPE_PRICE_BODY_IMAGE",file:"how-was-my-body-image-created.html",page:"/tools/how-was-my-body-image-created/"},
- "deconstructing-a-belief":{priceEnv:"STRIPE_PRICE_DECONSTRUCTING_BELIEF",file:"deconstructing-a-belief.html",page:"/tools/deconstructing-a-belief/"},
- "behavior-sequence":{amount:2900,file:"behavior-sequence.html",page:"/tools/behavior-sequence/"},
- "permission-and-scarcity":{amount:2900,file:"permission-and-scarcity.html",page:"/tools/permission-and-scarcity/"},
- "what-is-this-doing-for-me":{amount:2900,file:"what-is-this-doing-for-me.html",page:"/tools/what-is-this-doing-for-me/"},
- "choice-has-conditions":{amount:2900,file:"choice-has-conditions.html",page:"/tools/choice-has-conditions/"},
- "my-food-and-body-framework":{amount:2900,file:"my-food-and-body-framework.html",page:"/tools/my-food-and-body-framework/"},
- "values-clarification":{priceId:"price_1U7NfFPfe7PZZ7IATKAFHLtm",file:"values-clarification.html",page:"/tools/values-clarification/"}
+const crypto = require("crypto");
+const fs = require("fs");
+const path = require("path");
+const { TOOLS, PURCHASES, purchaseMatches } = require("./shop-catalog");
+
+function verifyToken(token) {
+  const secret = process.env.ACCESS_TOKEN_SECRET;
+  if (!secret || !token) return null;
+  const parts = token.split(".");
+  if (parts.length !== 2) return null;
+  const [payloadPart, signature] = parts;
+  const expected = crypto.createHmac("sha256", secret).update(payloadPart).digest("base64url");
+  const a = Buffer.from(signature), b = Buffer.from(expected);
+  if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) return null;
+  try {
+    const payload = JSON.parse(Buffer.from(payloadPart, "base64url").toString("utf8"));
+    if (!payload.sid || !payload.product) return null;
+    if (!Array.isArray(payload.grants)) payload.grants = [payload.product];
+    return payload;
+  } catch { return null; }
+}
+
+async function stripeGet(apiPath) {
+  const key = process.env.STRIPE_SECRET_KEY;
+  if (!key) throw new Error("Stripe is not configured");
+  const response = await fetch(`https://api.stripe.com${apiPath}`, { headers: { Authorization: `Bearer ${key}` } });
+  if (!response.ok) throw new Error(`Stripe request failed: ${response.status}`);
+  return response.json();
+}
+
+function html(statusCode, body) { return { statusCode, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "private, no-store, max-age=0", "X-Robots-Tag": "noindex, nofollow" }, body }; }
+
+exports.handler = async event => {
+  const qs = event.queryStringParameters || {}, product = qs.product || "", tool = TOOLS[product];
+  if (!tool) return html(404, "<h1>Tool not found</h1>");
+  const payload = verifyToken(qs.token || "");
+  if (!payload || !payload.grants.includes(product)) return html(403, `<h1>Access link invalid</h1><p>Please return to the <a href="${tool.page}">product page</a>.</p>`);
+  const purchase = PURCHASES[payload.product];
+  if (!purchase) return html(403, "<h1>Purchase not recognized</h1>");
+  try {
+    const session = await stripeGet(`/v1/checkout/sessions/${encodeURIComponent(payload.sid)}`);
+    const items = await stripeGet(`/v1/checkout/sessions/${encodeURIComponent(payload.sid)}/line_items?limit=10`);
+    const metadataMatches = session.metadata && session.metadata.product_slug === payload.product;
+    if (session.payment_status !== "paid" || session.status !== "complete" || !purchaseMatches(session, items, purchase) || !metadataMatches) return html(403, "<h1>Purchase not verified</h1><p>This access link is not connected to a completed purchase.</p>");
+    let content = fs.readFileSync(path.join(__dirname, "private", tool.file), "utf8");
+    content = content.replace("</body>", `<div class="product-return"><a href="/shop/">← Return to the shop</a></div></body>`);
+    return html(200, content);
+  } catch (error) {
+    console.error(error);
+    return html(500, "<h1>We could not verify access</h1><p>Please try again shortly.</p>");
+  }
 };
-function verifyToken(token,product){const secret=process.env.ACCESS_TOKEN_SECRET;if(!secret||!token)return null;const parts=token.split(".");if(parts.length!==2)return null;const[payloadPart,signature]=parts;const expected=crypto.createHmac("sha256",secret).update(payloadPart).digest("base64url");const a=Buffer.from(signature),b=Buffer.from(expected);if(a.length!==b.length||!crypto.timingSafeEqual(a,b))return null;try{const payload=JSON.parse(Buffer.from(payloadPart,"base64url").toString("utf8"));return payload.product===product&&payload.sid?payload:null;}catch{return null;}}
-async function stripeGet(apiPath){const key=process.env.STRIPE_SECRET_KEY;if(!key)throw new Error("Stripe is not configured");const response=await fetch(`https://api.stripe.com${apiPath}`,{headers:{Authorization:`Bearer ${key}`}});if(!response.ok)throw new Error(`Stripe request failed: ${response.status}`);return response.json();}
-function html(statusCode,body){return{statusCode,headers:{"Content-Type":"text/html; charset=utf-8","Cache-Control":"private, no-store, max-age=0","X-Robots-Tag":"noindex, nofollow"},body};}
-exports.handler=async(event)=>{const qs=event.queryStringParameters||{},product=qs.product||"",config=PRODUCTS[product];if(!config)return html(404,"<h1>Tool not found</h1>");const payload=verifyToken(qs.token||"",product);if(!payload)return html(403,`<h1>Access link invalid</h1><p>Please return to the <a href="${config.page}">product page</a>.</p>`);try{const session=await stripeGet(`/v1/checkout/sessions/${encodeURIComponent(payload.sid)}`);const items=await stripeGet(`/v1/checkout/sessions/${encodeURIComponent(payload.sid)}/line_items?limit=10`);let hasProduct=false;if(config.priceId){hasProduct=Array.isArray(items.data)&&items.data.some(item=>item.price&&item.price.id===config.priceId);}else if(config.priceEnv){const priceId=process.env[config.priceEnv];if(!priceId)return html(500,"<h1>Access is temporarily unavailable</h1>");hasProduct=Array.isArray(items.data)&&items.data.some(item=>item.price&&item.price.id===priceId);}else{hasProduct=session.amount_total===config.amount&&session.currency==="usd"&&Array.isArray(items.data)&&items.data.some(item=>item.amount_total===config.amount&&item.price&&item.price.currency==="usd");}const metadataMatches=session.metadata&&session.metadata.product_slug===product;if(session.payment_status!=="paid"||session.status!=="complete"||!hasProduct||!metadataMatches)return html(403,"<h1>Purchase not verified</h1><p>This access link is not connected to a completed purchase.</p>");let tool=fs.readFileSync(path.join(__dirname,"private",config.file),"utf8");tool=tool.replace("</body>",`<div class="product-return"><a href="${config.page}">← Product page</a></div></body>`);return html(200,tool);}catch(error){console.error(error);return html(500,"<h1>We could not verify access</h1><p>Please try again shortly.</p>");}};
