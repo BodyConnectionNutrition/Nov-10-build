@@ -136,6 +136,20 @@ The paid educational work is where I bring together nutrition science, behaviora
   <article class="card"><span class="number">3</span><h3>Rebuild</h3><p>Develop frameworks better aligned with evidence, your body, your values, and the life you are actually living.</p></article>
 </div>
 
+## Where the process can lead
+
+The free experience and **Why Am I Eating?** are not isolated products. They are the opening of a learning path that lets you choose how much structure and support you want.
+
+<div class="cards" style="margin:2rem 0">
+  <article class="card"><p class="post-meta">Free insight</p><h3>Notice</h3><p>Make a body signal, automatic interpretation, nutrition claim, or repeated choice visible.</p><p><a class="text-link" href="/tools/">Explore free tools →</a></p></article>
+  <article class="card"><p class="post-meta">Guided tools · From $29</p><h3>Examine</h3><p>Investigate one eating moment, belief, source of influence, behavior sequence, scarcity condition, or constraint.</p><p><a class="text-link" href="/shop/">Choose a tool →</a></p></article>
+  <article class="card"><p class="post-meta">Workbooks & courses</p><h3>Rebuild</h3><p>Move from a single insight into a structured process for testing inherited frameworks and authoring more workable ones.</p><p><a class="text-link" href="/path/#deeper-learning">See deeper learning →</a></p></article>
+  <article class="card"><p class="post-meta">Live workshops</p><h3>Practice together</h3><p>Apply the method to real claims and real questions with teaching, demonstration, discussion, and reflection.</p><p><a class="text-link" href="/path/#live-learning">See live learning →</a></p></article>
+  <article class="card"><p class="post-meta">Individual nutrition care</p><h3>Individualize</h3><p>Bring the framework into your own health history, needs, barriers, laboratory data, and daily life with a registered dietitian.</p><p><a class="text-link" href="/services/">Explore individual care →</a></p></article>
+</div>
+
+<p><a class="button button-secondary" href="/path/">See the complete Body Connection path →</a></p>
+
 ## Education, not therapy
 
 Serious reflection is also serious learning.
