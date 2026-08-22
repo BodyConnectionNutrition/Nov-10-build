@@ -52,7 +52,24 @@ intro: Clear science and deeper context for people who want to understand their 
     <p>Eating is never just a nutrient calculation. It develops inside culture, memory, material conditions, repeated experience, and the meanings we inherit.</p>
   </div>
   <div class="library-grid">
-    <a class="library-card" href="/blog/restriction-trap/"><span class="label">11-part series</span><h3>The Restriction Trap</h3><p>Why deprivation can make food louder, eating more urgent, and “control” increasingly difficult—and why that response is not a character flaw.</p></a>
+  <div class="library-note" style="grid-column:1 / -1;margin:0 0 1.25rem">
+    <p class="eyebrow">Featured · 11-part series</p>
+    <h2><a href="/blog/restriction-trap/">The Restriction Trap</a></h2>
+    <p>Why deprivation can make food louder, eating more urgent, and “control” increasingly difficult—and why that response is not a character flaw.</p>
+    <ol>
+      <li><a href="/blog/restriction-trap/">What If More Control Is the Problem?</a></li>
+      <li><a href="/blog/why-dieting-makes-food-so-loud/">Why Dieting Makes Food So Loud</a></li>
+      <li><a href="/blog/starvation-study-food-obsession/">The Starvation Study That Made Healthy Men Obsessed With Food</a></li>
+      <li><a href="/blog/why-forbidden-foods-become-impossible-to-ignore/">Why Forbidden Foods Become Impossible to Ignore</a></li>
+      <li><a href="/blog/food-thought-suppression-pink-elephant/">The Pink Elephant Problem</a></li>
+      <li><a href="/blog/i-already-blew-it-effect/">The “I Already Blew It” Effect</a></li>
+      <li><a href="/blog/dieting-hunger-fullness-cues/">Why Dieting Can Make Hunger and Fullness Harder to Hear</a></li>
+      <li><a href="/blog/last-supper-eating-scarcity/">Last-Supper Eating Is a Response to Scarcity</a></li>
+      <li><a href="/blog/why-eating-control-collapses-under-stress/">Why Eating Control Collapses Under Stress</a></li>
+      <li><a href="/blog/does-restriction-always-cause-binge-eating/">Does Restriction Always Cause Binge Eating?</a></li>
+      <li><a href="/blog/your-body-did-not-betray-you-restriction/">Your Body Did Not Betray You</a></li>
+    </ol>
+  </div>
     <a class="library-card" href="/blog/why-understanding-changes-behavior/"><span class="label">Learning</span><h3>Why Understanding Changes Behavior Better Than More Rules</h3><p>Another instruction rarely repairs the framework that made change difficult in the first place.</p></a>
     <a class="library-card" href="/blog/transformation-requires-conditions/"><span class="label">Behavior change</span><h3>Why Behavior Change Requires More Than Motivation</h3><p>Time, money, safety, access, health, and support shape which changes are actually possible.</p></a>
     <a class="library-card" href="/blog/food-is-more-than-fuel/"><span class="label">Food in context</span><h3>Food Is More Than Fuel</h3><p>Culture, memory, pleasure, access, stress, time, and relationships belong in the nutrition conversation.</p></a>

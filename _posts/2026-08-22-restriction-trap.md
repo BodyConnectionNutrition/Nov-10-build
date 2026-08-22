@@ -29,6 +29,22 @@ The person restricts because eating feels difficult to control. Restriction make
 
 The shame lands on the person. The evidence points upstream.
 
+## Read the complete series
+
+The Restriction Trap contains 11 articles. Read them in order, or choose the part that speaks most directly to what you are experiencing:
+
+1. **The Restriction Trap: What If More Control Is the Problem?** — the introduction you are reading now.
+2. [Why Dieting Makes Food So Loud](/blog/why-dieting-makes-food-so-loud/)
+3. [The Starvation Study That Made Healthy Men Obsessed With Food](/blog/starvation-study-food-obsession/)
+4. [Why Forbidden Foods Become Impossible to Ignore](/blog/why-forbidden-foods-become-impossible-to-ignore/)
+5. [The Pink Elephant Problem: Why Trying Not to Think About Food Can Backfire](/blog/food-thought-suppression-pink-elephant/)
+6. [The “I Already Blew It” Effect](/blog/i-already-blew-it-effect/)
+7. [Why Dieting Can Make Hunger and Fullness Harder to Hear](/blog/dieting-hunger-fullness-cues/)
+8. [Last-Supper Eating Is a Response to Scarcity](/blog/last-supper-eating-scarcity/)
+9. [Why Eating Control Collapses Under Stress](/blog/why-eating-control-collapses-under-stress/)
+10. [Does Restriction Always Cause Binge Eating? Here’s What the Research Actually Says](/blog/does-restriction-always-cause-binge-eating/)
+11. [Your Body Did Not Betray You](/blog/your-body-did-not-betray-you-restriction/)
+
 ## Restriction changes the conditions of choice
 
 Eating does not occur in a vacuum. Every decision is made inside a biological state, an emotional state, a history of learning, an environment, and an expectation about whether food will remain available.
