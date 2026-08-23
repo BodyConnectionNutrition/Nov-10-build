@@ -1,7 +1,14 @@
 {
-  "schema": "bcn.glp1.evidence-briefs.v1.2",
+  "schema": "bcn.glp1.evidence-briefs.v1.3",
+  "library_metadata": {
+    "library_version": "2026.08-beta.1",
+    "last_evidence_review": "2026-08-23",
+    "last_safety_review": "2026-08-23",
+    "review_status": "Clinician reviewed; safety language approved",
+    "public_beta": true
+  },
   "standard_answer_format": {
-    "version": "1.2",
+    "version": "1.3",
     "display_order": [
       "question",
       "bottom_line",
