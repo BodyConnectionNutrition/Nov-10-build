@@ -5,6 +5,8 @@ title: Why Am I Eating?
 eyebrow: Paid awareness experience · $29
 intro: Take one real eating moment apart and see the biological, emotional, environmental, learned, social, habitual, and reward-related forces that were operating together.
 ---
+<link rel="stylesheet" href="/assets/css/product-preview.css">
+
 <div class="quote-card" style="margin:2.4rem 0">
 <p class="eyebrow">One-time purchase · ongoing access</p>
 <h2>$29</h2>
@@ -44,6 +46,8 @@ You might discover that one moment was shaped mostly by biological hunger and en
 
 That is why this product includes **ongoing access and repeat use**. The value grows when you use it with different eating moments and begin to see patterns across situations.
 
+<section class="product-preview" data-product-preview="why-am-i-eating"></section>
+
 <div class="quote-card" style="margin:2.4rem 0">
 <p class="eyebrow">The central shift</p>
 <h2>Behavior becomes easier to understand when it is treated as information instead of a moral verdict.</h2>
@@ -72,3 +76,5 @@ This is **education, not psychotherapy**. The tool does not diagnose an eating d
 </div>
 
 <p class="trust-line" style="margin-top:1rem">After checkout, Body Connection Nutrition verifies the completed Stripe purchase and immediately issues access to the paid experience.</p>
+
+<script src="/assets/js/product-preview.js"></script>
