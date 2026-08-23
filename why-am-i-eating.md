@@ -14,7 +14,7 @@ intro: Take one real eating moment apart and see the biological, emotional, envi
 <form method="post" action="/.netlify/functions/create-checkout-session" style="margin:1.2rem 0">
   <button class="button" type="submit">Buy Why Am I Eating? — $29 →</button>
 </form>
-<p><a class="text-link" href="/why-am-i-eating/access/">Already purchased? Open your saved access →</a></p>
+<p><a class="text-link" href="/my-tools/">Already purchased? Open My Tools →</a></p>
 <p class="trust-line">Secure checkout powered by Stripe · One-time payment · Immediate access after purchase</p>
 </div>
 
