@@ -13,11 +13,13 @@
   from = "/my-tools"
   to = "/.netlify/functions/my-tools"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/my-tools/"
   to = "/.netlify/functions/my-tools"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/patient-tools/login"
