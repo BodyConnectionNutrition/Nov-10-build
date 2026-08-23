@@ -14,13 +14,15 @@ exports.handler = async event => {
     const now = Math.floor(Date.now() / 1000);
     await updateCustomer(customer.id, { bcn_login_nonce: hash(nonce) });
     const token = sign({ type: "magic", cid: customer.id, email, grants, nonce, iat: now, exp: now + MAGIC_SECONDS });
+    const requestHost = String((event.headers && (event.headers.host || event.headers.Host)) || "").toLowerCase();
+    const emailSite = /^deploy-preview-\d+--bodyconnectionnutrition\.netlify\.app$/.test(requestHost) ? `https://${requestHost}` : SITE;
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY || ""}`, "Content-Type": "application/json", "User-Agent": "body-connection-nutrition/1.0" },
       body: JSON.stringify({
         from: process.env.ACCESS_EMAIL_FROM || "Body Connection Nutrition <access@bodyconnectionnutrition.com>",
         to: [email], subject: "Your Body Connection Nutrition sign-in link",
-        html: `<div style="font-family:Arial,sans-serif;line-height:1.6;max-width:560px"><h1 style="color:#31412f">Open your purchased tools</h1><p>This private sign-in link expires in 15 minutes and can be used once.</p><p><a href="${SITE}/.netlify/functions/activate-access?token=${encodeURIComponent(token)}" style="display:inline-block;background:#31412f;color:white;padding:12px 18px;border-radius:999px;text-decoration:none">Open My Tools</a></p><p>If you did not request this link, you can ignore this email.</p></div>`
+        html: `<div style="font-family:Arial,sans-serif;line-height:1.6;max-width:560px"><h1 style="color:#31412f">Open your purchased tools</h1><p>This private sign-in link expires in 15 minutes and can be used once.</p><p><a href="${emailSite}/.netlify/functions/activate-access?token=${encodeURIComponent(token)}" style="display:inline-block;background:#31412f;color:white;padding:12px 18px;border-radius:999px;text-decoration:none">Open My Tools</a></p><p>If you did not request this link, you can ignore this email.</p></div>`
       })
     });
     if (!response.ok) throw new Error(`Email provider failed: ${response.status}`);
