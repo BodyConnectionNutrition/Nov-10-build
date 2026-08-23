@@ -1,7 +1,7 @@
 const crypto = require("crypto");
 const { PURCHASES, TOOLS } = require("./shop-catalog");
 
-const SITE = "https://bodyconnectionnutrition.com";
+const SITE = process.env.DEPLOY_PRIME_URL || process.env.URL || "https://bodyconnectionnutrition.com";
 const COOKIE = "bcn_access";
 const SESSION_SECONDS = 60 * 60 * 24 * 30;
 const MAGIC_SECONDS = 60 * 15;
