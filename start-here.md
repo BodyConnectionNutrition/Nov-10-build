@@ -21,7 +21,7 @@ We begin by noticing the signals, assumptions, learned rules, and automatic inte
 
 These experiences are designed to build on one another. The first helps you notice the space between a body signal and your response. The second takes one real food-related decision and helps you investigate what was shaping that response before it ever felt like a simple choice.
 
-<div class="three-grid" style="margin:2rem 0">
+<div class="cards" style="margin:2rem 0">
   <article class="card">
     <span class="number">1</span>
     <p class="post-meta">FREE · Start here</p>
@@ -38,14 +38,9 @@ These experiences are designed to build on one another. The first helps you noti
     <p>Take one real food decision apart and study how biology, food attention, learned rules, habit, emotion, access, relationships, and environment interacted.</p>
     <p><a class="button" href="/why-am-i-eating/">Explore the paid experience →</a></p>
   </article>
-  <article class="card">
-    <span class="number">3</span>
-    <p class="post-meta">The larger journey</p>
-    <h3>Examine. Test. Rebuild.</h3>
-    <p><strong>Learn what deserves to change.</strong></p>
-    <p>Use what you notice to examine inherited frameworks, test them against evidence and experience, and build ways of relating to food and your body that fit your life more accurately.</p>
-  </article>
 </div>
+
+<p class="trust-line"><strong>This two-step progression is the flagship Body Connection experience.</strong> The other tools, collections, courses, workshops, and individual care are optional next layers—not prerequisites.</p>
 
 ## Step 1 · Can You Hear Your Body?
 
@@ -136,9 +131,9 @@ The paid educational work is where I bring together nutrition science, behaviora
   <article class="card"><span class="number">3</span><h3>Rebuild</h3><p>Develop frameworks better aligned with evidence, your body, your values, and the life you are actually living.</p></article>
 </div>
 
-## Where the process can lead
+## When you want another layer
 
-The free experience and **Why Am I Eating?** are not isolated products. They are the opening of a learning path that lets you choose how much structure and support you want.
+The flagship progression stands on its own. If it raises another question, the wider Body Connection path lets you choose how much additional structure or support you want.
 
 <div class="cards" style="margin:2rem 0">
   <article class="card"><p class="post-meta">Free insight</p><h3>Notice</h3><p>Make a body signal, automatic interpretation, nutrition claim, or repeated choice visible.</p><p><a class="text-link" href="/tools/">Explore free tools →</a></p></article>
