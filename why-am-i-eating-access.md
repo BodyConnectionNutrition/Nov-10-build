@@ -13,6 +13,7 @@ intro: Open the paid experience from a browser that has already verified your pu
 </div>
 
 <p>If you purchased on a different device or browser, use the secure access link you received immediately after checkout on that device. The access link functions like a key, so keep it private.</p>
+<p>If browser data was cleared and you no longer have the secure link, <a href="/purchase-support/#contact-support">request access restoration</a> using the email from checkout and any Stripe receipt details you still have.</p>
 
 <script>
 (function(){
