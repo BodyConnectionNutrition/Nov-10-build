@@ -9,6 +9,7 @@ sitemap: false
 ---
 <div class="quote-card" style="margin:2.4rem 0" id="access-status"><p class="eyebrow">Purchase verification</p><h2 id="verify-title">Checking your purchase…</h2><p id="verify-message">This should only take a moment.</p><p id="verify-action"></p></div>
 <p class="trust-line">Your access link is a bearer link: anyone who has the full link could use it. Keep it private. This browser also remembers your access.</p>
+<p><strong>Save the full secure tool link</strong> if you want to use another device or protect access if browser data is cleared. If access does not appear, visit <a href="/purchase-support/">Purchase Help</a>.</p>
 <script>
 (function(){
   const products={

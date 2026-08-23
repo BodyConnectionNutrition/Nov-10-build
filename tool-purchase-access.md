@@ -8,6 +8,7 @@ noindex: true
 sitemap: false
 ---
 <div class="quote-card" style="margin:2.4rem 0"><h2 id="access-title">Checking saved access…</h2><p id="access-message"></p><p id="access-action"></p></div>
+<div class="card"><h2>Access missing?</h2><p>Browser-saved access can disappear if site data is cleared or if you change devices. A bookmarked secure tool link will still work. If you no longer have either one, Body Connection Nutrition can verify the purchase and help restore access.</p><a class="button button-secondary" href="/purchase-support/#contact-support">Request access help →</a></div>
 <script>
 (function(){
   const products={

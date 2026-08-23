@@ -10,8 +10,10 @@ intro: Choose one useful question, follow a connected path, or get the complete 
 </style>
 
 <nav class="shop-jump" aria-label="Shop sections">
-  <a href="#start">Start here</a><a href="#collections">Collections</a><a href="#origins">Origins & beliefs</a><a href="#patterns">Eating patterns</a><a href="#integration">Integration</a><a href="#compare">Compare</a>
+  <a href="#start">Start here</a><a href="#collections">Collections</a><a href="#origins">Origins & beliefs</a><a href="#patterns">Eating patterns</a><a href="#integration">Integration</a><a href="#compare">Compare</a><a href="/purchase-support/">Purchase help</a>
 </nav>
+
+<div class="card" style="margin:0 0 2rem"><strong>Questions before or after purchase?</strong> Read how access, devices, browser data, refunds, privacy, and eating-disorder considerations work. <a href="/purchase-support/">Open Purchase Help →</a></div>
 
 <aside class="recommend" style="margin-top:0">
   <p class="eyebrow">Where the shop fits</p>

@@ -13,6 +13,7 @@ intro: We are verifying your Stripe checkout and preparing your access.
 </div>
 
 <p class="trust-line">Your access link is a bearer link: anyone who has the full link could use it. Keep it private and bookmark it for future use.</p>
+<p><strong>Save the full secure tool link</strong> if you want to use another device or protect access if browser data is cleared. If access does not appear, visit <a href="/purchase-support/">Purchase Help</a>.</p>
 
 <script>
 (function(){
