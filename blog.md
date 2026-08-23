@@ -83,6 +83,12 @@ intro: Clear science and deeper context for people who want to understand their 
     <p>Tools for thinking clearly about scientific claims, persuasive certainty, changing evidence, and the beliefs that shape what feels true.</p>
   </div>
   <div class="library-grid">
+    <div class="library-note" style="grid-column:1 / -1;margin:0 0 1.25rem">
+      <p class="eyebrow">Featured · 9-part investigation</p>
+      <h2><a href="/food-waste-to-wellness/">Food Waste to Wellness</a></h2>
+      <p>How whey, collagen, grape seed, citrus peel and spent grain move from production remainders to premium health products—and how to tell intelligent recovery from health meaning the evidence has not earned.</p>
+      <p><a class="text-link" href="/food-waste-to-wellness/">Read the complete investigation →</a></p>
+    </div>
     <a class="library-card" href="/blog/ai-health-information/"><span class="label">Health misinformation</span><h3>Why AI Can Sound Certain and Still Be Wrong About Health</h3><p>A practical explanation of why fluent answers are not necessarily accurate ones.</p></a>
     <a class="library-card" href="/blog/why-facts-do-not-change-minds/"><span class="label">Cognitive bias</span><h3>Why Facts Don’t Always Change Minds</h3><p>Evidence can collide with identity, belonging, prior commitments, and motivated reasoning.</p></a>
     <a class="library-card" href="/blog/when-science-changes-its-mind/"><span class="label">Scientific literacy</span><h3>Why Scientific Advice Changes</h3><p>Updated guidance can be evidence that science is correcting itself—not that science has failed.</p></a>
