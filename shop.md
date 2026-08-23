@@ -23,14 +23,13 @@ intro: Choose one useful question, follow a connected path, or get the complete 
 </aside>
 
 <section id="start" class="recommend">
-  <p class="eyebrow">Not sure where to begin?</p>
-  <h2>Start with the question that feels most useful now.</h2>
-  <div class="recommend-grid">
-    <article class="recommend-card"><h3>“Why did that eating moment happen?”</h3><p>Begin with <strong>Why Am I Eating?</strong> to see the biological, learned, emotional, environmental, social, habitual, and reward-related forces operating together.</p><a class="button" href="/why-am-i-eating/">Start here · $29 →</a></article>
-    <article class="recommend-card"><h3>“Where did these food and body rules come from?”</h3><p>Begin with <strong>Who Taught You to Eat?</strong>, or choose the Origins & Beliefs collection for the connected path.</p><a class="button button-secondary" href="#origins">Explore origins →</a></article>
-    <article class="recommend-card"><h3>“I can see the pattern, but not what maintains it.”</h3><p>Use the Eating Patterns collection to examine sequence, scarcity, function, and the conditions surrounding choice.</p><a class="button button-secondary" href="#patterns">Explore patterns →</a></article>
-  </div>
+  <p class="eyebrow">The recommended first purchase</p>
+  <h2>Continue the flagship experience with Why Am I Eating?</h2>
+  <p>If you have completed <strong>Can You Hear Your Body?</strong>, this is the designed next step. Take one real eating moment apart and see the biological, learned, emotional, environmental, social, habitual, and reward-related forces operating together.</p>
+  <p><a class="button" href="/why-am-i-eating/">Explore Why Am I Eating? · $29 →</a> <a class="button button-secondary" href="/tools/can-you-hear-your-body/">Start with the free experience</a></p>
 </section>
+
+<section style="margin:0 0 3rem"><p class="eyebrow">The next layer</p><h2>Choose another tool when a more specific question emerges.</h2><p class="category-note">The products and collections below extend the flagship progression. They help you trace origins and beliefs, examine a recurring pattern more closely, or integrate what you have learned into a wider framework.</p></section>
 
 <section id="collections">
 <p class="eyebrow">Save with a connected collection</p>
