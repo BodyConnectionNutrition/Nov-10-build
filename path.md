@@ -32,15 +32,15 @@ The path does not require everyone to buy everything. Each level stands on its o
 </div>
 
 <section class="learning-form" id="learning-updates">
-  <p class="eyebrow">Continue when you are ready</p>
-  <h2>Get deeper-learning and workshop updates.</h2>
-  <p>Choose what you want to hear about. This does not enroll you in a course or reserve a paid seat.</p>
+  <p class="eyebrow">The Body Connection Field Note</p>
+  <h2>Get one useful question each month.</h2>
+  <p>Each Field Note unpacks one body signal, eating pattern, or nutrition claim through the Body Connection lens. Choose which deeper-learning announcements you would also like to receive. This does not enroll you in a course or reserve a paid seat.</p>
   <form name="body-connection-learning-updates" method="POST" action="/email-thank-you/" data-netlify="true" netlify-honeypot="bot-field" class="learning-form-grid">
     <input type="hidden" name="form-name" value="body-connection-learning-updates">
     <p hidden><label>Do not fill this out: <input name="bot-field"></label></p>
     <label><span>Email address</span><input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
-    <label><span>I want updates about</span><select name="interest" required><option value="">Choose one</option><option>Workbooks and courses</option><option>Live workshops</option><option>Both</option></select></label>
-    <button class="button" type="submit">Keep me updated →</button>
+    <label><span>I also want updates about</span><select name="interest" required><option value="">Choose one</option><option>The Field Note only</option><option>Workbooks and courses</option><option>Live workshops</option><option>Both</option></select></label>
+    <button class="button" type="submit">Send me the Field Note →</button>
     <label style="grid-column:1/-1;display:flex;gap:.55rem;align-items:flex-start;font-size:.9rem"><input type="checkbox" name="consent" value="yes" required style="width:auto;min-height:0;margin-top:.35rem"><span>I agree to receive educational and promotional emails from Body Connection Nutrition. I can unsubscribe at any time.</span></label>
   </form>
 </section>
