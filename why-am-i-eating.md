@@ -13,7 +13,7 @@ intro: Take one real eating moment apart and see the biological, emotional, envi
   <button class="button" type="submit">Buy Why Am I Eating? — $29 →</button>
 </form>
 <p><a class="text-link" href="/why-am-i-eating/access/">Already purchased? Open your saved access →</a></p>
-<p class="trust-line">Secure checkout powered by Stripe · Checkout is currently in Stripe test mode</p>
+<p class="trust-line">Secure checkout powered by Stripe · One-time payment · Immediate access after purchase</p>
 </div>
 
 ## What you will do
@@ -71,4 +71,4 @@ This is **education, not psychotherapy**. The tool does not diagnose an eating d
   </form>
 </div>
 
-<p class="trust-line" style="margin-top:1rem">After checkout, Body Connection Nutrition verifies the completed Stripe purchase before issuing access to the paid experience. No live charges are being accepted while Stripe remains in test mode.</p>
+<p class="trust-line" style="margin-top:1rem">After checkout, Body Connection Nutrition verifies the completed Stripe purchase and immediately issues access to the paid experience.</p>

@@ -17,6 +17,7 @@ exports.handler = async (event) => {
   body.set("line_items[0][price]", priceId);
   body.set("line_items[0][quantity]", "1");
   body.set("customer_creation", "always");
+  body.set("integration_identifier", "bcn_why_eating_nwqkzjfd");
   body.set("success_url", `${SITE}/why-am-i-eating/thank-you/?session_id={CHECKOUT_SESSION_ID}`);
   body.set("cancel_url", `${SITE}/why-am-i-eating/?checkout=cancelled`);
   body.set("metadata[product_slug]", "why-am-i-eating");
