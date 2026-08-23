@@ -1,5 +1,5 @@
 exports.handler = async event => {
-  if (process.env.CONTEXT !== "deploy-preview") return { statusCode: 404, body: "Not found" };
+  if (!String(process.env.DEPLOY_PRIME_URL || "").includes("deploy-preview-13--bodyconnectionnutrition.netlify.app")) return { statusCode: 404, body: "Not found" };
   if (event.httpMethod !== "POST") return { statusCode: 405, headers: { Allow: "POST" }, body: "Method not allowed" };
   try {
     const response = await fetch("https://api.resend.com/emails", {
