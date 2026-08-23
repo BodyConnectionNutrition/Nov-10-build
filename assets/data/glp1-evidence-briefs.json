@@ -1,0 +1,1002 @@
+{
+  "schema": "bcn.glp1.evidence-briefs.v1.2",
+  "standard_answer_format": {
+    "version": "1.2",
+    "display_order": [
+      "question",
+      "bottom_line",
+      "confidence",
+      "confidence_reason",
+      "strongest_evidence",
+      "numbers_to_know",
+      "who_was_studied",
+      "what_research_did_not_measure",
+      "body_connection_nutrition_lens",
+      "individual_guidance",
+      "current_label_and_guideline_language",
+      "sources",
+      "review_metadata"
+    ],
+    "confidence_levels": {
+      "Established": "Multiple directly applicable, consistent randomized trials or outcome trials support the conclusion.",
+      "Supported but incomplete": "Direct human evidence supports the conclusion, but duration, population coverage, methods, or replication remain limited.",
+      "Early evidence": "Preliminary trials or observational studies suggest an effect, but the evidence is not sufficient for a firm conclusion.",
+      "Insufficient evidence": "The question has not been directly or adequately studied.",
+      "Conflicting evidence": "Credible studies reach meaningfully different conclusions."
+    },
+    "required_safety_behavior": [
+      "Do not diagnose, prescribe, recommend starting or stopping medication, or provide individualized dosing.",
+      "Do not infer that a class effect applies equally to every agent.",
+      "Separate randomized evidence from observational associations and case reports.",
+      "Say when the user population differs from the studied population.",
+      "Treat absence of measurement as uncertainty, not proof of no effect.",
+      "Link every numerical claim to a source record.",
+      "Escalate urgent or severe symptoms to appropriate medical care."
+    ],
+    "conditional_safety_section": {
+      "field": "current_label_and_guideline_language",
+      "render_when": "The answer addresses pregnancy, reproductive planning, a labeled contraindication, stopping treatment, or an urgent or potentially serious adverse effect.",
+      "rules": [
+        "Identify the specific product; do not convert one product label into a class-wide rule.",
+        "Separate FDA prescribing information from professional-guideline recommendations.",
+        "Show the label or guideline review date and link the controlling source.",
+        "Do not instruct an individual to start, stop, restart, or change a dose; direct medication decisions to the prescriber.",
+        "Urgent-symptom language must be prominent and must not be hidden beneath research detail."
+      ]
+    }
+  },
+  "briefs": [
+    {
+      "id": "stopping-and-weight-regain",
+      "question": "What happens after stopping a GLP-1 medicine?",
+      "bottom_line": "Weight regain is common after GLP-1 or GIP/GLP-1 treatment is withdrawn, although the amount varies. This is consistent with the return of biological appetite and weight-regulation pressures after the medication effect is removed; it is not evidence that a person lacked discipline.",
+      "confidence": "Established",
+      "confidence_reason": "Randomized withdrawal evidence from semaglutide and tirzepatide shows substantial average regain after treatment withdrawal, with better maintenance during continued treatment. Evidence is strongest for adults with overweight or obesity without diabetes and for the specific drugs and treatment periods studied.",
+      "strongest_evidence": [
+        "In the STEP 1 extension, 327 adults without diabetes were followed for one year after semaglutide 2.4 mg and the trial lifestyle intervention were stopped. Participants regained an average 11.6 percentage points after previously losing 17.3%, leaving a 5.6% average loss from the original baseline. Most cardiometabolic improvements moved back toward baseline.",
+        "In SURMOUNT-4, participants first received tirzepatide for 36 weeks and lost an average 20.9%. During the next 52 weeks, those continuing tirzepatide lost another 5.5%, while those switched to placebo regained 14.0% from the randomization point.",
+        "These are averages from structured trials. They do not establish that every person will regain the same amount or that long-term treatment is the only possible maintenance strategy."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "STEP 1 extension",
+          "value": "About two-thirds of prior semaglutide-associated weight loss was regained during the year after withdrawal."
+        },
+        {
+          "label": "SURMOUNT-4",
+          "value": "89.5% continuing tirzepatide maintained at least 80% of the initial loss, compared with 16.6% after switching to placebo."
+        },
+        {
+          "label": "Scope",
+          "value": "The strongest withdrawal trials excluded diabetes and studied treatment under trial conditions."
+        }
+      ],
+      "who_was_studied": "Primarily middle-aged adults with BMI at least 30, or at least 27 with a weight-related condition, without diabetes. Evidence is much thinner for adolescents, older adults with frailty, eating-disorder populations, and people stopping because of pregnancy, cost, shortages, or severe adverse effects.",
+      "what_research_did_not_measure": [
+        "Whether participants had rebuilt trust in hunger, fullness, and satisfaction cues.",
+        "Whether food beliefs, body shame, dietary rigidity, or environmental pressures changed during treatment.",
+        "Which individualized nutrition, resistance-training, behavioral, financial, or social supports best reduce recurrence after discontinuation."
+      ],
+      "body_connection_nutrition_lens": "The return of appetite or weight-regulation pressure after medication withdrawal is a biological response, not a moral verdict. Preparation should include access planning, nourishment during treatment, realistic expectations, and support for the person’s food environment and learned frameworks—not another demand to prove willpower.",
+      "individual_guidance": "Medication should not be stopped or restarted solely from a website answer. The reason for stopping, diabetes status, other medicines, pregnancy plans, gastrointestinal symptoms, and access all change the clinical plan.",
+      "sources": [
+        {
+          "pmid": "35441470",
+          "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension.",
+          "authors": "Wilding JPH; Batterham RL; Davies M; Van Gaal LF; Kandler K; Konakli K; Lingvay I; McGowan BM; Oral TK; Rosenstock J; Wadden TA; Wharton S; Yokote K; Kushner RF; STEP 1 Study Group",
+          "journal": "Diabetes, obesity & metabolism",
+          "year": 2022,
+          "doi": "10.1111/dom.14725",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35441470/",
+          "study_design": "Randomized controlled trial"
+        },
+        {
+          "pmid": "38078870",
+          "title": "Continued Treatment With Tirzepatide for Maintenance of Weight Reduction in Adults With Obesity: The SURMOUNT-4 Randomized Clinical Trial.",
+          "authors": "Aronne LJ; Sattar N; Horn DB; Bays HE; Wharton S; Lin WY; Ahmad NN; Zhang S; Liao R; Bunck MC; Jouravskaya I; Murphy MA; SURMOUNT-4 Investigators",
+          "journal": "JAMA",
+          "year": 2024,
+          "doi": "10.1001/jama.2023.24945",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38078870/",
+          "study_design": "Randomized controlled trial"
+        },
+        {
+          "pmid": "41483046",
+          "title": "Recurrent Weight Gain after Weight Loss Induced by Lifestyle Intervention, Metabolic and Bariatric Surgery, or Semaglutide in Adults with Obesity: A Systematic Review of Randomized Controlled Trials.",
+          "authors": "Chen H; Guo X; Long T; Li M",
+          "journal": "Obesity surgery",
+          "year": 2026,
+          "doi": "10.1007/s11695-025-08415-1",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41483046/",
+          "study_design": "Systematic review"
+        }
+      ],
+      "current_label_and_guideline_language": {
+        "scope": "Medication discontinuation and reproductive planning",
+        "label_points": [
+          "FDA prescribing information is product-specific. A website answer should not tell a person to stop, restart, taper, or substitute a GLP-1 medicine without the prescriber who manages the indication and any glucose-lowering therapy.",
+          "For semaglutide used as Wegovy, the U.S. label advises stopping at least 2 months before a planned pregnancy because semaglutide has a long washout period. Other products have different pharmacokinetics and instructions."
+        ],
+        "guideline_points": [
+          "The 2025 WHO obesity guideline treats obesity as a chronic disease requiring long-term care and conditionally recommends long-term GLP-1 therapy for adults with obesity, excluding pregnant people; decisions about discontinuation still require individualized clinical planning."
+        ],
+        "sources": [
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Wegovy (semaglutide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b"
+          },
+          {
+            "authority": "World Health Organization",
+            "product": "Guideline on GLP-1 therapies for obesity in adults",
+            "reviewed": "2026-08-23",
+            "url": "https://www.who.int/news/item/01-12-2025-who-issues-global-guideline-on-the-use-of-GLP-1-medicines-in-treating-obesity"
+          }
+        ]
+      },
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    },
+    {
+      "id": "lean-mass-and-muscle",
+      "question": "How much lean mass or muscle is lost with GLP-1 treatment?",
+      "bottom_line": "GLP-1-based weight loss usually reduces more fat mass than lean mass, but absolute lean mass can still decrease. “A higher percentage of lean mass” does not mean that no lean tissue was lost. Muscle strength, function, age, intake, activity, and the measurement method matter more than a single body-composition percentage.",
+      "confidence": "Supported but incomplete",
+      "confidence_reason": "Randomized-trial meta-analyses consistently identify some absolute lean-mass reduction, but estimates vary substantially and many trials use imprecise body-composition methods. Evidence on strength, physical function, bone, older adults, and prevention strategies is limited.",
+      "strongest_evidence": [
+        "A 2026 meta-analysis of seven obesity-dose randomized trials (821 participants) estimated an average absolute lean-mass reduction of 1.74 kg, while lean mass increased by 1.81 percentage points as a proportion of total body weight. Heterogeneity for absolute loss was very high, so the pooled number should not be treated as an individual prediction.",
+        "A network meta-analysis of 22 randomized trials (2,258 participants) estimated that lean mass accounted for about 25% of total weight lost across GLP-1 and GLP-1/GIP therapies.",
+        "Neither analysis establishes that all measured “lean mass” was contractile skeletal muscle. Hydration, organs, connective tissue, and measurement error can influence lean-mass estimates."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "Pooled absolute change",
+          "value": "-1.74 kg in one seven-trial meta-analysis; heterogeneity I²=98%."
+        },
+        {
+          "label": "Contribution to total loss",
+          "value": "Approximately 25% of total weight loss in a separate 22-trial analysis."
+        },
+        {
+          "label": "Interpretation",
+          "value": "Fat loss predominated on average, but absolute lean tissue was not universally preserved."
+        }
+      ],
+      "who_was_studied": "Mostly adults with overweight, obesity, or type 2 diabetes enrolled in weight-loss trials. Older adults, people with baseline sarcopenia, people consuming very little energy or protein, and people with disabilities or limited mobility are underrepresented.",
+      "what_research_did_not_measure": [
+        "Muscle strength and physical function consistently across trials.",
+        "The protein dose or resistance-training program that optimally preserves function during GLP-1 treatment.",
+        "Long-term bone outcomes and whether lean mass is restored after treatment changes."
+      ],
+      "body_connection_nutrition_lens": "The goal is not merely to make the body smaller. The clinically meaningful question is what the body can still do: climb stairs, carry groceries, recover from illness, maintain balance, and remain adequately nourished. “Better body composition” can conceal an absolute loss of capacity-producing tissue.",
+      "individual_guidance": "People with rapid loss, weakness, falls, very low intake, older age, chronic disease, or baseline frailty warrant individualized assessment of intake, function, medication tolerance, and resistance activity.",
+      "sources": [
+        {
+          "pmid": "42321502",
+          "title": "Effect of GLP-1 receptor agonists at doses for obesity management on muscle health: systematic review and meta-analysis of randomized controlled trials (RCTs).",
+          "authors": "Laverde LP; Muñoz-Velandia OM; Alfonso D; Gómez Medina AM",
+          "journal": "International journal of obesity (2005)",
+          "year": 2026,
+          "doi": "10.1038/s41366-026-02118-y",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42321502/",
+          "study_design": "Meta-analysis"
+        },
+        {
+          "pmid": "39719170",
+          "title": "Effect of glucagon-like peptide-1 receptor agonists and co-agonists on body composition: Systematic review and network meta-analysis.",
+          "authors": "Karakasis P; Patoulias D; Fragakis N; Mantzoros CS",
+          "journal": "Metabolism: clinical and experimental",
+          "year": 2025,
+          "doi": "10.1016/j.metabol.2024.156113",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39719170/",
+          "study_design": "Meta-analysis"
+        },
+        {
+          "pmid": "42037117",
+          "title": "Dietary Strategies and Nutritional Management in Patients Receiving GLP-1 and Dual GIP/GLP-1 Receptor Agonists as Adjuncts to Lifestyle Interventions: A Systematic Review of Randomised Clinical Trials.",
+          "authors": "de Paulo RS; Bonifácio DB; de Carvalho MHL; Bressan J",
+          "journal": "Diabetes, obesity & metabolism",
+          "year": 2026,
+          "doi": "10.1111/dom.70779",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42037117/",
+          "study_design": "Systematic review"
+        }
+      ],
+      "current_label_and_guideline_language": null,
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    },
+    {
+      "id": "food-noise-hunger-appetite",
+      "question": "How do GLP-1 medicines affect food noise, hunger, and appetite?",
+      "bottom_line": "GLP-1-based medicines can reduce hunger, food cravings, reactivity to food cues, perceived tendency to overeat, and energy intake. “Food noise,” however, is not a standardized clinical outcome, so the research supports changes in related constructs rather than proving that everyone experiences the same phenomenon.",
+      "confidence": "Supported but incomplete",
+      "confidence_reason": "Randomized human studies directly measure energy intake and validated appetite or eating-behavior outcomes, but many are short, exploratory, or drug-specific. The durability of subjective relief and what happens after withdrawal are less certain.",
+      "strongest_evidence": [
+        "In a six-week randomized phase 1 trial of 114 adults without diabetes, tirzepatide reduced energy consumed at an ad libitum lunch by an estimated 525 kcal versus placebo at week 3.",
+        "The same trial reported reductions in overall appetite, hunger, cravings, tendency to overeat, and reactivity to environmental food cues. It did not reduce volitional dietary restriction, showing that biological appetite effects and deliberate food control are separable.",
+        "Retatrutide phase 2 exploratory analyses also found lower self-reported hunger and disinhibition at higher doses, but these findings are not evidence that every GLP-1 medicine has identical psychological effects."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "Tirzepatide trial",
+          "value": "Estimated 524.6 kcal less consumed at a test lunch than placebo at week 3."
+        },
+        {
+          "label": "Duration",
+          "value": "The direct ingestive-behavior trial lasted only six weeks."
+        },
+        {
+          "label": "Measurement caveat",
+          "value": "“Food noise” itself lacks a single validated definition and measurement standard."
+        }
+      ],
+      "who_was_studied": "The most direct tirzepatide experiment included adults with BMI 27-50 without diabetes. Other studies include adults with type 2 diabetes and use differing drugs, doses, appetite scales, and durations.",
+      "what_research_did_not_measure": [
+        "Whether reduced food thoughts represent relief, emotional blunting, inadequate intake, or a mixture for a particular person.",
+        "Whether changes persist after treatment ends.",
+        "Whether medication changes internalized food rules, body shame, trauma-linked eating, or the food environment."
+      ],
+      "body_connection_nutrition_lens": "Medication may turn down the volume of appetite and reward signals. That can create welcome cognitive space. It does not automatically teach a person how to interpret quieter cues, notice under-fueling, choose satisfying food, or dismantle the beliefs that once made eating frightening or morally loaded.",
+      "individual_guidance": "A marked loss of appetite accompanied by inability to eat, persistent vomiting, dehydration, weakness, or rapid functional decline is not simply “the medicine working” and deserves clinical attention.",
+      "sources": [
+        {
+          "pmid": "40555748",
+          "title": "Tirzepatide on ingestive behavior in adults with overweight or obesity: a randomized 6-week phase 1 trial.",
+          "authors": "Martin CK; Carmichael OT; Carnell S; Considine RV; Kareken DA; Dydak U; Mattes RD; Scott D; Shcherbinin S; Nishiyama H; Knights A; Urva S; Biernat L; Pratt E; Haupt A; Mintun M; Otero Svaldi D; Milicevic Z; Coskun T",
+          "journal": "Nature medicine",
+          "year": 2025,
+          "doi": "10.1038/s41591-025-03774-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40555748/",
+          "study_design": "Randomized controlled trial"
+        },
+        {
+          "pmid": "40916752",
+          "title": "Appetite, eating attitudes, and eating behaviours during treatment with retatrutide in adults with type 2 diabetes: Results of a phase 2 study.",
+          "authors": "Kanu C; Boye KS; Poon JL; Goetz I; Williamson S; Lou J; Hartman ML; Martin CK; Coskun T",
+          "journal": "Diabetes, obesity & metabolism",
+          "year": 2025,
+          "doi": "10.1111/dom.70097",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40916752/",
+          "study_design": "Randomized controlled trial"
+        },
+        {
+          "pmid": "35441470",
+          "title": "Weight regain and cardiometabolic effects after withdrawal of semaglutide: The STEP 1 trial extension.",
+          "authors": "Wilding JPH; Batterham RL; Davies M; Van Gaal LF; Kandler K; Konakli K; Lingvay I; McGowan BM; Oral TK; Rosenstock J; Wadden TA; Wharton S; Yokote K; Kushner RF; STEP 1 Study Group",
+          "journal": "Diabetes, obesity & metabolism",
+          "year": 2022,
+          "doi": "10.1111/dom.14725",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35441470/",
+          "study_design": "Randomized controlled trial"
+        }
+      ],
+      "current_label_and_guideline_language": null,
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    },
+    {
+      "id": "relationship-with-food",
+      "question": "Do GLP-1 medicines change a person’s relationship with food?",
+      "bottom_line": "We do not yet know. GLP-1 medicines can change appetite, cravings, intake, and some eating behaviors, but trials have rarely measured food beliefs, body image, dietary rigidity, shame, trust in body cues, or the lived meaning of eating. A quieter appetite should not be presented as proof that a person’s relationship with food has healed.",
+      "confidence": "Insufficient evidence",
+      "confidence_reason": "The outcomes needed to answer the question directly are largely absent. A systematic review of 41 GLP-1/GIP randomized trials found that only two assessed or reported dietary intake or dietary change, and their methods were limited. Direct measures of relationship-with-food constructs are even less common.",
+      "strongest_evidence": [
+        "Across 41 unique randomized trials totaling 50,690 participants, only about 5% assessed or reported dietary intake or dietary change.",
+        "A 14-week secondary randomized analysis of 70 adults found liraglutide did not improve overall diet quality relative to comparison groups; participants across groups continued to miss several food-group recommendations.",
+        "Trials showing less hunger, craving, or binge behavior answer narrower questions. They do not demonstrate changes in shame, body image, fear foods, moralization, or trust in internal cues."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "Trials measuring diet",
+          "value": "2 of 41 unique randomized trials in a 2026 systematic review."
+        },
+        {
+          "label": "Participants represented",
+          "value": "50,690 across the reviewed trials, despite the striking absence of dietary measurement."
+        },
+        {
+          "label": "Direct answer",
+          "value": "No adequate trial evidence establishes relationship-with-food repair."
+        }
+      ],
+      "who_was_studied": "Large metabolic and obesity trials studied weight and glycemic outcomes, but the specific psychosocial population relevant to this question was not adequately characterized. People with active eating disorders are frequently excluded or not separately analyzed.",
+      "what_research_did_not_measure": [
+        "Internalized weight stigma, body surveillance, food morality, fear foods, guilt, shame, or compensatory restriction.",
+        "Trust in hunger, fullness, satisfaction, and other interoceptive signals.",
+        "How family, culture, trauma, marketing, scarcity, and access continue to shape eating while appetite is pharmacologically altered."
+      ],
+      "body_connection_nutrition_lens": "This is the clearest boundary between medication and the work of Body Connection Nutrition. A drug can change signal intensity. It cannot be assumed to rewrite the framework through which the person interprets the signal. Relief from food noise may make that work easier, but it is not the same work.",
+      "individual_guidance": "People noticing escalating restriction, fear of eating, body checking, guilt, binge-restrict cycling, or distress about medication-related appetite changes may benefit from eating-disorder-informed nutrition and mental-health support.",
+      "sources": [
+        {
+          "pmid": "41491340",
+          "title": "A Systematic Review Identifying Critical Evidence Gaps in Reporting Dietary Change in Randomized Controlled Trials Prescribing Liraglutide, Semaglutide, or Tirzepatide.",
+          "authors": "Jansson AK; Gómez-Martín M; Hedin L; Clarke ED; Cross V; Stanford J; Taylor RM; Bogl LH; De Vlieger N; Koochek A; Löf M; Asher RC; Burrows T; Bucher T; Sullivan C; Nowicka P; Collins CE",
+          "journal": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
+          "year": 2026,
+          "doi": "10.1111/obr.70077",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41491340/",
+          "study_design": "Systematic review"
+        },
+        {
+          "pmid": "40259488",
+          "title": "The influence of the glucagon-like peptide-1 receptor agonist, liraglutide, on dietary patterns and nutrient intakes in patients with obesity and prediabetes: A secondary analysis of a randomized controlled trial.",
+          "authors": "Richardson KM; Schembre SM; Jospe MR; Widmer A; Silver HJ",
+          "journal": "Diabetes, obesity & metabolism",
+          "year": 2025,
+          "doi": "10.1111/dom.16395",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40259488/",
+          "study_design": "Randomized controlled trial"
+        },
+        {
+          "pmid": "40555748",
+          "title": "Tirzepatide on ingestive behavior in adults with overweight or obesity: a randomized 6-week phase 1 trial.",
+          "authors": "Martin CK; Carmichael OT; Carnell S; Considine RV; Kareken DA; Dydak U; Mattes RD; Scott D; Shcherbinin S; Nishiyama H; Knights A; Urva S; Biernat L; Pratt E; Haupt A; Mintun M; Otero Svaldi D; Milicevic Z; Coskun T",
+          "journal": "Nature medicine",
+          "year": 2025,
+          "doi": "10.1038/s41591-025-03774-9",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40555748/",
+          "study_design": "Randomized controlled trial"
+        }
+      ],
+      "current_label_and_guideline_language": null,
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    },
+    {
+      "id": "nutrition-deficiency-intake",
+      "question": "What nutritional deficiencies or intake problems can occur during GLP-1 treatment?",
+      "bottom_line": "Reduced energy intake, gastrointestinal symptoms, and low appetite can make adequate nourishment harder, but the true rates of protein, micronutrient, fiber, fluid, and bone-related problems are not well established because major trials rarely measured them. “No deficiencies were reported” is not equivalent to “deficiencies were systematically ruled out.”",
+      "confidence": "Supported but incomplete",
+      "confidence_reason": "There is direct evidence of reduced intake and frequent gastrointestinal effects, plus small observational evidence of suboptimal diet quality. However, randomized trials have not adequately monitored nutritional status, dietary quality, bone health, or optimal protein needs.",
+      "strongest_evidence": [
+        "A systematic review found that only two of 41 GLP-1/GIP randomized trials assessed dietary intake or dietary change.",
+        "A review of 16 randomized trials (7,096 participants) found frequent nausea, diarrhea, constipation, and vomiting despite lifestyle guidance. None directly assessed bone health, and none reported clinically relevant nutritional deficiencies; the review emphasized that optimal dietary strategies and protein requirements remain uncertain.",
+        "In a cross-sectional sample of 69 GLP-1 users, the average Healthy Eating Index score was 54 of 100, below the study’s target, with most components below maximum scores. This cannot establish that medication caused the pattern."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "Dietary measurement gap",
+          "value": "About 5% of 41 unique randomized trials assessed or reported dietary change."
+        },
+        {
+          "label": "Diet-quality sample",
+          "value": "69 self-selected users; average Healthy Eating Index 54/100."
+        },
+        {
+          "label": "Evidence gap",
+          "value": "No established GLP-1-specific protein requirement or validated universal supplement regimen."
+        }
+      ],
+      "who_was_studied": "Mostly adults in obesity or diabetes trials receiving variable and often poorly described lifestyle guidance. People with very low intake, food insecurity, gastrointestinal disease, older age, disabilities, restrictive eating, and previous bariatric surgery require more specific evidence than is available.",
+      "what_research_did_not_measure": [
+        "Routine longitudinal micronutrient status and clinically meaningful deficiency rates.",
+        "Bone density, fractures, and functional effects over long treatment periods.",
+        "The optimal distribution of protein, carbohydrate, fat, fiber, and fluids when meal size is constrained."
+      ],
+      "body_connection_nutrition_lens": "When hunger becomes quiet, essential care may need to become more intentional. Eating enough is not a failure of treatment. The goal is to help the body receive protein, carbohydrate, fat, fiber, fluid, vitamins, minerals, pleasure, and social nourishment within the person’s actual appetite and gastrointestinal capacity.",
+      "individual_guidance": "Persistent vomiting, dehydration, dizziness, weakness, inability to meet intake, severe constipation, rapid functional loss, or suspected deficiency warrants prompt clinical assessment. Supplements should respond to an identified need, not a generic “GLP-1 protocol.”",
+      "sources": [
+        {
+          "pmid": "41491340",
+          "title": "A Systematic Review Identifying Critical Evidence Gaps in Reporting Dietary Change in Randomized Controlled Trials Prescribing Liraglutide, Semaglutide, or Tirzepatide.",
+          "authors": "Jansson AK; Gómez-Martín M; Hedin L; Clarke ED; Cross V; Stanford J; Taylor RM; Bogl LH; De Vlieger N; Koochek A; Löf M; Asher RC; Burrows T; Bucher T; Sullivan C; Nowicka P; Collins CE",
+          "journal": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
+          "year": 2026,
+          "doi": "10.1111/obr.70077",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41491340/",
+          "study_design": "Systematic review"
+        },
+        {
+          "pmid": "42037117",
+          "title": "Dietary Strategies and Nutritional Management in Patients Receiving GLP-1 and Dual GIP/GLP-1 Receptor Agonists as Adjuncts to Lifestyle Interventions: A Systematic Review of Randomised Clinical Trials.",
+          "authors": "de Paulo RS; Bonifácio DB; de Carvalho MHL; Bressan J",
+          "journal": "Diabetes, obesity & metabolism",
+          "year": 2026,
+          "doi": "10.1111/dom.70779",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42037117/",
+          "study_design": "Systematic review"
+        },
+        {
+          "pmid": "40852562",
+          "title": "Diet quality and nutrient distribution while using glucagon-like-peptide-1 receptor agonist: A secondary cross-sectional analysis.",
+          "authors": "Johnson BVB; Milstead M; Green L; Kreider R; Jones R",
+          "journal": "Obesity pillars",
+          "year": 2025,
+          "doi": "10.1016/j.obpill.2025.100195",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40852562/",
+          "study_design": "Observational study"
+        },
+        {
+          "pmid": "40259488",
+          "title": "The influence of the glucagon-like peptide-1 receptor agonist, liraglutide, on dietary patterns and nutrient intakes in patients with obesity and prediabetes: A secondary analysis of a randomized controlled trial.",
+          "authors": "Richardson KM; Schembre SM; Jospe MR; Widmer A; Silver HJ",
+          "journal": "Diabetes, obesity & metabolism",
+          "year": 2025,
+          "doi": "10.1111/dom.16395",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40259488/",
+          "study_design": "Randomized controlled trial"
+        }
+      ],
+      "current_label_and_guideline_language": {
+        "scope": "Urgent symptoms related to inadequate intake, vomiting, diarrhea, and volume depletion",
+        "label_points": [
+          "Current U.S. labels for semaglutide, tirzepatide, and liraglutide warn about acute kidney injury due to volume depletion and severe gastrointestinal adverse reactions. Persistent vomiting or diarrhea, inability to maintain fluids, markedly reduced urination, fainting, confusion, or progressive weakness warrants prompt medical assessment.",
+          "These symptoms should not be framed as expected evidence that treatment is working. The prescribing clinician may need to assess hydration, kidney function, interacting medicines, dose tolerability, and alternative causes."
+        ],
+        "guideline_points": [
+          "Professional guidance supports person-centered nutrition and behavioral care alongside treatment, but no current guideline establishes a universal supplement or protein prescription for every GLP-1 user."
+        ],
+        "sources": [
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Wegovy (semaglutide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b"
+          },
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Zepbound (tirzepatide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+          },
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Saxenda (liraglutide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3946d389-0926-4f77-a708-0acb8153b143"
+          },
+          {
+            "authority": "World Health Organization",
+            "product": "Guideline on GLP-1 therapies for obesity in adults",
+            "reviewed": "2026-08-23",
+            "url": "https://www.who.int/news/item/01-12-2025-who-issues-global-guideline-on-the-use-of-GLP-1-medicines-in-treating-obesity"
+          }
+        ]
+      },
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    },
+    {
+      "id": "binge-eating-disorder",
+      "question": "What is known about GLP-1 medicines and binge-eating disorder?",
+      "bottom_line": "Early evidence suggests GLP-1 medicines may reduce binge-eating symptoms for some people, but they are not established treatments for binge-eating disorder and have not been shown to replace psychotherapy or comprehensive eating-disorder care. Weight loss and binge-eating recovery are different outcomes.",
+      "confidence": "Early evidence",
+      "confidence_reason": "The evidence includes small pilots, retrospective cohorts, and a heterogeneous systematic review. The only identified placebo-controlled liraglutide pilot was underpowered and did not show a statistically significant difference in binge episodes or remission.",
+      "strongest_evidence": [
+        "A 2026 systematic review identified 12 studies of liraglutide, semaglutide, or dulaglutide; samples were generally smaller than 75 and methods and outcomes varied. The review described reductions in binge-eating measures but called for larger randomized trials.",
+        "In a 17-week randomized pilot of 27 adults, weekly objective binge episodes decreased in both liraglutide and placebo groups. The between-group difference was not statistically significant, and remission was 44% versus 36%. Weight loss was greater with liraglutide.",
+        "A retrospective semaglutide cohort reported improvement in Binge Eating Scale scores, but open-label observational findings are vulnerable to selection, expectation, and treatment-confounding effects."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "Randomized pilot",
+          "value": "27 participants; binge remission 44% with liraglutide versus 36% with placebo."
+        },
+        {
+          "label": "Binge episodes",
+          "value": "The randomized between-group difference was not significant (p=0.37)."
+        },
+        {
+          "label": "Systematic review",
+          "value": "12 eligible studies, generally with fewer than 75 participants and short follow-up."
+        }
+      ],
+      "who_was_studied": "Small adult samples with diagnosed binge-eating disorder or binge-eating symptoms, often alongside overweight, obesity, diabetes, or psychiatric comorbidity. Evidence does not adequately address anorexia nervosa, bulimia nervosa, ARFID, adolescents, or people with severe dietary restriction.",
+      "what_research_did_not_measure": [
+        "Whether reduced binge frequency was accompanied by reduced restriction, shame, overvaluation of weight, and compensatory behavior.",
+        "Long-term remission after medication discontinuation.",
+        "Whether appetite suppression could conceal inadequate intake or intensify restrictive eating in vulnerable people."
+      ],
+      "body_connection_nutrition_lens": "A reduction in binge behavior may be meaningful, but it should not be confused with complete recovery. The person still deserves care for deprivation, food rules, trauma, body distress, and the environment in which the binge-restrict cycle developed.",
+      "individual_guidance": "Anyone with an active or suspected eating disorder should receive individualized assessment. Rapid restriction, purging, fainting, severe distress, or inability to nourish the body requires prompt eating-disorder-informed care.",
+      "sources": [
+        {
+          "pmid": "41947645",
+          "title": "Incretin-Based Therapies for the Treatment of Binge Eating-A Systematic Review.",
+          "authors": "White RT; Henriquez P; Innocent B; Bullers K; Elmaoued A",
+          "journal": "Pharmacotherapy",
+          "year": 2026,
+          "doi": "10.1002/phar.70135",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41947645/",
+          "study_design": "Systematic review"
+        },
+        {
+          "pmid": "37034559",
+          "title": "A pilot randomized controlled trial of liraglutide 3.0 mg for binge eating disorder.",
+          "authors": "Allison KC; Chao AM; Bruzas MB; McCuen-Wurst C; Jones E; McAllister C; Gruber K; Berkowitz RI; Wadden TA; Tronieri JS",
+          "journal": "Obesity science & practice",
+          "year": 2023,
+          "doi": "10.1002/osp4.619",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37034559/",
+          "study_design": "Randomized controlled trial"
+        },
+        {
+          "pmid": "37990682",
+          "title": "Successful treatment of binge eating disorder with the GLP-1 agonist semaglutide: A retrospective cohort study.",
+          "authors": "Richards J; Bang N; Ratliff EL; Paszkowiak MA; Khorgami Z; Khalsa SS; Simmons WK",
+          "journal": "Obesity pillars",
+          "year": 2023,
+          "doi": "10.1016/j.obpill.2023.100080",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37990682/",
+          "study_design": "Observational study"
+        }
+      ],
+      "current_label_and_guideline_language": null,
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    },
+    {
+      "id": "gastroparesis-and-gi",
+      "question": "How common are gastroparesis and other gastrointestinal problems?",
+      "bottom_line": "Nausea, vomiting, diarrhea, and constipation are common, especially during dose escalation. Diagnosed gastroparesis appears uncommon, but its true incidence is uncertain. Randomized trials are reassuring about many rare serious gastrointestinal outcomes, while observational studies identify a possible gastroparesis signal that needs cautious interpretation.",
+      "confidence": "Supported but incomplete",
+      "confidence_reason": "Common gastrointestinal symptoms are consistently demonstrated in randomized trials. Rare events such as gastroparesis are harder to estimate because trials are not designed or powered for them, definitions vary, and observational studies can be confounded.",
+      "strongest_evidence": [
+        "A systematic review of 55 placebo-controlled randomized trials with 106,395 participants found increased cholelithiasis (RR 1.46; approximately two additional cases per 1,000) and probable increased GERD (RR 2.19; approximately four additional cases per 1,000). It found little or no randomized-trial effect for several other serious gastrointestinal or biliary outcomes, including gastroparesis, but event counts were limited.",
+        "A retrospective claims study of 55,460 adults with obesity and no diabetes found diagnosed gastroparesis rates of 6.5 per 1,000 person-years with semaglutide, 2.1 with bupropion-naltrexone, and 1.1 after sleeve gastrectomy. Residual confounding and diagnosis-code limitations prevent causal certainty.",
+        "Individual risk is affected by baseline motility disorders, diabetes, other medicines, dose escalation, hydration, intake, and the specific agent."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "Randomized evidence",
+          "value": "55 trials; 106,395 participants."
+        },
+        {
+          "label": "Cholelithiasis",
+          "value": "RR 1.46; about 2 additional cases per 1,000 in the pooled trials."
+        },
+        {
+          "label": "Observational gastroparesis rate",
+          "value": "6.5 diagnoses per 1,000 person-years among semaglutide users in one claims cohort."
+        }
+      ],
+      "who_was_studied": "Adults with type 2 diabetes, overweight or obesity, or metabolic liver disease. Trial participants may exclude people at greatest gastrointestinal risk, and claims databases do not confirm diagnoses as precisely as prospective clinical assessment.",
+      "what_research_did_not_measure": [
+        "A single standardized prospective definition of medication-induced gastroparesis.",
+        "The true incidence in people with pre-existing dysmotility or multiple interacting medications.",
+        "How often symptoms lead to sustained under-nutrition, dehydration, or avoidant eating."
+      ],
+      "body_connection_nutrition_lens": "Severe discomfort is not a character-building requirement and inability to eat is not proof of therapeutic success. Gastrointestinal capacity is part of body communication. Treatment support should respond to symptoms without moralizing food quantity or celebrating depletion.",
+      "individual_guidance": "Severe or persistent abdominal pain, repeated vomiting, inability to keep fluids down, abdominal distention, black or bloody stool, jaundice, fainting, or signs of dehydration require prompt medical evaluation.",
+      "sources": [
+        {
+          "pmid": "40499738",
+          "title": "Glucagon-Like Peptide-1 Receptor Agonists and Gastrointestinal Adverse Events: A Systematic Review and Meta-Analysis.",
+          "authors": "Chiang CH; Jaroenlapnopparat A; Colak SC; Yu CC; Xanthavanij N; Wang TH; See XY; Lo SW; Ko A; Chang YC; Song J; Hsia YP; Chiang CH",
+          "journal": "Gastroenterology",
+          "year": 2025,
+          "doi": "10.1053/j.gastro.2025.06.003",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40499738/",
+          "study_design": "Meta-analysis"
+        },
+        {
+          "pmid": "40175094",
+          "title": "Comparing the risk of gastroparesis following different modalities for treating obesity: semaglutide versus bupropion-naltrexone versus sleeve gastrectomy - a retrospective cohort study.",
+          "authors": "Aneke-Nash C; Hung KS; Wall-Wieler E; Zheng F; Sharaiha RZ",
+          "journal": "BMJ open gastroenterology",
+          "year": 2025,
+          "doi": "10.1136/bmjgast-2024-001704",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40175094/",
+          "study_design": "Observational study"
+        },
+        {
+          "pmid": "37796527",
+          "title": "Risk of Gastrointestinal Adverse Events Associated With Glucagon-Like Peptide-1 Receptor Agonists for Weight Loss.",
+          "authors": "Sodhi M; Rezaeianzadeh R; Kezouh A; Etminan M",
+          "journal": "JAMA",
+          "year": 2023,
+          "doi": "10.1001/jama.2023.19574",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37796527/",
+          "study_design": "Other peer-reviewed research"
+        }
+      ],
+      "current_label_and_guideline_language": {
+        "scope": "Contraindications, labeled gastrointestinal warnings, and urgent adverse effects",
+        "label_points": [
+          "Wegovy, Zepbound, and Saxenda are contraindicated in people with a personal or family history of medullary thyroid carcinoma, in people with multiple endocrine neoplasia syndrome type 2, and in people with a prior serious hypersensitivity reaction to the specific product or its ingredients.",
+          "Current labels warn about acute pancreatitis, acute gallbladder disease, acute kidney injury due to volume depletion, severe gastrointestinal adverse reactions, serious hypersensitivity, and pulmonary aspiration during general anesthesia or deep sedation. Zepbound is not recommended in people with severe gastroparesis; current Wegovy and Saxenda labeling similarly cautions against use in severe gastroparesis or severe gastrointestinal disease.",
+          "Seek urgent medical evaluation for severe or persistent abdominal pain—especially if it radiates to the back—with or without vomiting; facial or throat swelling, breathing difficulty, or other signs of anaphylaxis; inability to keep fluids down; fainting or severe dehydration; jaundice; or severe abdominal distention. Tell the procedural or anesthesia team about GLP-1 use before planned anesthesia or deep sedation."
+        ],
+        "guideline_points": [
+          "The 2025 American College of Cardiology consensus likewise identifies personal or family medullary thyroid carcinoma, MEN2, and known serious product hypersensitivity as contraindications for GLP-1/GIP-based obesity medicines and emphasizes gradual titration and clinical management of adverse effects."
+        ],
+        "sources": [
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Wegovy (semaglutide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b"
+          },
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Zepbound (tirzepatide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+          },
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Saxenda (liraglutide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3946d389-0926-4f77-a708-0acb8153b143"
+          },
+          {
+            "authority": "American College of Cardiology",
+            "product": "2025 Concise Clinical Guidance on Medical Weight Management",
+            "reviewed": "2026-08-23",
+            "url": "https://www.jacc.org/doi/10.1016/j.jacc.2025.05.024"
+          }
+        ]
+      },
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    },
+    {
+      "id": "pregnancy-and-fertility",
+      "question": "What is known about pregnancy and fertility?",
+      "bottom_line": "GLP-1 medicines are not considered established treatments during pregnancy. Human exposure data have not shown a consistent major-malformation signal, but the evidence remains too limited and heterogeneous to establish safety. Fertility may change indirectly through weight, insulin sensitivity, menstrual function, or PCOS, which also means an unplanned pregnancy can become more possible.",
+      "confidence": "Insufficient evidence",
+      "confidence_reason": "Pregnant people were excluded from pivotal trials. Available evidence comes from inadvertent exposure cohorts, registries, case reports, and systematic reviews with limited control of diabetes, obesity, medication timing, and discontinuation.",
+      "strongest_evidence": [
+        "A 2026 systematic review identified five studies totaling 1,128 semaglutide-exposed pregnancies. It found no consistent association with major congenital malformations, but results were mixed and studies had important variability and bias risk.",
+        "Observed outcomes included spontaneous abortion, preeclampsia, preterm birth, large-for-gestational-age infants, neonatal hypoglycemia, and congenital malformations; these outcomes are also influenced by diabetes, obesity, and other clinical factors.",
+        "Evidence that GLP-1 therapy improves some metabolic and reproductive outcomes in PCOS does not establish safety during pregnancy."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "Semaglutide review",
+          "value": "Five studies; 1,128 exposed pregnancies."
+        },
+        {
+          "label": "Conclusion",
+          "value": "No consistent major-malformation signal, but insufficient evidence for a firm safety conclusion."
+        },
+        {
+          "label": "Key limitation",
+          "value": "No pivotal randomized pregnancy trials."
+        }
+      ],
+      "who_was_studied": "People with inadvertent exposure before conception or during pregnancy, often with obesity, diabetes, or both. Evidence is not sufficient for drug-specific risk estimates across dose, trimester, or lactation.",
+      "what_research_did_not_measure": [
+        "Long-term developmental outcomes in exposed children.",
+        "Reliable trimester-, dose-, and drug-specific risk estimates.",
+        "How nutrition changes during exposure or after discontinuation affect maternal and fetal outcomes."
+      ],
+      "body_connection_nutrition_lens": "Pregnancy planning should not be reduced to weight loss. The relevant body needs include medication safety, glucose management, adequate intake, folate and other nutrients, nausea tolerance, fertility changes, and continuity of care when a drug is discontinued.",
+      "individual_guidance": "People who are pregnant, trying to conceive, breastfeeding, or who become pregnant while taking a GLP-1 medicine should contact the prescribing and obstetric teams for individualized guidance rather than stopping or continuing solely from a website answer.",
+      "sources": [
+        {
+          "pmid": "41313865",
+          "title": "Impact of semaglutide exposure on fetal and neonatal outcomes in pregnant women: a systematic review.",
+          "authors": "Mandal L; Andersen LU; Luef BM; Tanvig MH; Vinter CA",
+          "journal": "European journal of obstetrics, gynecology, and reproductive biology",
+          "year": 2026,
+          "doi": "10.1016/j.ejogrb.2025.114836",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41313865/",
+          "study_design": "Systematic review"
+        }
+      ],
+      "current_label_and_guideline_language": {
+        "scope": "Pregnancy, conception planning, lactation, and contraception",
+        "label_points": [
+          "U.S. obesity-treatment labels state that weight loss offers no benefit during pregnancy and may cause fetal harm; semaglutide, tirzepatide, or liraglutide used for weight management should be discontinued when pregnancy is recognized in coordination with the prescribing and obstetric teams. Treatment of diabetes during pregnancy requires an alternative glucose-management plan rather than an unsupervised stop.",
+          "The Wegovy label advises stopping semaglutide at least 2 months before a planned pregnancy. Product washout instructions are not interchangeable.",
+          "The Zepbound label states that tirzepatide may reduce the effectiveness of oral hormonal contraceptives because of delayed gastric emptying. People using oral hormonal contraception should switch to a non-oral method or add a barrier method for 4 weeks after starting tirzepatide and for 4 weeks after every dose escalation.",
+          "Human lactation evidence remains limited and product formulations differ; breastfeeding decisions require product-specific review with the prescribing and pediatric/obstetric teams."
+        ],
+        "guideline_points": [
+          "The 2025 WHO obesity guideline excludes pregnant people from its conditional recommendation for long-term GLP-1 obesity treatment.",
+          "Current obesity standards state that anti-obesity medications are contraindicated during pregnancy or active attempts to conceive, are not recommended during breastfeeding, and require reliable-contraception counseling for people who could become pregnant."
+        ],
+        "sources": [
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Wegovy (semaglutide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b"
+          },
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Zepbound (tirzepatide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b"
+          },
+          {
+            "authority": "U.S. FDA prescribing information via DailyMed",
+            "product": "Saxenda (liraglutide)",
+            "reviewed": "2026-08-23",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3946d389-0926-4f77-a708-0acb8153b143"
+          },
+          {
+            "authority": "World Health Organization",
+            "product": "Guideline on GLP-1 therapies for obesity in adults",
+            "reviewed": "2026-08-23",
+            "url": "https://www.who.int/news/item/01-12-2025-who-issues-global-guideline-on-the-use-of-GLP-1-medicines-in-treating-obesity"
+          },
+          {
+            "authority": "Obesity Association/ADA-aligned Standards of Care",
+            "product": "Pharmacologic treatment of obesity in adults",
+            "reviewed": "2026-08-23",
+            "url": "https://doi.org/10.1136/bmjdrc-2025-005729"
+          }
+        ]
+      },
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    },
+    {
+      "id": "benefits-without-diabetes",
+      "question": "What benefits occur in people without diabetes?",
+      "bottom_line": "In people without diabetes, GLP-1-based medicines can produce substantial average weight loss and improve several cardiometabolic measures. Semaglutide 2.4 mg also reduced major cardiovascular events in adults who already had cardiovascular disease. That cardiovascular finding should not be generalized to every person without diabetes.",
+      "confidence": "Established",
+      "confidence_reason": "Large randomized trials directly support weight reduction, and SELECT directly supports cardiovascular benefit for a specific secondary-prevention population without diabetes. Evidence for primary prevention, kidney outcomes, mental health, and other benefits in broader non-diabetic populations is less certain.",
+      "strongest_evidence": [
+        "In STEP 1, 1,961 adults without diabetes received semaglutide 2.4 mg or placebo plus lifestyle intervention for 68 weeks. Average weight change was -14.9% with semaglutide and -2.4% with placebo.",
+        "In SELECT, 17,604 adults age 45 or older with BMI at least 27, established cardiovascular disease, and no diabetes were followed for a mean 39.8 months. Major cardiovascular events occurred in 6.5% with semaglutide and 8.0% with placebo (HR 0.80).",
+        "SELECT was a secondary-prevention trial. It does not prove the same absolute cardiovascular benefit in a younger person without established cardiovascular disease."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "STEP 1 weight change",
+          "value": "-14.9% with semaglutide versus -2.4% with placebo at 68 weeks."
+        },
+        {
+          "label": "SELECT MACE",
+          "value": "6.5% versus 8.0%; absolute difference 1.5 percentage points over about 40 months."
+        },
+        {
+          "label": "SELECT discontinuation",
+          "value": "Adverse events led to permanent discontinuation in 16.6% with semaglutide versus 8.2% with placebo."
+        }
+      ],
+      "who_was_studied": "STEP 1 included adults with overweight or obesity without diabetes. SELECT included adults at least 45 years old with established cardiovascular disease and overweight or obesity. Neither trial represents all people without diabetes.",
+      "what_research_did_not_measure": [
+        "Whether cardiovascular benefit is equally large in primary prevention or lower-risk populations.",
+        "Whether weight loss translated into improved relationship with food, body trust, or dietary adequacy.",
+        "The effects of losing medication access or long-term treatment beyond the studied duration."
+      ],
+      "body_connection_nutrition_lens": "The cardiovascular finding is real and important, but it should not turn weight loss into the sole definition of health. Benefit, burden, access, side effects, nourishment, strength, and the person’s values all belong in the decision.",
+      "individual_guidance": "The balance of benefits and risks depends on cardiovascular history, other conditions and medicines, treatment goals, cost, gastrointestinal tolerance, and reproductive plans.",
+      "sources": [
+        {
+          "pmid": "37952131",
+          "title": "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes.",
+          "authors": "Lincoff AM; Brown-Frandsen K; Colhoun HM; Deanfield J; Emerson SS; Esbjerg S; Hardt-Lindberg S; Hovingh GK; Kahn SE; Kushner RF; Lingvay I; Oral TK; Michelsen MM; Plutzky J; Tornøe CW; Ryan DH; SELECT Trial Investigators",
+          "journal": "The New England journal of medicine",
+          "year": 2023,
+          "doi": "10.1056/NEJMoa2307563",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37952131/",
+          "study_design": "Randomized controlled trial"
+        },
+        {
+          "pmid": "33567185",
+          "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity.",
+          "authors": "Wilding JPH; Batterham RL; Calanna S; Davies M; Van Gaal LF; Lingvay I; McGowan BM; Rosenstock J; Tran MTD; Wadden TA; Wharton S; Yokote K; Zeuthen N; Kushner RF; STEP 1 Study Group",
+          "journal": "The New England journal of medicine",
+          "year": 2021,
+          "doi": "10.1056/NEJMoa2032183",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33567185/",
+          "study_design": "Randomized controlled trial"
+        },
+        {
+          "pmid": "40874398",
+          "title": "Cardiovascular and kidney outcomes of GLP-1 receptor agonists in adults with obesity: A target trial emulation study.",
+          "authors": "Tang H; Lu Y; Zhang B; Zhou T; Zhang D; Chen J; Chen Y; Asch DA; Chen Y",
+          "journal": "Diabetes, obesity & metabolism",
+          "year": 2025,
+          "doi": "10.1111/dom.70054",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40874398/",
+          "study_design": "Observational study"
+        }
+      ],
+      "current_label_and_guideline_language": null,
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    },
+    {
+      "id": "nutrition-and-behavioral-support",
+      "question": "What nutritional and behavioral support should accompany treatment?",
+      "bottom_line": "Support should help a person remain adequately nourished, preserve function, manage symptoms, and understand changed body signals. However, trials have not established one optimal “GLP-1 diet,” protein prescription, or behavioral program. Recommendations must therefore distinguish direct GLP-1 evidence from reasonable clinical extrapolation.",
+      "confidence": "Supported but incomplete",
+      "confidence_reason": "Trials commonly include lifestyle support, and reviews support the importance of nutrition and activity context. But intervention descriptions are inconsistent, dietary outcomes are rarely measured, and the independent contribution of specific nutrition or behavioral components cannot be isolated.",
+      "strongest_evidence": [
+        "A review of 41 unique randomized trials found that only two assessed or reported dietary intake or dietary change.",
+        "A review of 16 randomized trials found that optimal nutritional strategies, protein requirements, bone outcomes, and evidence-based management recommendations remain inadequately studied.",
+        "A pediatric systematic review of 15 studies found lifestyle support ranged from general advice to multidisciplinary family programs; inconsistent reporting prevented separation of medication effects from nutrition, activity, behavioral, and family support.",
+        "A 2026 adult review similarly found substantial heterogeneity in lifestyle co-interventions and body-composition reporting."
+      ],
+      "numbers_to_know": [
+        {
+          "label": "Diet-assessment gap",
+          "value": "2 of 41 randomized trials assessed or reported dietary change."
+        },
+        {
+          "label": "Nutrition-management review",
+          "value": "16 trials; 7,096 participants; no established optimal dietary strategy."
+        },
+        {
+          "label": "Pediatric co-interventions",
+          "value": "15 studies; 1,448 participants; intervention intensity and reporting varied widely."
+        }
+      ],
+      "who_was_studied": "Adults and children in obesity, prediabetes, or diabetes trials, generally receiving some background lifestyle advice. The content, intensity, provider qualifications, family involvement, and adherence were often poorly described.",
+      "what_research_did_not_measure": [
+        "A universal protein target proven to prevent functional muscle loss during GLP-1 treatment.",
+        "The best approach for people with eating disorders, food insecurity, sensory needs, disabilities, trauma histories, or limited cooking capacity.",
+        "Whether conventional weight-focused counseling helps or harms body trust and eating flexibility."
+      ],
+      "body_connection_nutrition_lens": "The support should not become another restrictive diet. Its job is to protect essential care while body signals are altered: enough food and fluid, tolerable meal size, protein and carbohydrate availability, fiber as tolerated, strength and function, symptom response, satisfaction, and permission to eat even when hunger is quiet.",
+      "individual_guidance": "Support should be adapted to the person’s diagnosis, medication, dose, symptoms, age, intake, food access, culture, cooking capacity, eating-disorder risk, activity, and goals. Severe symptoms or inadequate intake require coordination with the prescriber.",
+      "sources": [
+        {
+          "pmid": "41491340",
+          "title": "A Systematic Review Identifying Critical Evidence Gaps in Reporting Dietary Change in Randomized Controlled Trials Prescribing Liraglutide, Semaglutide, or Tirzepatide.",
+          "authors": "Jansson AK; Gómez-Martín M; Hedin L; Clarke ED; Cross V; Stanford J; Taylor RM; Bogl LH; De Vlieger N; Koochek A; Löf M; Asher RC; Burrows T; Bucher T; Sullivan C; Nowicka P; Collins CE",
+          "journal": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
+          "year": 2026,
+          "doi": "10.1111/obr.70077",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41491340/",
+          "study_design": "Systematic review"
+        },
+        {
+          "pmid": "42037117",
+          "title": "Dietary Strategies and Nutritional Management in Patients Receiving GLP-1 and Dual GIP/GLP-1 Receptor Agonists as Adjuncts to Lifestyle Interventions: A Systematic Review of Randomised Clinical Trials.",
+          "authors": "de Paulo RS; Bonifácio DB; de Carvalho MHL; Bressan J",
+          "journal": "Diabetes, obesity & metabolism",
+          "year": 2026,
+          "doi": "10.1111/dom.70779",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42037117/",
+          "study_design": "Systematic review"
+        },
+        {
+          "pmid": "42280306",
+          "title": "GLP-1 Receptor Agonists and Dual GIP/GLP-1 Receptor Agonists in Children and Adolescents with Obesity: Clinical Outcomes and the Impact of Nutritional and Behavioral Co-Interventions-A Systematic Review.",
+          "authors": "Myśliwczyk D; Gofron KK; Wasilewski A; Myśliwiec M; Wasilewska E",
+          "journal": "Nutrients",
+          "year": 2026,
+          "doi": "10.3390/nu18111662",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42280306/",
+          "study_design": "Systematic review"
+        },
+        {
+          "pmid": "42280424",
+          "title": "GLP-1RA- and Incretin-Based Therapies Within Lifestyle Interventions for Adults with Overweight or Obesity: A Systematic Review and Meta-Analysis.",
+          "authors": "Bruna-Mejias A; Valenzuela-Fuenzalida JJ; Oyanedel G; Figueroa-Puig J; Cabezas-Salgado JJ; Orellana-Donoso M; Cifuentes-Suazo G; Loro-Ferrer JF",
+          "journal": "Nutrients",
+          "year": 2026,
+          "doi": "10.3390/nu18111781",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42280424/",
+          "study_design": "Meta-analysis"
+        }
+      ],
+      "current_label_and_guideline_language": {
+        "scope": "Current professional guidance on accompanying care",
+        "label_points": [
+          "Product labeling does not establish a universal GLP-1 diet, protein target, supplement protocol, or behavioral curriculum. Safety monitoring remains specific to the medicine, indication, other glucose-lowering therapy, symptoms, and comorbidities."
+        ],
+        "guideline_points": [
+          "The 2025 WHO guideline conditionally recommends that adults receiving GLP-1 therapy for obesity may also receive intensive behavioral therapy within comprehensive, person-centered care; certainty that this adds benefit beyond medication was rated low.",
+          "The guidance should not be translated into a single restrictive meal plan. Nutrition support must remain feasible, culturally and contextually appropriate, and responsive to nutritional adequacy, adverse effects, function, access, and the person’s priorities."
+        ],
+        "sources": [
+          {
+            "authority": "World Health Organization",
+            "product": "Guideline on GLP-1 therapies for obesity in adults",
+            "reviewed": "2026-08-23",
+            "url": "https://www.who.int/news/item/01-12-2025-who-issues-global-guideline-on-the-use-of-GLP-1-medicines-in-treating-obesity"
+          },
+          {
+            "authority": "JAMA / World Health Organization",
+            "product": "WHO guideline summary and recommendations",
+            "reviewed": "2026-08-23",
+            "url": "https://doi.org/10.1001/jama.2025.24288"
+          }
+        ]
+      },
+      "review_metadata": {
+        "review_status": "Approved for website publication",
+        "clinician_review_status": "complete",
+        "safety_language_status": "approved",
+        "approval_date": "2026-08-23",
+        "approving_clinician": "Not recorded",
+        "public_eligibility": true,
+        "evidence_cutoff": "2026-08-23",
+        "last_reviewed": "2026-08-23",
+        "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+      }
+    }
+  ]
+}
