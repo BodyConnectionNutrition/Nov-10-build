@@ -1,14 +1,17 @@
 {
-  "schema": "bcn.glp1.evidence-briefs.v1.3",
+  "schema": "bcn.glp1.evidence-briefs.v1.4",
   "library_metadata": {
-    "library_version": "2026.08-beta.1",
+    "library_version": "2026.08-beta.2",
     "last_evidence_review": "2026-08-23",
     "last_safety_review": "2026-08-23",
     "review_status": "Clinician reviewed; safety language approved",
-    "public_beta": true
+    "public_beta": true,
+    "framework_structure_updated": "2026-08-30",
+    "framework_version": "Body Connection Nutrition 1.0",
+    "evidence_cutoff_unchanged": true
   },
   "standard_answer_format": {
-    "version": "1.3",
+    "version": "1.4",
     "display_order": [
       "question",
       "bottom_line",
@@ -20,6 +23,7 @@
       "what_research_did_not_measure",
       "body_connection_nutrition_lens",
       "individual_guidance",
+      "use_this_evidence",
       "current_label_and_guideline_language",
       "sources",
       "review_metadata"
@@ -50,7 +54,18 @@
         "Do not instruct an individual to start, stop, restart, or change a dose; direct medication decisions to the prescriber.",
         "Urgent-symptom language must be prominent and must not be hidden beneath research detail."
       ]
-    }
+    },
+    "collaborative_inquiry_rule": "Offer the five-part practice as optional inquiry, not a test of insight, compliance, monitoring, or treatment choice.",
+    "source_provenance_fields": [
+      "study_design",
+      "population",
+      "drug_and_dose",
+      "duration",
+      "funding",
+      "conflicts",
+      "doi_or_pmid",
+      "source_role"
+    ]
   },
   "briefs": [
     {
@@ -152,7 +167,15 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "What changed—or may change—in hunger, fullness, food thoughts, glucose, symptoms, function, or distress after treatment changed?",
+        "interpret": "Which changes are consistent with returning medication effects, and which need clinical assessment?",
+        "contextualize": "Was stopping shaped by preference, benefit, side effects, pregnancy planning, cost, insurance, shortage, stigma, or access to follow-up care?",
+        "locate_responsibility": "The person is not solely responsible for biological recurrence or an access failure. Prescribers, insurers, care systems, and manufacturers also shape continuity and support.",
+        "respond": "Decide with the care team what preparation, nourishment, monitoring, access advocacy, or alternative support deserves energy now."
       }
     },
     {
@@ -231,7 +254,15 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "Look beyond weight to strength, stamina, balance, recovery, mobility, intake, and daily function.",
+        "interpret": "A lean-mass estimate is not the same as measured skeletal muscle, strength, or disability.",
+        "contextualize": "Age, illness, food access, appetite suppression, mobility, disability, training access, dose, and measurement method can all shape risk.",
+        "locate_responsibility": "Preserving function is not a private willpower task; monitoring, symptom management, nutrition access, and appropriate movement support are parts of care.",
+        "respond": "Weakness, falls, rapid functional change, or very low intake deserves assessment; otherwise choose feasible nourishment and function supports rather than body surveillance."
       }
     },
     {
@@ -310,7 +341,15 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "Has quieter appetite created relief, difficulty eating, emotional flatness, more flexibility, or a mixture?",
+        "interpret": "Less food thought may reflect reduced appetite or cue reactivity; it does not by itself identify healing, adequate intake, or emotional meaning.",
+        "contextualize": "Food rules, scarcity, marketing, work schedules, trauma, family expectations, and medication effects may still operate together.",
+        "locate_responsibility": "The person should not have to prove the medication is working by ignoring hunger, weakness, nausea, or nourishment needs.",
+        "respond": "Protect intake and function, seek help for concerning symptoms, and use any new cognitive space for choices that matter to the person."
       }
     },
     {
@@ -389,7 +428,15 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "What has changed in flexibility, fear, guilt, satisfaction, body checking, restriction, social eating, or trust—not only appetite volume?",
+        "interpret": "Symptom relief and relationship repair can coexist, but they are not interchangeable outcomes.",
+        "contextualize": "Medication does not automatically remove diet culture, stigma, trauma, family rules, scarcity, or commercial pressure.",
+        "locate_responsibility": "A person is not failing treatment if quieter hunger does not resolve body shame or learned food rules.",
+        "respond": "Use relief where it exists, and seek food-relationship or eating-disorder support where distress, rigidity, or deprivation remains."
       }
     },
     {
@@ -513,7 +560,15 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "Track tolerable intake, hydration, gastrointestinal capacity, energy, strength, dizziness, food variety, satisfaction, and social nourishment without grading the body.",
+        "interpret": "Quiet hunger, nausea, low intake, and an identified deficiency are related possibilities, not interchangeable diagnoses.",
+        "contextualize": "Food cost, cooking capacity, disability, caregiving, transportation, cultural fit, appointment access, and prescriber responsiveness shape what is feasible.",
+        "locate_responsibility": "Adequate nourishment depends on medication management and material access as well as individual action; depletion is not evidence of success.",
+        "respond": "Address urgent symptoms promptly and build the least burdensome, most tolerable pattern that protects essential care."
       }
     },
     {
@@ -592,7 +647,15 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "Consider binge frequency alongside restriction, shame, purging, fear, nourishment, distress, and quality of life.",
+        "interpret": "Reduced binge episodes are meaningful but do not by themselves establish recovery or adequate intake.",
+        "contextualize": "Deprivation, weight stigma, trauma, food access, family systems, and treatment pressure may continue even when appetite changes.",
+        "locate_responsibility": "Medication must not be used by clinicians, programs, or families to legitimize escalating restriction or to substitute weight loss for recovery.",
+        "respond": "Coordinate eating-disorder-informed care when restriction, purging, fainting, severe distress, or inadequate nourishment is present."
       }
     },
     {
@@ -707,19 +770,27 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "Distinguish expected, tolerable symptoms from persistent pain, repeated vomiting, dehydration, severe distention, bleeding, jaundice, or declining intake and function.",
+        "interpret": "Common symptoms, serious adverse events, contraindications, and diagnosed gastroparesis are different categories of evidence and risk.",
+        "contextualize": "Baseline motility, diabetes, interacting medicines, titration, hydration, intake, clinical access, and pressure to tolerate symptoms all matter.",
+        "locate_responsibility": "A person does not have to earn treatment by enduring suffering; the care system is responsible for assessment, titration, alternatives, and emergency guidance.",
+        "respond": "Urgent signs require prompt evaluation. Less severe problems still deserve proportionate symptom management rather than celebration of reduced eating."
       }
     },
     {
       "id": "pregnancy-and-fertility",
-      "question": "What is known about pregnancy and fertility?",
-      "bottom_line": "GLP-1 medicines are not considered established treatments during pregnancy. Human exposure data have not shown a consistent major-malformation signal, but the evidence remains too limited and heterogeneous to establish safety. Fertility may change indirectly through weight, insulin sensitivity, menstrual function, or PCOS, which also means an unplanned pregnancy can become more possible.",
+      "question": "What is known about pregnancy exposure, conception planning, fertility, and lactation?",
+      "bottom_line": "GLP-1 medicines are not established treatments during pregnancy. Human exposure data have not shown a consistent major-malformation signal, but the evidence remains too limited and heterogeneous to establish safety. Treatment may change the possibility of conception indirectly through metabolic, menstrual, or appetite-related changes, but a direct fertility effect has not been established. Pregnancy exposure, conception planning, contraception, and lactation require separate, product-specific decisions.",
       "confidence": "Insufficient evidence",
       "confidence_reason": "Pregnant people were excluded from pivotal trials. Available evidence comes from inadvertent exposure cohorts, registries, case reports, and systematic reviews with limited control of diabetes, obesity, medication timing, and discontinuation.",
       "strongest_evidence": [
         "A 2026 systematic review identified five studies totaling 1,128 semaglutide-exposed pregnancies. It found no consistent association with major congenital malformations, but results were mixed and studies had important variability and bias risk.",
         "Observed outcomes included spontaneous abortion, preeclampsia, preterm birth, large-for-gestational-age infants, neonatal hypoglycemia, and congenital malformations; these outcomes are also influenced by diabetes, obesity, and other clinical factors.",
-        "Evidence that GLP-1 therapy improves some metabolic and reproductive outcomes in PCOS does not establish safety during pregnancy."
+        "Evidence about metabolic or reproductive changes before pregnancy does not establish medication safety during pregnancy, and it should not be generalized into a direct fertility claim."
       ],
       "numbers_to_know": [
         {
@@ -810,13 +881,21 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "Identify the actual question—current exposure, planned conception, contraception, fertility concerns, glucose management, or lactation—because these are not interchangeable.",
+        "interpret": "Limited reassuring observations do not establish safety, and a change in the possibility of conception does not prove a direct fertility effect.",
+        "contextualize": "Diagnosis, product, dose timing, diabetes, nutrition, pregnancy intentions, access to contraception, and continuity of obstetric and prescribing care shape the decision.",
+        "locate_responsibility": "Safe planning requires product-specific counseling and continuity of care; it should not be reduced to a person managing risk alone or pursuing weight loss before deserving care.",
+        "respond": "Coordinate promptly with prescribing and obstetric teams rather than using a general website answer to continue or stop treatment."
       }
     },
     {
       "id": "benefits-without-diabetes",
-      "question": "What benefits occur in people without diabetes?",
-      "bottom_line": "In people without diabetes, GLP-1-based medicines can produce substantial average weight loss and improve several cardiometabolic measures. Semaglutide 2.4 mg also reduced major cardiovascular events in adults who already had cardiovascular disease. That cardiovascular finding should not be generalized to every person without diabetes.",
+      "question": "What benefits have been demonstrated in people without diabetes—and who was actually studied?",
+      "bottom_line": "In selected trial populations without diabetes, specific GLP-1-based medicines have produced substantial average weight loss and improved several cardiometabolic measures. Semaglutide 2.4 mg also reduced major cardiovascular events in adults who already had cardiovascular disease. These findings are drug-, indication-, and population-specific; they do not establish the same benefit for every GLP-1 medicine or every person without diabetes.",
       "confidence": "Established",
       "confidence_reason": "Large randomized trials directly support weight reduction, and SELECT directly supports cardiovascular benefit for a specific secondary-prevention population without diabetes. Evidence for primary prevention, kidney outcomes, mental health, and other benefits in broader non-diabetic populations is less certain.",
       "strongest_evidence": [
@@ -889,7 +968,15 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "Which outcome matters to the person—cardiovascular risk, glucose, mobility, symptoms, weight, burden, cost, or something else?",
+        "interpret": "A relative benefit in a high-risk trial population does not predict the same absolute benefit in a lower-risk individual.",
+        "contextualize": "Baseline cardiovascular disease, age, access, side effects, treatment duration, stigma, and the outcomes trials chose to measure all shape the meaning of benefit.",
+        "locate_responsibility": "Treatment value is not proved by weight loss alone, and the person is not responsible for gaps in coverage, follow-up, or evidence.",
+        "respond": "Compare the demonstrated benefit for the closest studied population with the person’s burdens, values, alternatives, and access."
       }
     },
     {
@@ -1002,8 +1089,50 @@
         "evidence_cutoff": "2026-08-23",
         "last_reviewed": "2026-08-23",
         "appraisal_method": "Rapid critical synthesis of directly relevant human studies and systematic reviews. Not a formal GRADE review.",
-        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice."
+        "medical_scope": "General scientific information; not diagnosis, prescribing, or individualized medical advice.",
+        "framework_structure_updated": "2026-08-30"
+      },
+      "use_this_evidence": {
+        "notice": "What support is actually needed for nourishment, symptom tolerance, function, satisfaction, food access, and understanding changed cues?",
+        "interpret": "A plausible clinical strategy is not the same as a GLP-1-specific intervention proven in trials.",
+        "contextualize": "Culture, disability, sensory needs, food security, caregiving, cooking capacity, eating-disorder history, clinical access, and goals determine feasibility.",
+        "locate_responsibility": "Support is shared work. The person supplies lived evidence; practitioners translate science; prescribers manage medication; systems must make care and food materially accessible.",
+        "respond": "Choose the smallest realistic supports that protect essential care. More monitoring is not automatically better if it increases surveillance rather than understanding."
       }
     }
-  ]
+  ],
+  "framework_context": {
+    "title": "The evidence is produced inside a system",
+    "summary": "Research priorities, trial outcomes, prescribing systems, insurance rules, commercial investment, clinical time, and access shape what gets studied, offered, measured, and called success. Industry funding does not automatically invalidate a result, but it is relevant context. Missing evidence about nourishment, function, body image, quality of life, discontinuation, disability, and unequal access should remain visible.",
+    "shared_authority": "Scientific evidence can estimate benefits, risks, averages, and uncertainty. You contribute evidence trials cannot supply: bodily experience, values, history, culture, access, capacity, burdens, and goals. Neither form of knowledge should erase the other.",
+    "practice": [
+      {
+        "key": "notice",
+        "label": "Notice",
+        "description": "What has changed in appetite, comfort, eating, energy, function, symptoms, or food thoughts?"
+      },
+      {
+        "key": "interpret",
+        "label": "Interpret",
+        "description": "What are the plausible explanations, and what remains uncertain?"
+      },
+      {
+        "key": "contextualize",
+        "label": "Contextualize",
+        "description": "What biological, relational, material, commercial, or institutional conditions are shaping this experience?"
+      },
+      {
+        "key": "locate_responsibility",
+        "label": "Locate responsibility",
+        "description": "What belongs to you, the prescriber, care system, insurer, manufacturer, workplace, family, or broader environment?"
+      },
+      {
+        "key": "respond",
+        "label": "Respond",
+        "description": "What information, care, nourishment, accommodation, monitoring, or advocacy deserves energy now—and what does not require immediate action?"
+      }
+    ],
+    "performance_safeguard": "These prompts are optional supports for inquiry. Body connection is not measured by certainty, perfect cue awareness, disclosure, adherence, or a particular treatment decision."
+  }
 }
+
