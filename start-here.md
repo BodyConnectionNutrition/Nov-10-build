@@ -9,6 +9,8 @@ Most health advice begins with instructions: eat this, avoid that, exercise more
 
 Body Connection Nutrition begins somewhere else.
 
+Body Connection Nutrition helps you understand what your body is responding to, question the rules that taught you to distrust it, and build realistic ways of eating and caring for yourself.
+
 We begin by noticing the signals, assumptions, learned rules, and automatic interpretations that are already influencing your relationship with food and your body.
 
 <div class="quote-card" style="margin:2.4rem 0">
@@ -19,7 +21,7 @@ We begin by noticing the signals, assumptions, learned rules, and automatic inte
 
 ## Begin the Body Connection progression
 
-These experiences are designed to build on one another. The first helps you notice the space between a body signal and your response. The second takes one real food-related decision and helps you investigate what was shaping that response before it ever felt like a simple choice.
+These experiences can build on one another, but neither is a test or prerequisite. The first helps you **notice and interpret** the space between a body signal and your response. The second helps you **contextualize the moment, locate responsibility, and choose a realistic response** instead of treating the final behavior as a simple choice.
 
 <div class="cards" style="margin:2rem 0">
   <article class="card">
@@ -123,12 +125,16 @@ The paid educational work is where I bring together nutrition science, behaviora
 
 **Free gives you a meaningful beginning. Paid gives you the structure to continue.**
 
-## The larger Body Connection process
+## The Body Connection practice
+
+This practice is iterative. You may move back and forth as new information appears.
 
 <div class="three-grid" style="margin:2rem 0">
-  <article class="card"><span class="number">1</span><h3>Notice</h3><p>Become aware of the signals, thoughts, rules, and patterns that usually operate automatically.</p></article>
-  <article class="card"><span class="number">2</span><h3>Examine</h3><p>Ask where those frameworks came from, what evidence supports them, what function they serve, and whether they still fit your life.</p></article>
-  <article class="card"><span class="number">3</span><h3>Rebuild</h3><p>Develop frameworks better aligned with evidence, your body, your values, and the life you are actually living.</p></article>
+  <article class="card"><span class="number">1</span><h3>Notice</h3><p>What am I experiencing—in my body, attention, emotions, or behavior?</p></article>
+  <article class="card"><span class="number">2</span><h3>Interpret</h3><p>What might this mean? Signals are information, not infallible commands.</p></article>
+  <article class="card"><span class="number">3</span><h3>Contextualize</h3><p>What biology, history, learning, relationships, resources, and environments are participating?</p></article>
+  <article class="card"><span class="number">4</span><h3>Locate responsibility</h3><p>What is mine to influence, what requires support, and what belongs to a larger condition or system?</p></article>
+  <article class="card"><span class="number">5</span><h3>Respond</h3><p>What next step fits the evidence, my goals, safety, access, and current capacity?</p></article>
 </div>
 
 ## When you want another layer
@@ -154,6 +160,6 @@ Advanced education often asks us to examine the assumptions and frameworks throu
 That is the educational method behind this work. It is not psychotherapy, diagnosis, or treatment of a mental-health condition. It is structured learning designed to help you understand the ideas shaping your relationship with food, health, behavior, and your body.
 
 <div class="cta" style="margin-top:3rem">
-  <div><p class="eyebrow">Start with Step 1</p><h2>First, learn to notice the signal.</h2><p>Take a few minutes with the free Body Connection Nutrition awareness experience. When you are ready to investigate what shapes the response, Step 2 will be waiting.</p></div>
+  <div><p class="eyebrow">Start with Step 1</p><h2>First, notice the signal without turning it into a verdict.</h2><p>Take a few minutes with the free experience. If you later want to investigate what shaped the response, Step 2 will be waiting—not as a requirement, but as another layer of inquiry.</p></div>
   <a class="button" href="/tools/can-you-hear-your-body/">Start Can You Hear Your Body? →</a>
 </div>
