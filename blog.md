@@ -124,6 +124,12 @@ intro: Understand the response. Find the context. Put responsibility where it be
       <p>How production remainders become premium health products—and how to tell intelligent recovery from health meaning the evidence has not earned.</p>
       <p><a class="text-link" href="/food-waste-to-wellness/">Read the complete investigation →</a></p>
     </article>
+    <article class="series">
+      <p class="stage-label">8-part claim investigation</p>
+      <h3><a href="/what-does-that-even-mean/">What Does That Even Mean?</a></h3>
+      <p>How wellness advertising uses ingredient counts, borrowed research, vague physiology, medical authority, purity stories, popularity and absorption claims to sound more informative than it is.</p>
+      <p><a class="text-link" href="/what-does-that-even-mean/">Read the complete investigation →</a></p>
+    </article>
   </div>
   <div class="card-grid" style="margin-top:1rem">
     <a class="library-card" href="/blog/ai-health-information/"><span class="label">Health misinformation</span><h3>Why AI Can Sound Certain and Still Be Wrong About Health</h3><p>Fluency, confidence and availability are not the same as accuracy.</p></a>
