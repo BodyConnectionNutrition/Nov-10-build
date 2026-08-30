@@ -53,6 +53,19 @@ intro: Clear science and deeper context for people who want to understand their 
   </div>
   <div class="library-grid">
   <div class="library-note" style="grid-column:1 / -1;margin:0 0 1.25rem">
+    <p class="eyebrow">Featured · 6-part series</p>
+    <h2><a href="/blog/food-designed-hard-to-stop-eating/">Your Appetite Is Responding to the Environment</a></h2>
+    <p>How nutrient combinations, food texture, eating rate, energy density and portion size shape eating—and why the eater was never the only variable.</p>
+    <ol>
+      <li><a href="/blog/food-designed-hard-to-stop-eating/">What If the Food Is Designed to Be Hard to Stop Eating?</a></li>
+      <li><a href="/blog/fat-carbohydrate-food-reward/">When Fat and Carbohydrate Arrive Together</a></li>
+      <li><a href="/blog/eating-rate-matters/">The Food You Can Eat Before Your Body Catches Up</a></li>
+      <li><a href="/blog/energy-density-matters/">How Much Energy Can Fit Into a Bite?</a></li>
+      <li><a href="/blog/portion-size-changes-intake/">The Portion You Were Given Changes the Amount You Eat</a></li>
+      <li><a href="/blog/person-was-never-only-variable/">The Person Was Never the Only Variable</a></li>
+    </ol>
+  </div>
+  <div class="library-note" style="grid-column:1 / -1;margin:0 0 1.25rem">
     <p class="eyebrow">Featured · 11-part series</p>
     <h2><a href="/blog/restriction-trap/">The Restriction Trap</a></h2>
     <p>Why deprivation can make food louder, eating more urgent, and “control” increasingly difficult—and why that response is not a character flaw.</p>
