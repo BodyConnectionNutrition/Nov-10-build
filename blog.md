@@ -97,6 +97,25 @@ intro: Clear science and deeper context for people who want to understand their 
   </div>
   <div class="library-grid">
     <div class="library-note" style="grid-column:1 / -1;margin:0 0 1.25rem">
+      <p class="eyebrow">Featured · 12-part series</p>
+      <h2><a href="/blog/health-halo-food-marketing/">The Architecture of Appetite</a></h2>
+      <p>How food, diet, wellness, and media environments use predictable features of cognition to shape what we buy, eat, fear, and believe.</p>
+      <ol>
+        <li><a href="/blog/health-halo-food-marketing/">The Health Halo Is Making More of the Decision Than You Think</a></li>
+        <li><a href="/blog/anchoring-food-diet-decisions/">The First Number Changes Everything That Follows</a></li>
+        <li><a href="/blog/framing-effect-food-decisions/">The Same Fact Can Produce a Different Food Decision</a></li>
+        <li><a href="/blog/authority-bias-nutrition-claims/">A White Coat Is Not Evidence</a></li>
+        <li><a href="/blog/social-proof-food-diet-trends/">Popularity Is Evidence of Reach—Not Proof That It Works</a></li>
+        <li><a href="/blog/scarcity-effect-diet-marketing/">The Deadline Is Part of the Sales Pitch</a></li>
+        <li><a href="/blog/loss-aversion-wellness-marketing/">Fear Changes the Standard of Proof</a></li>
+        <li><a href="/blog/confirmation-bias-food-beliefs/">Once Food Has a Villain, Everything Starts Looking Like Evidence</a></li>
+        <li><a href="/blog/availability-heuristic-nutrition-stories/">The Story You Remember Is Not the Same as the Risk</a></li>
+        <li><a href="/blog/mere-exposure-nutrition-claims/">You May Recognize the Claim Without Actually Knowing It</a></li>
+        <li><a href="/blog/sunk-cost-diet-programs/">The Program Already Took Your Money. It Does Not Get Your Future Too</a></li>
+        <li><a href="/blog/default-effect-food-choice-architecture/">The Choice Was Yours, but the Path Was Designed</a></li>
+      </ol>
+    </div>
+    <div class="library-note" style="grid-column:1 / -1;margin:0 0 1.25rem">
       <p class="eyebrow">Featured · 9-part investigation</p>
       <h2><a href="/food-waste-to-wellness/">Food Waste to Wellness</a></h2>
       <p>How whey, collagen, grape seed, citrus peel and spent grain move from production remainders to premium health products—and how to tell intelligent recovery from health meaning the evidence has not earned.</p>
