@@ -212,3 +212,25 @@ It is not indulgent.
 It is not optional.
 
 **It is essential care.**
+
+## Locate responsibility before demanding more effort
+
+Recognizing a need does not automatically create the capacity to meet it. A
+person may need food, rest, healthcare, recovery, safety, or connection while
+also lacking time, money, access, privacy, transportation, workplace
+flexibility, caregiving relief, or appropriate support.
+
+That is not a motivation problem. Before turning an unmet need into another
+instruction, ask:
+
+- **What can I influence directly?** Perhaps the smallest honest version of
+  care is available now.
+- **What requires support or shared labor?** The need may be real while the
+  responsibility cannot reasonably belong to one person.
+- **What belongs upstream?** A work schedule, insurance rule, inaccessible
+  service, caregiving structure, or cultural expectation may need to change.
+- **What is not safe or possible right now?** Naming a limit accurately is not
+  the same as giving up.
+
+Agency begins with an honest map of conditions. It does not require pretending
+that every condition is individually controllable.
