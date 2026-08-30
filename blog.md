@@ -158,6 +158,7 @@ intro: Understand the response. Find the context. Put responsibility where it be
     <p>Agency is not total control over outcomes. It is the growing ability to understand what is happening, identify what can genuinely change and build care that increases capacity rather than surveillance.</p>
   </div>
   <div class="card-grid">
+    <a class="library-card" href="/change-needs-conditions/"><span class="label">10-part cornerstone series</span><h3>Change Needs Conditions</h3><p>What makes new patterns possible: resources, predictability, repetition without surveillance, environmental support, belonging, realistic options, revision and care without shame.</p></a>
     <a class="library-card" href="/blog/why-knowing-what-to-do-is-not-the-same-as-being-able-to-do-it/"><span class="label">The central argument</span><h3>Why Knowing What to Do Is Not the Same as Being Able to Do It</h3><p>Biology, learning, relationships, resources and environment are already in the room.</p></a>
     <a class="library-card" href="/blog/transformation-requires-conditions/"><span class="label">Realistic agency</span><h3>Why Behavior Change Requires More Than Motivation</h3><p>Time, money, safety, access, health and support shape which changes are actually possible.</p></a>
     <a class="library-card" href="/blog/why-understanding-changes-behavior/"><span class="label">Learning</span><h3>Why Understanding Changes Behavior Better Than More Rules</h3><p>Another instruction rarely repairs the framework that made change difficult in the first place.</p></a>
