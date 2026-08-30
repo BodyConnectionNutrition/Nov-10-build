@@ -43,7 +43,7 @@ intro: The videos are not a separate collection of advice. They are another way 
     <p class="eyebrow">Respond</p>
     <h2>What would realistic agency and care look like?</h2>
     <p>Essential care, capacity, support, flexible experiments, values, environmental change, and responses that fit an actual life.</p>
-    <ul><li><a href="/blog/essential-care/">Read Essential Care</a></li><li><a href="/tools/values-clarification/">Explore Values Clarification</a></li><li><a href="/start-here/">Experience the five-part practice</a></li></ul>
+    <ul><li><a href="/principles/essential-care/">Read Essential Care</a></li><li><a href="/tools/values-clarification/">Explore Values Clarification</a></li><li><a href="/start-here/">Experience the five-part practice</a></li></ul>
   </article>
 </section>
 
