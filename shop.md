@@ -32,9 +32,9 @@ intro: Choose one useful question, follow a connected path, or get the complete 
 <section style="margin:0 0 3rem"><p class="eyebrow">The next layer</p><h2>Choose another tool when a more specific question emerges.</h2><p class="category-note">The products and collections below extend the flagship progression. They help you trace origins and beliefs, examine a recurring pattern more closely, or integrate what you have learned into a wider framework.</p></section>
 
 <section id="collections">
-<p class="eyebrow">Save with a connected collection</p>
-<h2>Bundles</h2>
-<p class="category-note">One checkout gives you ongoing access to every listed tool. Work through them in order or open only the one that fits the moment.</p>
+<p class="eyebrow">Optional discounted access</p>
+<h2>Collections</h2>
+<p class="category-note">These are not required courses or additional stages of the framework. They are discounted ways to access several distinct tools. Each tool stands alone; buy a collection only when several of its questions are genuinely useful to you.</p>
 <div class="bundle-grid">
   <article class="bundle-card" id="origins-beliefs"><span class="save">Save $27</span><h3>Origins & Beliefs</h3><p>Trace how food and body frameworks were built, examine one inherited belief, and reclaim authorship through values.</p><ul><li>Who Taught You to Eat?</li><li>How Was My Body Image Created?</li><li>Deconstructing a Belief</li><li>Values Clarification</li></ul><p><s>$126 separately</s><br><span class="price">$99</span></p><form class="shop-form" method="post" action="/.netlify/functions/create-tool-checkout"><input type="hidden" name="product" value="origins-beliefs-bundle"><button class="button" type="submit">Buy the collection →</button></form></article>
   <article class="bundle-card" id="eating-patterns"><span class="save">Save $36</span><h3>Eating Patterns</h3><p>Reconstruct one eating moment and examine the sequence, scarcity, function, and conditions participating in it.</p><ul><li>Why Am I Eating?</li><li>Behavior Sequence</li><li>Permission & Scarcity</li><li>What Is This Doing for Me?</li><li>Choice Has Conditions</li></ul><p><s>$145 separately</s><br><span class="price">$109</span></p><form class="shop-form" method="post" action="/.netlify/functions/create-tool-checkout"><input type="hidden" name="product" value="eating-patterns-bundle"><button class="button" type="submit">Buy the collection →</button></form></article>
