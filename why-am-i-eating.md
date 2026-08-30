@@ -18,6 +18,10 @@ intro: Take one real eating moment apart and see the biological, emotional, envi
 <p class="trust-line">Secure checkout powered by Stripe · One-time payment · Immediate access after purchase</p>
 </div>
 
+## Where this fits
+
+This is the second part of the flagship Body Connection pathway. <a href="/tools/can-you-hear-your-body/">Can You Hear Your Body?</a> helps you notice and interpret a signal. **Why Am I Eating?** helps you contextualize one eating moment, locate responsibility accurately, and decide whether any response would be useful. You can begin here; the first tool is not a prerequisite.
+
 ## What you will do
 
 Choose one real eating moment—a meal, snack, craving, grazing episode, or a time you kept eating after feeling full—and use it as a case study.
@@ -54,6 +58,15 @@ That is why this product includes **ongoing access and repeat use**. The value g
 <p>Awareness does not mean you have to change anything immediately. It gives you something better to work with than shame or self-criticism: a clearer picture of what was actually happening.</p>
 </div>
 
+## From understanding to response
+
+The tool does not end by turning your Eating Drivers Map into another behavior grade. It helps you sort what the moment revealed:
+
+- **What is mine to influence?** A choice, experiment, boundary, or form of care that is realistically available.
+- **What requires support?** Nutrition care, medical care, accommodations, resources, or help from another person.
+- **What belongs to the conditions around me?** Access, work, caregiving, cost, stigma, commercial pressure, institutional rules, or an environment that cannot be solved through self-control.
+- **What response fits now?** Something consistent with evidence, safety, your goals, and your current capacity—including choosing not to act yet.
+
 ## This is serious educational work
 
 The method behind this experience is critical reflection: identifying the assumptions, conditions, and frameworks shaping a behavior, examining them, and separating what is happening from the judgment we automatically attach to it.
@@ -69,7 +82,7 @@ This is **education, not psychotherapy**. The tool does not diagnose an eating d
 - Ongoing access to this version of the experience
 
 <div class="cta" style="margin-top:3rem">
-  <div><p class="eyebrow">One-time purchase</p><h2>Why Am I Eating? · $29</h2><p>Take one eating moment apart. See what was really operating.</p></div>
+  <div><p class="eyebrow">One-time purchase</p><h2>Why Am I Eating? · $29</h2><p>Notice the moment. Understand the conditions. Locate responsibility. Choose what happens next.</p></div>
   <form method="post" action="/.netlify/functions/create-checkout-session">
     <button class="button" type="submit">Buy now — $29 →</button>
   </form>
