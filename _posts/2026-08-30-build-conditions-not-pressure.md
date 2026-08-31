@@ -61,6 +61,20 @@ The Restriction Trap explains why deprivation can intensify the behavior it is m
 
 Freedom does not mean acting without influence. It means participating with greater knowledge of what is shaping the action, greater access to workable alternatives, and greater authority to revise.
 
+## From explanation to supported participation
+
+Across these five series, the question has changed.
+
+Not: **Why can’t I control myself?**
+
+But: **What is my body responding to? How has that response been interpreted and influenced? Who controls the relevant conditions? What would make the next meaningful act more possible?**
+
+You do not need to complete the series by creating a perfect new system for yourself. That would turn support into another assignment. Begin with one experience.
+
+**Continue into practice:** Start with **[Can You Hear Your Body?](/tools/can-you-hear-your-body/)** to notice and interpret a signal. Then use **[Why Am I Eating?](/why-am-i-eating/)** to contextualize one eating moment, locate responsibility, and identify a response that fits the conditions actually present.
+
+If external expectations are consuming the capacity required for food, rest, medication, hygiene, movement, safety, or recovery, use the **Essential Care Audit**. If the available options are workable but point in different directions, use the **[Values Clarification Tool](/tools/values-clarification/)**.
+
 People do not need more pressure to prove they want change. They need conditions in which change has somewhere to live.
 
 ## Sources
@@ -73,7 +87,3 @@ People do not need more pressure to prove they want change. They need conditions
 ---
 
 **Previous:** [Revision Is a Change Skill](/blog/revision-is-a-change-skill/)
-
-## Continue into practice
-
-Start with [Can You Hear Your Body?](/tools/can-you-hear-your-body/) to notice and interpret a signal. Then use [Why Am I Eating?](/why-am-i-eating/) to place one eating moment back into context, locate responsibility and identify a response that fits the conditions actually present.

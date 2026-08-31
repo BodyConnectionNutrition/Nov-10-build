@@ -42,6 +42,18 @@ None of those facts establishes that every prospective buyer has an unmet need f
 
 The evidence shows that recovery can convert residual material into saleable ingredients and finished products. It does not provide a common cost-and-margin dataset for all categories. The series therefore concludes only that companies solve a production problem and create new value; whether the consumer receives proportional value depends on need, dose, outcome and alternatives.
 
+## Seeing the system is necessary. It is not the same as having another option.
+
+This series has separated environmental value from nutritional and clinical claims. It has shown how health meaning can be manufactured around a product and how a consumer can examine the evidence without accepting the marketing frame.
+
+But critical awareness does not create time, money, food access, rest, executive capacity, social support, or safe care. A person can understand the system accurately and still lack a workable alternative.
+
+**Change Needs Conditions** is the constructive counterpart. It asks what meaningful change requires in practice: resources, predictability, repetition without surveillance, environmental support, reduced cognitive load, belonging, realistic options, permission to revise, and care without shame.
+
+**Continue the argument:** Read **[Change Needs Conditions: What Actually Makes New Patterns Possible](/change-needs-conditions/)**.
+
+**Try the practice:** Use the **Food Belief Audit** if the product story has become a rule about what you must buy, avoid, or become.
+
 ## References
 
 1. U.S. Department of Agriculture, U.S. Environmental Protection Agency, and U.S. Food and Drug Administration. National Strategy for Reducing Food Loss and Waste and Recycling Organics. 2024. <https://www.usda.gov/sites/default/files/documents/NATIONAL-STRATEGY-FOR-REDUCING-FOOD-LOSS-AND-WASTE-AND-RECYCLING-ORGANICS.pdf>

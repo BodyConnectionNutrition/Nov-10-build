@@ -150,6 +150,18 @@ Instead of asking why they cannot simply overcome the environment, they can begi
 
 The question is no longer "Why can't I control myself?" It becomes "What is happening here, and what can I change?" The first question demands a verdict about the person. The second gives them somewhere to go.
 
+## What happens when we try to control the response?
+
+This series has shown that appetite does not arise in a neutral environment. Food properties, access, cost, convenience, schedules, scarcity, social norms, and repeated cues help shape what the body notices and what becomes possible.
+
+But people are rarely taught to change those conditions. They are taught to control the response—usually by eating less, waiting longer, removing foods, overriding hunger, or proving discipline.
+
+That response deserves its own examination. **The Restriction Trap** follows what can happen when an embodied organism detects deprivation: greater food salience, preoccupation, urgency, rebound eating, and distrust of bodily signals. If the environment helps produce the pressure, restriction may intensify rather than resolve it.
+
+**Continue the argument:** Read **[The Restriction Trap](/blog/restriction-trap/)**.
+
+**Try the practice:** Use **[Why Am I Eating?](/why-am-i-eating/)** to examine one eating moment in context, without turning the answer into another judgment.
+
 ## References
 
 DiFeliceantonio AG, Coppin G, Rigoux L, et al. Supra-additive effects of combining fat and carbohydrate on food reward. Cell Metabolism. 2018;28(1):33–44.e3.

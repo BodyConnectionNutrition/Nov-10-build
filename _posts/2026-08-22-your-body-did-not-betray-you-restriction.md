@@ -71,6 +71,18 @@ Your body did not betray you by responding to deprivation. It tried to keep ener
 
 You do not need to admire every eating experience. You do not need to pretend every choice felt good. But you can stop using those experiences as evidence that you are broken.
 
+## Why does the promise of control remain so persuasive?
+
+Restriction can intensify the very responses it is prescribed to control. Yet the failure is usually assigned to the person, while the method retains its authority. To understand why, we have to look beyond physiology.
+
+People do not evaluate food and diet claims from outside human cognition. We rely on familiarity, repetition, authority, social proof, anchors, fear, categories, stories, and visible outcomes. Food companies and the diet industry know how to build messages around those tendencies.
+
+**The Architecture of Appetite** examines how ordinary cognitive processes are recruited to shape attention, decisions, and belief. Human responsiveness is not the design flaw. Its commercial exploitation is the problem.
+
+**Continue the argument:** Read **[The Architecture of Appetite](/blog/health-halo-food-marketing/)**.
+
+**Try the practice:** Use **[Can You Hear Your Body?](/tools/can-you-hear-your-body/)** to notice what restriction has made easier or harder to sense—then carry one moment into **[Why Am I Eating?](/why-am-i-eating/)** for context.
+
 **Return to the beginning:** [The Restriction Trap](/blog/restriction-trap/)
 
 ## References
