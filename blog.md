@@ -9,12 +9,13 @@ intro: Understand the response. Find the context. Put responsibility where it be
 <style>
 .framework-hero{background:var(--forest);color:#fff;border-radius:30px;padding:clamp(2rem,5vw,4rem);margin:1.5rem 0 2rem;box-shadow:0 18px 45px rgba(49,65,47,.16)}.framework-hero h2,.framework-hero p,.framework-hero a{color:#fff}.framework-hero h2{font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.02;max-width:880px;margin:.45rem 0 1.2rem}.framework-hero .lead{max-width:800px;color:#f4eee5}.framework-hero .button{background:#fff;color:var(--forest);border-color:#fff}.framework-hero .button:hover{color:var(--forest)}
 .journey-intro{max-width:800px;margin:2rem 0 1.5rem}.journey-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin:0 0 3.5rem}.journey-link{display:block;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--sage);border-radius:18px;padding:1.25rem;transition:transform .2s,box-shadow .2s}.journey-link:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(49,65,47,.10)}.journey-link span{display:block;color:var(--clay);font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;margin-bottom:.55rem}.journey-link strong{display:block;color:var(--forest);font-size:1.1rem;line-height:1.25}.journey-link small{display:block;color:var(--muted);margin-top:.45rem;line-height:1.4}
+.guided-pathway{margin:2rem 0 4rem;padding:clamp(1.5rem,4vw,2.7rem);background:#f4eee5;border:1px solid var(--line);border-radius:28px}.guided-pathway-head{max-width:820px;margin-bottom:1.5rem}.guided-pathway-head h2{font-size:clamp(2rem,4vw,3.2rem);margin:.3rem 0 .75rem}.pathway-list{display:grid;gap:.85rem;counter-reset:pathway}.pathway-card{position:relative;display:grid;grid-template-columns:70px minmax(0,1fr) auto;gap:1.25rem;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.25rem 1.35rem;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s}.pathway-card:hover{transform:translateX(4px);box-shadow:0 12px 28px rgba(49,65,47,.10);border-color:var(--sage)}.pathway-number{display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:var(--forest);color:#fff;font-family:"Fraunces",Georgia,serif;font-size:1.45rem;font-weight:700}.pathway-copy .stage-label{display:block;margin-bottom:.25rem}.pathway-copy h3{font-size:1.5rem;margin:0 0 .35rem}.pathway-copy p{color:var(--muted);margin:.2rem 0}.pathway-copy .start-if{color:var(--forest);font-size:.92rem}.pathway-action{color:var(--forest);font-weight:800;white-space:nowrap}.pathway-overview{margin:1.25rem 0 0;text-align:right}
 .practice{background:#efe7d8;border:1px solid var(--line);border-radius:24px;padding:clamp(1.5rem,4vw,2.5rem);margin:0 0 4rem}.practice h2{font-size:1.8rem}.practice-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:.65rem;margin-top:1.4rem}.practice-step{background:rgba(255,255,255,.62);border-radius:15px;padding:1rem}.practice-step b{display:block;color:var(--forest);margin-bottom:.3rem}.practice-step small{color:var(--muted);line-height:1.35}
 .library-section{padding:4rem 0;border-top:1px solid var(--line)}.library-section-head{display:grid;grid-template-columns:.72fr 1.28fr;gap:2rem;align-items:end;margin-bottom:1.8rem}.library-section-head h2{font-size:clamp(2rem,4vw,3.2rem);margin:.25rem 0 0}.library-section-head p{color:var(--muted);margin:0}.stage-label{font-size:.76rem;text-transform:uppercase;letter-spacing:.11em;font-weight:800;color:var(--clay)}
 .series-grid,.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.series{background:#e4eadf;border:1px solid var(--line);border-radius:22px;padding:clamp(1.5rem,3vw,2rem)}.series h3{font-size:1.65rem;margin:.25rem 0 .7rem}.series p{color:var(--muted)}.series details{margin-top:1rem;border-top:1px solid rgba(49,65,47,.18);padding-top:.85rem}.series summary{cursor:pointer;color:var(--forest);font-weight:800}.series ol{margin:1rem 0 0;padding-left:1.35rem}.series li{margin:.65rem 0;padding-left:.2rem}.library-card{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:1.5rem;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s}.library-card:hover{transform:translateY(-3px);box-shadow:0 14px 35px rgba(49,65,47,.10);border-color:var(--sage)}.library-card .label{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--clay);margin-bottom:.65rem}.library-card h3{font-size:1.35rem;margin:0 0 .55rem}.library-card p{color:var(--muted);margin:0}.section-bridge{margin:2rem 0 0;padding:1.3rem 1.5rem;border-left:4px solid var(--clay);background:#f7f2e9}.section-bridge strong{color:var(--forest)}
 .respond-cta{background:var(--forest);color:#fff;border-radius:24px;padding:2rem;margin-top:1rem;display:flex;justify-content:space-between;gap:2rem;align-items:center}.respond-cta h3,.respond-cta p{color:#fff}.respond-cta h3{margin:0 0 .45rem}.respond-cta p{margin:0;color:#f4eee5}.respond-cta .button{background:#fff;color:var(--forest);border-color:#fff;white-space:nowrap}.foundation{margin-top:4rem;padding:2.5rem;border-radius:24px;background:#f4eee5}.foundation h2{font-size:1.8rem}
 @media(max-width:900px){.journey-grid{grid-template-columns:repeat(2,1fr)}.practice-steps{grid-template-columns:repeat(2,1fr)}.practice-step:last-child{grid-column:1 / -1}.library-section-head{grid-template-columns:1fr;gap:.5rem}}
-@media(max-width:700px){.journey-grid,.series-grid,.card-grid{grid-template-columns:1fr}.practice-steps{grid-template-columns:1fr}.practice-step:last-child{grid-column:auto}.respond-cta{display:block}.respond-cta .button{margin-top:1rem}.library-section{padding:3rem 0}}
+@media(max-width:700px){.journey-grid,.series-grid,.card-grid{grid-template-columns:1fr}.pathway-card{grid-template-columns:48px minmax(0,1fr);gap:.85rem}.pathway-number{width:44px;height:44px;font-size:1.15rem}.pathway-action{grid-column:2;white-space:normal}.pathway-overview{text-align:left}.practice-steps{grid-template-columns:1fr}.practice-step:last-child{grid-column:auto}.respond-cta{display:block}.respond-cta .button{margin-top:1rem}.library-section{padding:3rem 0}}
 </style>
 
 <section class="framework-hero">
@@ -24,7 +25,43 @@ intro: Understand the response. Find the context. Put responsibility where it be
   <p><a class="button" href="/how-food-decisions-get-made/">Follow the five-series argument →</a></p>
 </section>
 
-<p class="journey-intro lead">This is not a collection of unrelated nutrition topics. It is one argument, approached from different directions. Begin with <a href="/how-food-decisions-get-made/"><strong>How Food Decisions Get Made</strong></a> to follow the five cornerstone series in order, or enter below where your current question lives.</p>
+<section class="guided-pathway" aria-labelledby="guided-pathway-title">
+  <div class="guided-pathway-head">
+    <p class="stage-label">The guided five-series argument</p>
+    <h2 id="guided-pathway-title">How Food Decisions Get Made</h2>
+    <p class="lead">Food decisions are personal, but they are never produced by the person alone. Follow appetite, restriction, cognitive influence and manufactured health meaning toward the conditions that make realistic change possible.</p>
+  </div>
+  <div class="pathway-list">
+    <a class="pathway-card" href="/blog/food-designed-hard-to-stop-eating/">
+      <span class="pathway-number" aria-hidden="true">1</span>
+      <div class="pathway-copy"><span class="stage-label">Series 1 of 5</span><h3>Your Appetite Is Responding to the Environment</h3><p>How food properties and environments shape appetite and eating.</p><p class="start-if"><strong>Start here if:</strong> eating feels harder to regulate in some settings than others.</p></div>
+      <span class="pathway-action">Begin the series →</span>
+    </a>
+    <a class="pathway-card" href="/blog/restriction-trap/">
+      <span class="pathway-number" aria-hidden="true">2</span>
+      <div class="pathway-copy"><span class="stage-label">Series 2 of 5</span><h3>The Restriction Trap</h3><p>How attempts to control appetite can increase food noise, urgency and distrust.</p><p class="start-if"><strong>Start here if:</strong> every attempt to gain control seems to make food more powerful.</p></div>
+      <span class="pathway-action">Continue the argument →</span>
+    </a>
+    <a class="pathway-card" href="/blog/health-halo-food-marketing/">
+      <span class="pathway-number" aria-hidden="true">3</span>
+      <div class="pathway-copy"><span class="stage-label">Series 3 of 5</span><h3>The Architecture of Appetite</h3><p>How ordinary cognitive processes are recruited to influence decisions and beliefs.</p><p class="start-if"><strong>Start here if:</strong> you want to understand why certain claims and promises feel convincing.</p></div>
+      <span class="pathway-action">Examine the influence →</span>
+    </a>
+    <a class="pathway-card" href="/food-waste-to-wellness/">
+      <span class="pathway-number" aria-hidden="true">4</span>
+      <div class="pathway-copy"><span class="stage-label">Series 4 of 5</span><h3>Food Waste to Wellness</h3><p>How commercial systems manufacture health meaning around products.</p><p class="start-if"><strong>Start here if:</strong> an ingredient or sustainability story is being used to imply a health benefit.</p></div>
+      <span class="pathway-action">Follow the investigation →</span>
+    </a>
+    <a class="pathway-card" href="/change-needs-conditions/">
+      <span class="pathway-number" aria-hidden="true">5</span>
+      <div class="pathway-copy"><span class="stage-label">Series 5 of 5</span><h3>Change Needs Conditions</h3><p>How resources, support, belonging and realistic options make new patterns possible.</p><p class="start-if"><strong>Start here if:</strong> you understand the problem and need a humane, practical way forward.</p></div>
+      <span class="pathway-action">Make the constructive turn →</span>
+    </a>
+  </div>
+  <p class="pathway-overview"><a class="text-link" href="/how-food-decisions-get-made/">Read the complete pathway overview →</a></p>
+</section>
+
+<p class="journey-intro lead"><strong>Or enter the wider library where your current question lives.</strong> The four pathways below organize the complete collection by the Body Connection practice.</p>
 
 <nav class="journey-grid" aria-label="Article library pathways">
   <a class="journey-link" href="#understand"><span>Part 1</span><strong>Understand your body</strong><small>Notice the response and learn how to interpret it without accusation.</small></a>
