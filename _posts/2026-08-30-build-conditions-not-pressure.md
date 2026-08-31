@@ -73,7 +73,7 @@ You do not need to complete the series by creating a perfect new system for your
 
 **Continue into practice:** Start with **[Can You Hear Your Body?](/tools/can-you-hear-your-body/)** to notice and interpret a signal. Then use **[Why Am I Eating?](/why-am-i-eating/)** to contextualize one eating moment, locate responsibility, and identify a response that fits the conditions actually present.
 
-If external expectations are consuming the capacity required for food, rest, medication, hygiene, movement, safety, or recovery, use the **Essential Care Audit**. If the available options are workable but point in different directions, use the **[Values Clarification Tool](/tools/values-clarification/)**.
+If external expectations are consuming the capacity required for food, rest, medication, hygiene, movement, safety, or recovery, begin with **[Essential Care](/principles/essential-care/)**. If the available options are workable but point in different directions, use the **[Values Clarification Tool](/tools/values-clarification/)**.
 
 People do not need more pressure to prove they want change. They need conditions in which change has somewhere to live.
 

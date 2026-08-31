@@ -77,7 +77,7 @@ Restriction can intensify the very responses it is prescribed to control. Yet th
 
 People do not evaluate food and diet claims from outside human cognition. We rely on familiarity, repetition, authority, social proof, anchors, fear, categories, stories, and visible outcomes. Food companies and the diet industry know how to build messages around those tendencies.
 
-**The Architecture of Appetite** examines how ordinary cognitive processes are recruited to shape attention, decisions, and belief. Human responsiveness is not the design flaw. Its commercial exploitation is the problem.
+**[The Architecture of Appetite](/blog/health-halo-food-marketing/)** examines how ordinary cognitive processes are recruited to shape attention, decisions, and belief. Human responsiveness is not the design flaw. Its commercial exploitation is the problem.
 
 **Continue the argument:** Read **[The Architecture of Appetite](/blog/health-halo-food-marketing/)**.
 

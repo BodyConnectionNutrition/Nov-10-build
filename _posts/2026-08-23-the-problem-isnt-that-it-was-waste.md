@@ -48,11 +48,11 @@ This series has separated environmental value from nutritional and clinical clai
 
 But critical awareness does not create time, money, food access, rest, executive capacity, social support, or safe care. A person can understand the system accurately and still lack a workable alternative.
 
-**Change Needs Conditions** is the constructive counterpart. It asks what meaningful change requires in practice: resources, predictability, repetition without surveillance, environmental support, reduced cognitive load, belonging, realistic options, permission to revise, and care without shame.
+**[Change Needs Conditions](/change-needs-conditions/)** is the constructive counterpart. It asks what meaningful change requires in practice: resources, predictability, repetition without surveillance, environmental support, reduced cognitive load, belonging, realistic options, permission to revise, and care without shame.
 
 **Continue the argument:** Read **[Change Needs Conditions: What Actually Makes New Patterns Possible](/change-needs-conditions/)**.
 
-**Try the practice:** Use the **Food Belief Audit** if the product story has become a rule about what you must buy, avoid, or become.
+**Try the practice:** Use **[Deconstructing a Belief](/tools/deconstructing-a-belief/)** if the product story has become a rule about what you must buy, avoid, or become.
 
 ## References
 

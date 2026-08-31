@@ -156,7 +156,7 @@ This series has shown that appetite does not arise in a neutral environment. Foo
 
 But people are rarely taught to change those conditions. They are taught to control the response—usually by eating less, waiting longer, removing foods, overriding hunger, or proving discipline.
 
-That response deserves its own examination. **The Restriction Trap** follows what can happen when an embodied organism detects deprivation: greater food salience, preoccupation, urgency, rebound eating, and distrust of bodily signals. If the environment helps produce the pressure, restriction may intensify rather than resolve it.
+That response deserves its own examination. **[The Restriction Trap](/blog/restriction-trap/)** follows what can happen when an embodied organism detects deprivation: greater food salience, preoccupation, urgency, rebound eating, and distrust of bodily signals. If the environment helps produce the pressure, restriction may intensify rather than resolve it.
 
 **Continue the argument:** Read **[The Restriction Trap](/blog/restriction-trap/)**.
 
