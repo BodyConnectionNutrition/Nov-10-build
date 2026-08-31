@@ -21,10 +21,10 @@ intro: Understand the response. Find the context. Put responsibility where it be
   <p class="eyebrow">Recover the agency that blame, manipulation and body distrust have taken from you</p>
   <h2>Begin with the question blame erases: What is your body responding to?</h2>
   <p class="lead">Bodies do not eat, move, rest or change outside context. These articles help you understand the response, examine the conditions participating in it, question the rules that taught you to distrust yourself, and build realistic ways of caring for the body living your actual life.</p>
-  <p><a class="button" href="/blog/why-knowing-what-to-do-is-not-the-same-as-being-able-to-do-it/">Begin with the central argument →</a></p>
+  <p><a class="button" href="/how-food-decisions-get-made/">Follow the five-series argument →</a></p>
 </section>
 
-<p class="journey-intro lead">This is not a collection of unrelated nutrition topics. It is one argument, approached from different directions. Follow it in order or enter where your current question lives.</p>
+<p class="journey-intro lead">This is not a collection of unrelated nutrition topics. It is one argument, approached from different directions. Begin with <a href="/how-food-decisions-get-made/"><strong>How Food Decisions Get Made</strong></a> to follow the five cornerstone series in order, or enter below where your current question lives.</p>
 
 <nav class="journey-grid" aria-label="Article library pathways">
   <a class="journey-link" href="#understand"><span>Part 1</span><strong>Understand your body</strong><small>Notice the response and learn how to interpret it without accusation.</small></a>
