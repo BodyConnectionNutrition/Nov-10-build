@@ -2,8 +2,8 @@
 layout: post
 title: "What If the Food Is Designed to Be Hard to Stop Eating?"
 description: "Why food reward, hyper-palatability, eating rate and the modern food environment belong in conversations about appetite."
-eyebrow: Food, body & behavior
-cluster: Food, body & behavior
+eyebrow: Your Appetite Is Responding to the Environment · Part 1
+cluster: Your Appetite Is Responding to the Environment
 ---
 
 When people struggle to control their eating, we tend to look for an explanation inside the person. Maybe they lack discipline. Maybe they need more motivation. Maybe they haven't learned to listen to their fullness cues. We rarely give the same scrutiny to the food itself.
@@ -105,3 +105,9 @@ Fazzino TL, Rohde K, Sullivan DK. Hyper-palatable foods: development of a quanti
 Hall KD, Ayuketah A, Brychta R, et al. Ultra-processed diets cause excess calorie intake and weight gain: an inpatient randomized controlled trial of ad libitum food intake. Cell Metabolism. 2019;30(1):67–77.e3.
 
 Tinbergen N. The Study of Instinct. Oxford University Press; 1951.
+
+---
+
+**Previous:** [How Food Decisions Get Made](/how-food-decisions-get-made/)
+
+**Next:** [When Fat and Carbohydrate Arrive Together](/blog/fat-carbohydrate-food-reward/)

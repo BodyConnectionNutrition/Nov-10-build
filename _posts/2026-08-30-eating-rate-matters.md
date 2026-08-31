@@ -2,8 +2,8 @@
 layout: post
 title: "The Food You Can Eat Before Your Body Catches Up: Why Eating Rate Matters"
 description: "How food texture and oral processing influence eating rate, satiation and energy intake."
-eyebrow: Food, body & behavior
-cluster: Food, body & behavior
+eyebrow: Your Appetite Is Responding to the Environment · Part 3
+cluster: Your Appetite Is Responding to the Environment
 ---
 
 Eating quickly is usually framed as something the eater needs to fix. Advice to slow down, chew thoroughly, put the fork down between bites, or pay closer attention during meals is common in nutrition counseling. There can certainly be value in slowing down, particularly when eating quickly makes it difficult to notice emerging satisfaction and fullness. But treating eating speed entirely as a personal behavior leaves out an important variable: the food itself.
@@ -73,3 +73,9 @@ Forde CG, Mars M, de Graaf K. Ultra-processing or oral processing? A role for en
 Hall KD, Ayuketah A, Brychta R, et al. Ultra-processed diets cause excess calorie intake and weight gain: an inpatient randomized controlled trial of ad libitum food intake. Cell Metabolism. 2019;30(1):67–77.e3.
 
 McCrickerd K, Forde CG. Sensory influences on food intake control: moving beyond palatability. Obesity Reviews. 2016;17(1):18–29.
+
+---
+
+**Previous:** [When Fat and Carbohydrate Arrive Together](/blog/fat-carbohydrate-food-reward/)
+
+**Next:** [How Much Energy Can Fit Into a Bite?](/blog/energy-density-matters/)

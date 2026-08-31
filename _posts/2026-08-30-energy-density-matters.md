@@ -2,8 +2,8 @@
 layout: post
 title: "How Much Energy Can Fit Into a Bite? Why Energy Density Matters"
 description: "Why calories per gram and calories per minute change the eating environment without making foods morally good or bad."
-eyebrow: Food, body & behavior
-cluster: Food, body & behavior
+eyebrow: Your Appetite Is Responding to the Environment · Part 4
+cluster: Your Appetite Is Responding to the Environment
 ---
 
 Eating rate tells us how quickly food can be consumed, but speed alone cannot tell us how quickly energy is entering the body. Fifty grams of cucumber and fifty grams of chocolate may take the same amount of time to eat, yet they deliver very different amounts of energy. To understand that difference, we need to consider energy density: the amount of energy contained in a given weight of food, usually expressed as calories per gram.
@@ -77,3 +77,9 @@ Rolls BJ. The relationship between dietary energy density and energy intake. Phy
 Rolls BJ, Bell EA, Castellanos VH, Chow M, Pelkman CL, Thorwart ML. Energy density but not fat content of foods affected energy intake in lean and obese women. American Journal of Clinical Nutrition. 1999;69(5):863–871.
 
 Rolls BJ, Roe LS, Meengs JS. Reductions in portion size and energy density of foods are additive and lead to sustained decreases in energy intake. American Journal of Clinical Nutrition. 2006;83(1):11–17.
+
+---
+
+**Previous:** [The Food You Can Eat Before Your Body Catches Up](/blog/eating-rate-matters/)
+
+**Next:** [The Portion You Were Given Changes the Amount You Eat](/blog/portion-size-changes-intake/)

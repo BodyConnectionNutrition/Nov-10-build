@@ -2,8 +2,8 @@
 layout: post
 title: "The Person Was Never the Only Variable"
 description: "How reward, texture, energy density, portions, availability and context combine to shape eating behavior."
-eyebrow: Food, body & behavior
-cluster: Food, body & behavior
+eyebrow: Your Appetite Is Responding to the Environment · Part 6
+cluster: Your Appetite Is Responding to the Environment
 ---
 
 Throughout this series, we have looked at several characteristics of food that can influence eating behavior. Foods combining fat and carbohydrate can carry greater reward value than would be predicted from either nutrient alone. Physical structure and texture influence how quickly a food can be eaten. Energy density determines how much energy can be contained within a given amount of food, and portion size affects how much people consume even when the food itself remains unchanged.
@@ -181,3 +181,9 @@ McCrickerd K, Forde CG. Sensory influences on food intake control: moving beyond
 Rolls BJ. The relationship between dietary energy density and energy intake. Physiology & Behavior. 2009;97(5):609–615.
 
 Rolls BJ, Morris EL, Roe LS. Portion size of food affects energy intake in normal-weight and overweight men and women. American Journal of Clinical Nutrition. 2002;76(6):1207–1213.
+
+---
+
+**Previous:** [The Portion You Were Given Changes the Amount You Eat](/blog/portion-size-changes-intake/)
+
+**Next:** [The Restriction Trap](/blog/restriction-trap/)

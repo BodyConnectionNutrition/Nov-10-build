@@ -64,6 +64,8 @@ The halo effect does not mean you cannot trust yourself. It means your brain is 
 
 What food or product category gets an automatic health halo in your mind? What have you assumed about it that the label never actually proved?
 
+**Previous:** [Your Body Did Not Betray You](/blog/your-body-did-not-betray-you-restriction/)
+
 **Next:** [The First Number Changes Everything That Follows](/blog/anchoring-food-diet-decisions/)
 
 ## References

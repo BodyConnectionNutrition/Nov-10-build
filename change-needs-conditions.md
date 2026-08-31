@@ -7,6 +7,8 @@ eyebrow: A ten-article Body Connection Nutrition series
 intro: People do not need more pressure. Change needs somewhere to live.
 ---
 
+<p class="post-meta">Part of <a href="/how-food-decisions-get-made/">How Food Decisions Get Made</a> · Series 5 of 5 · Previous series: <a href="/food-waste-to-wellness/">Food Waste to Wellness</a> · Next: <a href="/tools/can-you-hear-your-body/">Practice</a></p>
+
 Change is often presented as a test of desire: if a person wants it badly enough, they will do it consistently. But wanting is only one influence on behavior. Bodies learn through resources, repetition, relationships, environments and experience.
 
 This series examines the conditions that allow change to become possible without making shame, surveillance or perfection the price of participation.

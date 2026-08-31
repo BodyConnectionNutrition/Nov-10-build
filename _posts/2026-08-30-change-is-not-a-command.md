@@ -57,4 +57,6 @@ Change becomes more possible when we stop treating motivation as the only legiti
 
 ---
 
+**Previous:** [The Problem Isn’t That It Was Waste](/blog/the-problem-isnt-that-it-was-waste/)
+
 **Next:** [Change Requires Something to Work With](/blog/change-requires-something-to-work-with/)

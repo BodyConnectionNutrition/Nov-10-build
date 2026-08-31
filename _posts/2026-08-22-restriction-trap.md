@@ -80,6 +80,8 @@ That question does not excuse behavior or predetermine the answer. It makes the 
 
 This series follows those conditions one by one. The purpose is not to declare every form of structure harmful. It is to explain why deprivation so often produces the very eating it was supposed to prevent—and why that response is not evidence of a defective person.
 
+**Previous:** [The Person Was Never the Only Variable](/blog/person-was-never-only-variable/)
+
 **Next:** [Why Dieting Makes Food So Loud](/blog/why-dieting-makes-food-so-loud/)
 
 ## References

@@ -2,8 +2,8 @@
 layout: post
 title: "When Fat and Carbohydrate Arrive Together: Why the Combination Is So Interesting"
 description: "What research on fat and carbohydrate together tells us about food reward—and what it does not."
-eyebrow: Food, body & behavior
-cluster: Food, body & behavior
+eyebrow: Your Appetite Is Responding to the Environment · Part 2
+cluster: Your Appetite Is Responding to the Environment
 ---
 
 If you look at the foods people commonly describe as difficult to stop eating, an interesting pattern appears. Cookies, donuts, chocolate, pizza, French fries, pastries, ice cream and many snack foods don't simply contain fat, carbohydrate, sugar or salt. They combine them.
@@ -89,3 +89,9 @@ The environment participates in the behavior. And nutrient combinations are only
 DiFeliceantonio AG, Coppin G, Rigoux L, et al. Supra-additive effects of combining fat and carbohydrate on food reward. Cell Metabolism. 2018;28(1):33–44.e3.
 
 Fazzino TL, Rohde K, Sullivan DK. Hyper-palatable foods: development of a quantitative definition and application to the US food system database. Obesity. 2019;27(11):1761–1768.
+
+---
+
+**Previous:** [What If the Food Is Designed to Be Hard to Stop Eating?](/blog/food-designed-hard-to-stop-eating/)
+
+**Next:** [The Food You Can Eat Before Your Body Catches Up](/blog/eating-rate-matters/)

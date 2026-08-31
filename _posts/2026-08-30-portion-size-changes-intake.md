@@ -2,8 +2,8 @@
 layout: post
 title: "The Portion You Were Given Changes the Amount You Eat"
 description: "What portion-size research reveals about environmental cues, consumption and the limits of willpower explanations."
-eyebrow: Food, body & behavior
-cluster: Food, body & behavior
+eyebrow: Your Appetite Is Responding to the Environment · Part 5
+cluster: Your Appetite Is Responding to the Environment
 ---
 
 If human food intake were governed entirely by internal energy needs, changing the amount of food placed in front of someone should have relatively little effect. A person served twice as much food would simply stop at approximately the same point they would have reached with a smaller serving. Their body has not suddenly developed greater energy requirements merely because the plate is larger.
@@ -101,3 +101,9 @@ Rolls BJ, Morris EL, Roe LS. Portion size of food affects energy intake in norma
 Steenhuis IHM, Vermeer WM. Portion size: review and framework for interventions. International Journal of Behavioral Nutrition and Physical Activity. 2009;6:58.
 
 Young LR, Nestle M. The contribution of expanding portion sizes to the US obesity epidemic. American Journal of Public Health. 2002;92(2):246–249.
+
+---
+
+**Previous:** [How Much Energy Can Fit Into a Bite?](/blog/energy-density-matters/)
+
+**Next:** [The Person Was Never the Only Variable](/blog/person-was-never-only-variable/)

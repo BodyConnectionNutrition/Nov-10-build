@@ -7,6 +7,8 @@ eyebrow: The Food Industry Is F’ing You · Investigative series
 intro: The industry can create something genuinely useful and still sell it through a level of health certainty the evidence has not earned.
 ---
 
+<p class="post-meta">Part of <a href="/how-food-decisions-get-made/">How Food Decisions Get Made</a> · Series 4 of 5 · Previous: <a href="/blog/health-halo-food-marketing/">The Architecture of Appetite</a> · Next: <a href="/change-needs-conditions/">Change Needs Conditions</a></p>
+
 Behind a cheese plant, whey was once difficult and costly to manage. Hides and bones moved through animal by-product markets. Seeds, skins, peel, pulp and spent grain remained after food processing. Today those materials appear in protein tubs, collagen jars, antioxidant capsules and upcycled foods.
 
 **What changed—the nutritional value, the technology or the story?**

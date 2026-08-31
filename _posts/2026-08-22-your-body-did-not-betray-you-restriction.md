@@ -91,3 +91,9 @@ People do not evaluate food and diet claims from outside human cognition. We rel
 2. Meule A. The psychology of food cravings: the role of food deprivation. *Curr Nutr Rep*. 2020;9:251–257. [doi:10.1007/s13668-020-00326-0](https://doi.org/10.1007/s13668-020-00326-0)
 3. Stewart TM, Martin CK, Williamson DA. The complicated relationship between dieting, dietary restraint, caloric restriction, and eating disorders. *Appetite*. 2022;171:105927. [doi:10.1016/j.appet.2022.105927](https://doi.org/10.1016/j.appet.2022.105927)
 4. Polivy J, Herman CP. Overeating in restrained and unrestrained eaters. *Front Nutr*. 2020;7:30. [doi:10.3389/fnut.2020.00030](https://doi.org/10.3389/fnut.2020.00030)
+
+---
+
+**Previous:** [Does Restriction Always Cause Binge Eating?](/blog/does-restriction-always-cause-binge-eating/)
+
+**Next:** [The Architecture of Appetite](/blog/health-halo-food-marketing/)
