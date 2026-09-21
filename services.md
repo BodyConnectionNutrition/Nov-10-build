@@ -28,11 +28,11 @@ You will not be graded on adherence. We use what happens between sessions as inf
 
 ## Begin with a free consultation
 
-A free 30-minute Google Meet consultation gives us an opportunity to talk about what you are looking for, answer your questions, and decide whether working together feels like a good fit.
+A free 20-minute Google Meet consultation gives us an opportunity to talk about what you are looking for, answer your questions, and decide whether working together feels like a good fit.
 
 Body Connection Nutrition is a private-pay practice and does not bill insurance. Costs and available services will be explained before you decide whether to schedule a clinical appointment. There is no obligation to continue after the consultation.
 
-<p><a class="button" href="https://calendly.com/bodyconnectionnutrition/intro-meeting" target="_blank" rel="noopener">Schedule a free consultation</a></p>
+<p><a class="button" href="https://calendly.com/bodyconnectionnutrition/free-initial-consultation" target="_blank" rel="noopener">Schedule a free consultation</a></p>
 
 ## Where I can provide care
 
