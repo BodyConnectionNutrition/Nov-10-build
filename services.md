@@ -2,13 +2,13 @@
 layout: page
 permalink: /services/
 title: Virtual Registered Dietitian Nutrition Counseling
-description: Virtual nutrition counseling with registered dietitian Jennifer Nickell for food relationships, disordered eating recovery support, appetite, ADHD, family nutrition, and practical eating strategies.
+description: Private-pay virtual nutrition counseling with registered dietitian Jennifer Nickell for people seeking evidence-based, individualized support without rigid food rules.
 eyebrow: Individual nutrition care
 intro: Evidence-based virtual nutrition counseling for people who are tired of conflicting advice, rigid food rules, and feeling as though their bodies have betrayed them.
 ---
-## Nutrition counseling through Nourish
+## Nutrition care that begins with understanding
 
-I provide virtual nutrition counseling through Nourish. Many clients pay little or nothing out of pocket because visits are covered by their insurance plan.
+I work with people who feel overwhelmed by nutrition information, disconnected from hunger and other body signals, or caught in cycles of restriction, guilt, and starting over. Our work may include making sense of appetite, rebuilding trust around food, understanding the conditions shaping your eating, and finding forms of care that are realistic for your actual life.
 
 Sessions may include:
 
@@ -26,4 +26,18 @@ We begin with your experience rather than a preset plan. Early visits focus on a
 
 You will not be graded on adherence. We use what happens between sessions as information.
 
-<p><a class="button" href="https://www.usenourish.com/providers/jennifer-nickell" target="_blank" rel="noopener">Check insurance and schedule a virtual dietitian visit</a></p>
+## Begin with a free consultation
+
+A free 30-minute Google Meet consultation gives us an opportunity to talk about what you are looking for, answer your questions, and decide whether working together feels like a good fit.
+
+Body Connection Nutrition is a private-pay practice and does not bill insurance. Costs and available services will be explained before you decide whether to schedule a clinical appointment. There is no obligation to continue after the consultation.
+
+<p><a class="button" href="https://calendly.com/bodyconnectionnutrition/intro-meeting" target="_blank" rel="noopener">Schedule a free consultation</a></p>
+
+## Where I can provide care
+
+Because nutrition licensing requirements depend on where you are physically located during an appointment, clinical services are currently available to people located in Arizona, Illinois, Indiana, Massachusetts, Michigan, New York, Oregon, Pennsylvania, Texas, and Washington.
+
+You will be asked to confirm your location before beginning care.
+
+<p class="trust-line"><strong>Please note:</strong> Scheduling or participating in a free consultation does not establish a clinician–patient relationship. The consultation is not medical or nutrition treatment and should not be used for urgent concerns. A clinical relationship begins only after we mutually agree to work together and the required consent and intake documents have been completed.</p>
