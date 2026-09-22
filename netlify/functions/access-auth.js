@@ -110,7 +110,7 @@ function toolName(slug) {
     "how-was-my-body-image-created": "How Was My Body Image Created?", "deconstructing-a-belief": "Deconstructing a Belief",
     "behavior-sequence": "Behavior Sequence", "permission-and-scarcity": "Permission & Scarcity",
     "what-is-this-doing-for-me": "What Is This Doing for Me?", "choice-has-conditions": "Conditions & Responsibility Map",
-    "my-food-and-body-framework": "My Food & Body Framework", "values-clarification": "Values Clarification"
+    "participation-planner": "Participation Planner", "my-food-and-body-framework": "My Food & Body Framework", "values-clarification": "Values Clarification"
   };
   return names[slug] || slug;
 }

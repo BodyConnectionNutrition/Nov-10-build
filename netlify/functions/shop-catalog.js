@@ -7,6 +7,7 @@ const TOOLS = {
   "permission-and-scarcity": { amount: 2900, file: "permission-and-scarcity.html", page: "/tools/permission-and-scarcity/" },
   "what-is-this-doing-for-me": { amount: 2900, file: "what-is-this-doing-for-me.html", page: "/tools/what-is-this-doing-for-me/" },
   "choice-has-conditions": { amount: 2900, file: "choice-has-conditions.html", page: "/tools/choice-has-conditions/" },
+  "participation-planner": { amount: 2900, file: "participation-planner.html", page: "/tools/participation-planner/" },
   "my-food-and-body-framework": { amount: 2900, file: "my-food-and-body-framework.html", page: "/tools/my-food-and-body-framework/" },
   "values-clarification": { priceId: "price_1U7NfFPfe7PZZ7IATKAFHLtm", file: "values-clarification.html", page: "/tools/values-clarification/" }
 };

@@ -13,6 +13,7 @@ const FILES = {
   "permission-and-scarcity": "permission-and-scarcity.html",
   "what-is-this-doing-for-me": "what-is-this-doing-for-me.html",
   "choice-has-conditions": "choice-has-conditions.html",
+  "participation-planner": "participation-planner.html",
   "my-food-and-body-framework": "my-food-and-body-framework.html"
 };
 
