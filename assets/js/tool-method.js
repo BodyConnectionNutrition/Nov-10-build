@@ -8,6 +8,7 @@
     'Permission & Scarcity': [2, 3, 4],
     'What Is This Doing for Me?': [1, 2, 3, 5],
     'Choice Has Conditions': [3, 4, 5],
+    'Conditions & Responsibility Map': [3, 4, 5],
     'Deconstructing a Belief': [1, 2, 3, 4, 5],
     'Who Taught You to Eat?': [2, 3, 4],
     'How Was My Body Image Created?': [2, 3, 4],

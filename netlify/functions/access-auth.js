@@ -109,7 +109,7 @@ function toolName(slug) {
     "why-am-i-eating": "Why Am I Eating?", "who-taught-you-to-eat": "Who Taught You to Eat?",
     "how-was-my-body-image-created": "How Was My Body Image Created?", "deconstructing-a-belief": "Deconstructing a Belief",
     "behavior-sequence": "Behavior Sequence", "permission-and-scarcity": "Permission & Scarcity",
-    "what-is-this-doing-for-me": "What Is This Doing for Me?", "choice-has-conditions": "Choice Has Conditions",
+    "what-is-this-doing-for-me": "What Is This Doing for Me?", "choice-has-conditions": "Conditions & Responsibility Map",
     "my-food-and-body-framework": "My Food & Body Framework", "values-clarification": "Values Clarification"
   };
   return names[slug] || slug;
