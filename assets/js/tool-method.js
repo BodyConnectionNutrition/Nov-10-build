@@ -2,6 +2,7 @@
   const title = (document.title || document.querySelector('h1')?.textContent || '').split('|')[0].trim();
   const focusByTitle = {
     'Can You Hear Your Body?': [1, 2],
+    'Interrupt the Verdict': [1, 2],
     'Why Am I Eating?': [1, 2, 3, 4, 5],
     'Why am I eating?': [1, 2, 3, 4, 5],
     'Behavior Sequence': [1, 2, 3],
