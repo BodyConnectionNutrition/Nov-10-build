@@ -60,5 +60,6 @@ function renderMap(id){const map=document.getElementById(id);map.querySelectorAl
 function renderReport(){document.getElementById('beforeOut').textContent=document.getElementById('beforeText').value.trim()||'I did not write a first explanation.';const box=document.getElementById('selectedDetails');box.innerHTML='';Object.keys(labels).forEach(k=>{const picks=[...document.querySelectorAll(`[data-group="${k}"] .choice.sel`)].map(x=>x.textContent.trim());if(!picks.length)return;const c=document.createElement('div');c.className='card';c.innerHTML=`<h3>${labels[k]}</h3>${picks.map(p=>`<span class="tag">${p}</span>`).join('')}`;box.appendChild(c)});}
 document.getElementById('restart').addEventListener('click',()=>{if(!confirm('Start a new moment? This will clear the answers currently on this page.'))return;document.querySelectorAll('.choice,.scale button').forEach(x=>x.classList.remove('sel'));document.querySelectorAll('textarea').forEach(x=>x.value='');Object.keys(weights).forEach(k=>delete weights[k]);show('moment');});
 </script>
+<script src="/assets/js/tool-method.js"></script>
 </body>
 </html>

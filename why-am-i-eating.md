@@ -91,3 +91,4 @@ This is **education, not psychotherapy**. The tool does not diagnose an eating d
 <p class="trust-line" style="margin-top:1rem">After checkout, Body Connection Nutrition verifies the completed Stripe purchase and immediately issues access to the paid experience.</p>
 
 <script src="/assets/js/product-preview.js"></script>
+<script src="/assets/js/tool-method.js"></script>

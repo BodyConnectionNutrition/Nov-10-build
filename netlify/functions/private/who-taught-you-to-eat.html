@@ -64,5 +64,6 @@ function escapeHtml(v){return String(v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<'
 function render(){Object.keys(labels).forEach(node)}
 document.getElementById('restart').onclick=()=>{document.querySelectorAll('.choice.sel,.scale button.sel').forEach(x=>x.classList.remove('sel'));document.querySelectorAll('textarea').forEach(t=>t.value='');Object.keys(W).forEach(k=>delete W[k]);show('home')};
 </script>
+<script src="/assets/js/tool-method.js"></script>
 </body>
 </html>

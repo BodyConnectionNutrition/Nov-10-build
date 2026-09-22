@@ -64,5 +64,6 @@ function bind(){document.querySelectorAll('[data-next]').forEach(b=>b.onclick=()
 function startTimer(){let n=30;const el=document.getElementById('timer'),next=document.getElementById('timerNext');const id=setInterval(()=>{n--;if(el)el.textContent=n;if(n<=0){clearInterval(id);if(el)el.textContent='✓';if(next){next.disabled=false;next.onclick=()=>{state.step++;render()}}}},1000)}
 render();
 </script>
+<script src="/assets/js/tool-method.js"></script>
 </body>
 </html>
