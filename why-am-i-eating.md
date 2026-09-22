@@ -20,11 +20,11 @@ intro: Take one real eating moment apart and see the biological, emotional, envi
 
 ## Where this fits
 
-This is the second part of the flagship Body Connection pathway. <a href="/tools/can-you-hear-your-body/">Can You Hear Your Body?</a> helps you notice and interpret a signal. **Why Am I Eating?** helps you contextualize one eating moment, locate responsibility accurately, and decide whether any response would be useful. You can begin here; the first tool is not a prerequisite.
+This is the second part of the flagship Body Connection pathway. <a href="/tools/can-you-hear-your-body/">Can You Hear Your Body?</a> helps you notice a signal, recognize the meaning that arrives, and interrupt the rush toward certainty. **Why Am I Eating?** widens the frame around one eating moment, locates responsibility accurately, and asks whether any response is needed at all. You can begin here; the first tool is not a prerequisite.
 
 ## What you will do
 
-Choose one real eating moment—a meal, snack, craving, grazing episode, or a time you kept eating after feeling full—and use it as a case study.
+Choose one real eating moment—a meal, snack, craving, grazing episode, a satisfying food experience, or a time you kept eating after feeling full—and use it as a case study. It does not need to be a moment you regret.
 
 Instead of asking, **“What is wrong with me?”**, the experience helps you ask a more useful question:
 
@@ -44,7 +44,7 @@ Instead of asking, **“What is wrong with me?”**, the experience helps you as
 
 ## Your Eating Drivers Map
 
-At the end, the tool turns your answers into an **Eating Drivers Map**. The purpose is not to identify one “real” cause. Human behavior is usually multiply determined.
+At the end, the tool turns your answers into an **Eating Drivers Map**. The purpose is not to identify one “real” cause, diagnose your eating, or justify the decision. Human behavior is usually multiply determined.
 
 You might discover that one moment was shaped mostly by biological hunger and environment, while another was shaped more by restriction, reward, habit, or social context.
 
@@ -55,7 +55,7 @@ That is why this product includes **ongoing access and repeat use**. The value g
 <div class="quote-card" style="margin:2.4rem 0">
 <p class="eyebrow">The central shift</p>
 <h2>Behavior becomes easier to understand when it is treated as information instead of a moral verdict.</h2>
-<p>Awareness does not mean you have to change anything immediately. It gives you something better to work with than shame or self-criticism: a clearer picture of what was actually happening.</p>
+<p>Awareness does not mean the moment requires correction. It gives you something better to work with than shame or self-criticism: a clearer picture of what was actually happening and the freedom to decide that nothing needs to change.</p>
 </div>
 
 ## From understanding to response
@@ -66,6 +66,8 @@ The tool does not end by turning your Eating Drivers Map into another behavior g
 - **What requires support?** Nutrition care, medical care, accommodations, resources, or help from another person.
 - **What belongs to the conditions around me?** Access, work, caregiving, cost, stigma, commercial pressure, institutional rules, or an environment that cannot be solved through self-control.
 - **What response fits now?** Something consistent with evidence, safety, your goals, and your current capacity—including choosing not to act yet.
+
+Before asking what to do, the tool asks a more basic question: **Does anything about this moment actually need to change?** Understanding creates options. It does not create an assignment.
 
 ## This is serious educational work
 
