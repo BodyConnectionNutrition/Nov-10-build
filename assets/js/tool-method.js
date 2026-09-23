@@ -69,6 +69,10 @@
     .phase2-reflection__choices{display:flex;flex-wrap:wrap;gap:.45rem}
     .phase2-reflection__choices button{border:1px solid #ded8ce;border-radius:999px;background:#fff;color:#31412f;padding:.5rem .7rem;cursor:pointer}
     .phase2-reflection__choices button[aria-pressed="true"]{background:#31412f;color:#fff;border-color:#31412f}
+    .working-record-preface{margin:1rem 0 1.35rem;padding:1rem 1.1rem;border-left:4px solid #c89468;border-radius:0 14px 14px 0;background:#fbf7ef;color:#4f4943}
+    .working-record-preface strong{color:#31412f}
+    .sparse-preview-example{margin-top:1.1rem;padding:1rem;border:1px dashed #e8c8ad;border-radius:14px;background:#ffffff10}
+    .sparse-preview-example p{margin:.35rem 0;color:inherit!important}
   `;
   document.head.appendChild(phase2Style);
 
@@ -158,11 +162,118 @@
     });
   }
 
+  const outputNames = {
+    'Your Behavior Sequence Map':'A working map of this episode',
+    'Your Conditions & Responsibility Map':'A working conditions and responsibility map',
+    'Your Belief Deconstruction Map':'A working account of this belief',
+    'Your Body Image Influence Map':'A working map of current body-image influences',
+    'Your Personal Food & Body Framework':'A working food and body framework',
+    'Your Working Participation Plan':'Current possibilities and conditions',
+    'Your Scarcity & Permission Map':'A working map of this situation',
+    'Your Values Clarification Summary':'A working values account',
+    'Your Function Map':'A working map of current effects and functions',
+    'Your Food Influence Map':'A working map of current food influences',
+    '12 · Your Eating Influences Map':'A working map of this eating moment',
+    'Your Body Signal Map':'A working map of current body-signal access'
+  };
+
+  function renameOutputs() {
+    document.querySelectorAll('.eye,.eyebrow').forEach(el => {
+      const replacement = outputNames[el.textContent.trim()];
+      if (replacement) el.textContent = replacement;
+    });
+    document.querySelectorAll('#report h1,#report h2,#summary h1,#summary h2').forEach(el => {
+      const replacement = outputNames[el.textContent.trim()];
+      if (replacement) el.textContent = replacement;
+    });
+  }
+
+  function isResultScreen(screen) {
+    if (['report','summary','finish'].includes(screen.id)) return true;
+    const label = screen.querySelector('.eye,.eyebrow')?.textContent.trim() || '';
+    return /^(Your|A working map|Current possibilities|Carry the practice)/i.test(label);
+  }
+
+  function makeWorkingPreface() {
+    const preface = document.createElement('div');
+    preface.className = 'working-record-preface';
+    preface.innerHTML = '<strong>This is a working record of what you noticed today.</strong> It is not a score, diagnosis, personality profile, causal measurement, or assignment. Blank, uncertain, contradictory, and changing responses belong in the map. You may keep it, revise it, or leave it behind.';
+    return preface;
+  }
+
+  function addWorkingPrefaces() {
+    document.querySelectorAll('.screen').forEach(screen => {
+      if (!isResultScreen(screen) || screen.querySelector('.working-record-preface')) return;
+      const heading = screen.querySelector('h1,h2');
+      if (heading) heading.insertAdjacentElement('afterend', makeWorkingPreface());
+      else screen.prepend(makeWorkingPreface());
+    });
+    const answer = document.getElementById('answer');
+    if (answer?.children.length && !answer.querySelector('.working-record-preface')) {
+      const header = answer.querySelector('header');
+      if (header) header.insertAdjacentElement('afterend', makeWorkingPreface());
+      else answer.prepend(makeWorkingPreface());
+    }
+  }
+
+  const neutralDefaults = new Map([
+    ['Your selected episode','Not recorded / left open.'],
+    ['Your selected situation','Not recorded / left open.'],
+    ['Your selected food or situation','Not recorded / left open.'],
+    ['Your selected pattern','Not recorded / left open.'],
+    ['The belief I examined','Not recorded / left open.'],
+    ['Your map adds bodily, practical, relational, and structural conditions to the explanation without making agency disappear.','Not explored / no synthesis recorded.'],
+    ['Your map adds access and permission as possible parts of the explanation without requiring them to explain everything.','Not explored / no synthesis recorded.'],
+    ['Access and permission may deserve consideration alongside other influences.','Not explored / no synthesis recorded.'],
+    ['Your map adds function to the explanation without requiring the pattern to be judged as either good or bad.','Not explored / no synthesis recorded.'],
+    ['I have permission to revise, wait, or leave this without a plan.','No permission statement recorded.'],
+    ['No responses yet. Return to the earlier steps to begin.','No responses recorded. Blank and unresolved fields remain valid.']
+  ]);
+
+  function neutralizeBlankDefaults() {
+    document.querySelectorAll('#report p,#report span,#summary p,#summary span').forEach(el => {
+      if (el.children.length) return;
+      const replacement = neutralDefaults.get(el.textContent.trim());
+      if (replacement) el.textContent = replacement;
+    });
+    const statement = document.getElementById('statement');
+    if (statement?.textContent.includes('________________')) statement.textContent = 'No authorship statement was generated because the relevant fields were left open.';
+  }
+
+  function addSparsePreviewExamples() {
+    document.querySelectorAll('.sample-map').forEach(preview => {
+      const previewNames = {
+        'Eating Drivers Map':'Working map of one eating moment',
+        'Body Image Influence Map':'Working map of current influences',
+        'Food Influence Map':'Working map of current food influences',
+        'Values & Authorship Map':'Working values account',
+        'Behavior Sequence Map':'Working map of one episode',
+        'Scarcity & Permission Map':'Working map of one situation',
+        'Function Map':'Working map of current effects and functions',
+        'Belief Deconstruction Map':'Working account of one belief',
+        'Conditions & Responsibility Map':'Working map of one situation',
+        'Working Participation Plan':'Current possibilities and conditions',
+        'Personal Working Framework':'Working food and body framework'
+      };
+      const title = preview.querySelector('h3');
+      if (title && previewNames[title.textContent.trim()]) title.textContent = previewNames[title.textContent.trim()];
+      if (preview.querySelector('.sparse-preview-example')) return;
+      const example = document.createElement('div');
+      example.className = 'sparse-preview-example';
+      example.innerHTML = '<strong>Equally valid sparse or uncertain example</strong><p><b>What was noticed:</b> One detail, uncertainty, or nothing recorded</p><p><b>What remains open:</b> Meaning, causality, and response</p><p>Blank, mixed, and unresolved maps are not less complete.</p>';
+      preview.appendChild(example);
+    });
+  }
+
   function applyPhase2Mechanics() {
     updatePosition();
     addChoiceControls();
     replaceValuesCompliance();
     replaceCompletionLanguage();
+    renameOutputs();
+    addWorkingPrefaces();
+    neutralizeBlankDefaults();
+    addSparsePreviewExamples();
   }
   applyPhase2Mechanics();
   window.addEventListener('hashchange', applyPhase2Mechanics);
