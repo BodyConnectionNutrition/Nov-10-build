@@ -56,4 +56,116 @@
     @media print{.shared-method{break-inside:avoid}}
   `;
   document.head.appendChild(style);
+
+  const phase2Style = document.createElement('style');
+  phase2Style.textContent = `
+    .progwrap,.progress{height:auto!important;min-height:42px!important;padding:.65rem 4%!important;background:#fbf7eff2!important;border-bottom:1px solid #ded8ce!important}
+    .prog,.bar,.track,.progress>span,.progress>.meta{display:none!important}
+    .phase2-position{color:#6f665d;font-size:.86rem;font-weight:750;letter-spacing:.02em;text-align:center}
+    .phase2-option{font-size:.88rem!important;font-weight:700!important}
+    .phase2-stop{display:inline-flex;align-items:center;color:#6f665d!important;border-color:#bdb5aa!important;text-decoration:none}
+    .phase2-reflection{margin:.85rem 0;padding:1rem;border:1px solid #ded8ce;border-radius:14px;background:#fff}
+    .phase2-reflection p{margin:.1rem 0 .65rem}
+    .phase2-reflection__choices{display:flex;flex-wrap:wrap;gap:.45rem}
+    .phase2-reflection__choices button{border:1px solid #ded8ce;border-radius:999px;background:#fff;color:#31412f;padding:.5rem .7rem;cursor:pointer}
+    .phase2-reflection__choices button[aria-pressed="true"]{background:#31412f;color:#fff;border-color:#31412f}
+  `;
+  document.head.appendChild(phase2Style);
+
+  function updatePosition() {
+    let host = document.querySelector('.progwrap,.progress');
+    if (!host) return;
+    let label = host.querySelector('.phase2-position');
+    if (!label) {
+      label = document.createElement('div');
+      label.className = 'phase2-position';
+      host.appendChild(label);
+    }
+    if (title === 'Can You Hear Your Body?') {
+      const pct = Number((host.querySelector('.meta span:last-child')?.textContent || '').replace('%',''));
+      const section = Number.isFinite(pct) ? Math.round((pct / 100) * 14) + 1 : 1;
+      const text = `Section ${section} of 15 · Stop, skip, or leave any question unresolved.`;
+      if (label.textContent !== text) label.textContent = text;
+      return;
+    }
+    const screens = [...document.querySelectorAll('.screen')];
+    const active = screens.findIndex(s => s.classList.contains('active'));
+    const text = active >= 0 ? `Section ${active + 1} of ${screens.length} · Stop, skip, or leave any question unresolved.` : 'Move through only the sections that are useful.';
+    if (label.textContent !== text) label.textContent = text;
+  }
+
+  function addChoiceControls() {
+    document.querySelectorAll('.screen .actions').forEach(actions => {
+      if (actions.dataset.phase2Controls) return;
+      const forward = actions.querySelector('[data-next],#build');
+      if (!forward) return;
+      actions.dataset.phase2Controls = 'true';
+      if (!forward.disabled) {
+        const skip = document.createElement('button');
+        skip.type = 'button';
+        skip.className = 'btn alt phase2-option';
+        skip.textContent = 'Skip / leave unresolved →';
+        skip.addEventListener('click', () => forward.click());
+        actions.appendChild(skip);
+      }
+      const stop = document.createElement('a');
+      stop.className = 'btn alt phase2-option phase2-stop';
+      stop.href = '/tools/';
+      stop.textContent = 'Stop here';
+      actions.appendChild(stop);
+    });
+  }
+
+  function replaceValuesCompliance() {
+    if (title !== 'Values Clarification') return;
+    const box = document.getElementById('compliance');
+    if (!box || box.dataset.phase2Reflection) return;
+    const questions = [...box.querySelectorAll('label')].map(label => label.textContent.trim()).filter(Boolean);
+    if (!questions.length) return;
+    box.dataset.phase2Reflection = 'true';
+    box.innerHTML = '';
+    const key = 'bcn_values_reflections_v1';
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch (_) {}
+    questions.forEach((question, index) => {
+      const item = document.createElement('div');
+      item.className = 'phase2-reflection';
+      item.innerHTML = `<p><b>${question}</b></p><div class="phase2-reflection__choices"></div>`;
+      const choices = item.querySelector('.phase2-reflection__choices');
+      ['Worth considering','Not relevant here','Unclear'].forEach(option => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = option;
+        button.setAttribute('aria-pressed', saved[index] === option ? 'true' : 'false');
+        button.addEventListener('click', () => {
+          const wasSelected = button.getAttribute('aria-pressed') === 'true';
+          choices.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed','false'));
+          if (wasSelected) delete saved[index];
+          else { saved[index] = option; button.setAttribute('aria-pressed','true'); }
+          localStorage.setItem(key, JSON.stringify(saved));
+        });
+        choices.appendChild(button);
+      });
+      box.appendChild(item);
+    });
+  }
+
+  function replaceCompletionLanguage() {
+    document.querySelectorAll('.eyebrow,.eye').forEach(el => {
+      const current = el.textContent.trim();
+      if (current === 'Your completed artifact') el.textContent = 'A working influence map';
+      if (current === 'Sample completed output') el.textContent = 'Sample working output';
+    });
+  }
+
+  function applyPhase2Mechanics() {
+    updatePosition();
+    addChoiceControls();
+    replaceValuesCompliance();
+    replaceCompletionLanguage();
+  }
+  applyPhase2Mechanics();
+  window.addEventListener('hashchange', applyPhase2Mechanics);
+  document.addEventListener('click', () => setTimeout(applyPhase2Mechanics, 0));
+  new MutationObserver(applyPhase2Mechanics).observe(document.body, {subtree:true,childList:true,attributes:true,attributeFilter:['class']});
 })();
