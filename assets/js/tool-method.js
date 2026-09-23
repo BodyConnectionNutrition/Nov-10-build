@@ -6,14 +6,14 @@
     'Why Am I Eating?': [1, 2, 3, 4, 5],
     'Why am I eating?': [1, 2, 3, 4, 5],
     'Behavior Sequence': [1, 2, 3],
-    'Permission & Scarcity': [2, 3, 4],
-    'What Is This Doing for Me?': [1, 2, 3, 5],
+    'Permission & Scarcity': [2, 3, 5],
+    'What Is This Doing for Me?': [1, 2, 3, 4],
     'Choice Has Conditions': [3, 4, 5],
     'Conditions & Responsibility Map': [3, 4, 5],
     'Participation Planner': [3, 4, 5],
     'Deconstructing a Belief': [1, 2, 3, 4, 5],
-    'Who Taught You to Eat?': [2, 3, 4],
-    'How Was My Body Image Created?': [2, 3, 4],
+    'Who Taught You to Eat?': [2, 3, 5],
+    'How Was My Body Image Created?': [2, 3, 5],
     'Values Clarification': [2, 3, 4, 5],
     'My Food & Body Framework': [1, 2, 3, 4, 5],
     'GLP-1 Evidence Answers': [2, 3, 4, 5]
@@ -21,7 +21,7 @@
   const focus = focusByTitle[title];
   if (!focus || document.querySelector('[data-shared-method]')) return;
 
-  const labels = ['Notice', 'Interpret', 'Contextualize', 'Locate responsibility', 'Respond'];
+  const labels = ['Notice', 'Interpret', 'Contextualize', 'Respond', 'Locate responsibility'];
   const hasExistingPath = Boolean(document.querySelector('.practice-path'));
   const section = document.createElement('section');
   section.className = 'shared-method';
@@ -29,7 +29,7 @@
   section.innerHTML = `
     <p class="shared-method__eyebrow">The shared Body Connection method</p>
     <h2>${hasExistingPath ? 'Agency within the method.' : 'Five moves, not five tests.'}</h2>
-    ${hasExistingPath ? '' : `<div class="shared-method__path" aria-label="Notice, Interpret, Contextualize, Locate responsibility, Respond">
+    ${hasExistingPath ? '' : `<div class="shared-method__path" aria-label="Notice, Interpret, Contextualize, Respond, Locate responsibility">
       ${labels.map((label, i) => `<span class="${focus.includes(i + 1) ? 'is-focus' : ''}"><b>${i + 1}</b>${label}</span>`).join('')}
     </div>`}
     <p class="shared-method__focus"><strong>This tool emphasizes:</strong> ${focus.map(i => labels[i - 1]).join(', ')}. The other moves remain available when they help; none is a test or a requirement to complete the tool correctly.</p>
@@ -265,6 +265,27 @@
     });
   }
 
+  function normalizeMethodOrder() {
+    const canonical = ['Notice','Interpret','Contextualize','Respond','Locate responsibility'];
+    document.querySelectorAll('.practice-path').forEach(path => {
+      if (path.dataset.methodOrderNormalized) return;
+      const spans = [...path.querySelectorAll('span')];
+      if (spans.length !== 5) return;
+      const byLabel = new Map(spans.map(span => [span.textContent.replace(/^\s*\d+\s*·\s*/,'').trim(), span]));
+      if (!canonical.every(label => byLabel.has(label))) return;
+      canonical.forEach((label,index) => {
+        const span = byLabel.get(label);
+        span.textContent = `${index + 1} · ${label}`;
+        path.appendChild(span);
+      });
+      path.setAttribute('aria-label', canonical.join(', '));
+      path.dataset.methodOrderNormalized = 'true';
+    });
+    document.querySelectorAll('h2').forEach(heading => {
+      if (heading.textContent.trim() === 'Contextualize. Locate responsibility. Respond.') heading.textContent = 'Contextualize. Respond. Locate responsibility.';
+    });
+  }
+
   function applyPhase2Mechanics() {
     updatePosition();
     addChoiceControls();
@@ -274,6 +295,7 @@
     addWorkingPrefaces();
     neutralizeBlankDefaults();
     addSparsePreviewExamples();
+    normalizeMethodOrder();
   }
   applyPhase2Mechanics();
   window.addEventListener('hashchange', applyPhase2Mechanics);
