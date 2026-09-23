@@ -40,7 +40,8 @@ permalink: /tools/glp-1-evidence/
     <p class="status" id="status" role="status" aria-live="polite"></p>
     <aside class="urgent" id="urgent" role="alert"></aside>
     <section class="match-box" id="match-box" aria-labelledby="match-heading">
-      <h2 id="match-heading">Which question is closest?</h2>
+      <h2 id="match-heading">Is this the question you want answered?</h2>
+      <p>The tool matched your words to the approved evidence questions below. Choose one to confirm the interpretation before any answer is shown.</p>
       <div class="match-list" id="match-list"></div>
     </section>
     <section class="unanswered" id="unanswered">
@@ -139,11 +140,10 @@ permalink: /tools/glp-1-evidence/
     const ranked = briefs.map(b => ({brief:b,score:scoreBrief(b,queryTokens)})).sort((a,b) => b.score-a.score);
     if (!ranked.length || ranked[0].score < 2) { status.textContent=''; unanswered.classList.add('show'); recordTopic('unanswered'); return; }
     const choices = ranked.filter(x => x.score > 0).slice(0,3);
-    if (choices.length === 1 || (ranked[0].score >= 10 && ranked[0].score >= (ranked[1]?.score || 0) + 4)) { renderBrief(ranked[0].brief); return; }
     matchList.innerHTML = '';
     choices.forEach(({brief}) => { const button=document.createElement('button'); button.type='button'; button.className='match-choice'; button.textContent=brief.question; button.addEventListener('click',() => renderBrief(brief)); matchList.appendChild(button); });
     matchBox.classList.add('show');
-    status.textContent = 'I found a few approved answers that may fit.';
+    status.textContent = choices.length === 1 ? 'Confirm the approved question before viewing its evidence answer.' : 'I found a few approved questions that may fit. Choose the one you intended.';
   }
 
   fetch(DATA_URL).then(r => { if (!r.ok) throw new Error('Evidence library unavailable'); return r.json(); }).then(data => { libraryMeta=data.library_metadata || {}; briefs = data.briefs.filter(b => b.review_metadata?.public_eligibility === true); status.textContent = `${briefs.length} clinician-reviewed evidence answers are ready. Library ${libraryMeta.library_version || ''}.`; }).catch(() => { status.textContent = 'The evidence library could not load. Please try again later.'; askButton.disabled = true; });
