@@ -17,7 +17,7 @@ description: "Watch Body Connection Nutrition on YouTube: food noise, learned fo
         <h1 id="watch-title">Make sense of the messages around food.</h1>
         <p class="lead">Short videos with Jennifer Nickell, RD, exploring food noise, the rules we learn about eating, and the conditions that shape our choices.</p>
         <p>Start with a question that feels familiar—or head straight to YouTube to watch the latest videos.</p>
-        <a class="button" href="https://www.youtube.com/@BodyConnectionNutrition">Watch on YouTube →</a>
+        <a class="button" href="https://www.youtube.com/@BodyConnectionNutrition">Watch on YouTube →</a> <a class="button button-secondary" href="https://www.youtube.com/@BodyConnectionNutrition/shorts">Latest Shorts →</a>
       </div>
       <aside class="bcn-channel" aria-label="YouTube channel">
         <p class="eyebrow" style="color:#e8c8ad">The video library</p>
@@ -34,15 +34,15 @@ description: "Watch Body Connection Nutrition on YouTube: food noise, learned fo
       <div class="bcn-watch-grid">
         <article class="bcn-watch-card">
           <div class="bcn-watch-art"><p>What are we calling “food noise”?</p></div>
-          <div class="bcn-watch-copy"><h3>Food noise and learned rules</h3><p>Hunger, competing demands, anticipated judgment, and the messages that turn eating into a trial of worth.</p><a href="https://www.youtube.com/@BodyConnectionNutrition">Explore the channel →</a></div>
+          <div class="bcn-watch-copy"><h3>Food noise and learned rules</h3><p>Hunger, competing demands, anticipated judgment, and the messages that turn eating into a trial of worth.</p><a href="https://www.youtube.com/shorts/CUjpWsd0wiA">Watch this video →</a></div>
         </article>
         <article class="bcn-watch-card">
           <div class="bcn-watch-art"><p>Who benefits when you’re the problem?</p></div>
-          <div class="bcn-watch-copy"><h3>Claims, persuasion, and environment</h3><p>How confident advice becomes convincing—and how sellers turn ordinary experiences into problems that need a purchase.</p><a href="https://www.youtube.com/@BodyConnectionNutrition">Explore the channel →</a></div>
+          <div class="bcn-watch-copy"><h3>Claims, persuasion, and environment</h3><p>How confident advice becomes convincing—and how sellers turn ordinary experiences into problems that need a purchase.</p><a href="https://www.youtube.com/shorts/iPxTudqytPk">Watch this video →</a></div>
         </article>
         <article class="bcn-watch-card">
           <div class="bcn-watch-art"><p>“I’m failing” is a verdict. What happened?</p></div>
-          <div class="bcn-watch-copy"><h3>Practice interrupting the verdict</h3><p>Build the pause between an experience and the character judgment attached to it, with room to understand what shaped the moment.</p><a href="https://www.youtube.com/@BodyConnectionNutrition">Explore the channel →</a></div>
+          <div class="bcn-watch-copy"><h3>Practice interrupting the verdict</h3><p>Build the pause between an experience and the character judgment attached to it, with room to understand what shaped the moment.</p><a href="https://www.youtube.com/shorts/CyZk_yxpHuM">Watch this video →</a></div>
         </article>
       </div>
     </section>
