@@ -1,4 +1,5 @@
 const TOOLS = {
+  "food-body-bias-catalog": { amount: 2900, name: "Food & Body Bias Catalog", file: "food-body-bias-catalog.html", page: "/food-body-bias-catalog/" },
   "why-am-i-eating": { priceEnv: "STRIPE_PRICE_ID", file: "why-am-i-eating.html", page: "/why-am-i-eating/" },
   "who-taught-you-to-eat": { priceEnv: "STRIPE_PRICE_WHO_TAUGHT_YOU_TO_EAT", file: "who-taught-you-to-eat.html", page: "/tools/who-taught-you-to-eat/" },
   "how-was-my-body-image-created": { priceEnv: "STRIPE_PRICE_BODY_IMAGE", file: "how-was-my-body-image-created.html", page: "/tools/how-was-my-body-image-created/" },
