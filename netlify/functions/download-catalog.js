@@ -15,5 +15,5 @@ exports.handler = async event => {
     if (!selected) return { statusCode: 400, body: "Unsupported format." };
     const content = fs.readFileSync(path.join(__dirname, "private", selected.name));
     return { statusCode: 200, isBase64Encoded: true, headers: { "Content-Type": selected.type, "Content-Disposition": 'attachment; filename="'+selected.name+'"', "Cache-Control": "private, no-store, max-age=0", "X-Robots-Tag": "noindex, nofollow" }, body: content.toString("base64") };
-  } catch (error) { console.error(error); return { statusCode: 500, body: "We could not prepare the download. Please try again shortly or visit Purchase Help." }; }
+  } catch (error) { console.error(error); return { statusCode: 500, body: "We could not prepare the download. Please try again shortly or visit Support Center." }; }
 };

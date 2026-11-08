@@ -21,6 +21,6 @@ Paid checkout is hosted by Stripe. Body Connection Nutrition does not receive or
 
 Responses entered inside the paid educational tools remain in your browser and are not submitted to Body Connection Nutrition. Product URLs do not grant access. Purchaser access is verified through the email used at Stripe checkout and stored in a secure, browser-specific session.
 
-Purchase-support forms should contain order information only. Do not submit card numbers, medical histories, diagnoses, symptoms, or other protected health information.
+Support Center forms should contain order information only. Do not submit card numbers, medical histories, diagnoses, symptoms, or other protected health information.
 
-For access instructions, refund terms, and purchase questions, visit [Purchase Help & Support](/purchase-support/).
+For access instructions, refund terms, and purchase questions, visit [Support Center](/support-center/).

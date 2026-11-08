@@ -65,3 +65,23 @@
   from = "/patient-tools/*"
   to = "/.netlify/functions/patient-tools?path=:splat"
   status = 200
+
+[[redirects]]
+  from = "/purchase-support/thanks"
+  to = "/support-center/thanks/"
+  status = 301
+
+[[redirects]]
+  from = "/purchase-support/thanks/"
+  to = "/support-center/thanks/"
+  status = 301
+
+[[redirects]]
+  from = "/purchase-support"
+  to = "/support-center/"
+  status = 301
+
+[[redirects]]
+  from = "/purchase-support/"
+  to = "/support-center/"
+  status = 301

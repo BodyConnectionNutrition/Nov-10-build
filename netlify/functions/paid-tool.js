@@ -12,5 +12,5 @@ exports.handler = async event => {
     let content = fs.readFileSync(path.join(__dirname, "private", tool.file), "utf8");
     content = content.replace("</body>", `<div class="product-return"><a href="/my-tools/">← Return to My Tools</a></div></body>`);
     return html(200, content);
-  } catch (error) { console.error(error); return html(500, "<h1>We could not verify access</h1><p>Please try again shortly or visit <a href='/purchase-support/'>Purchase Help</a>.</p>"); }
+  } catch (error) { console.error(error); return html(500, "<h1>We could not verify access</h1><p>Please try again shortly or visit <a href='/support-center/'>Support Center</a>.</p>"); }
 };
