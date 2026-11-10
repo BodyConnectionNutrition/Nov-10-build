@@ -1,26 +1,26 @@
 ---
 layout: page
-title: Share Your Experience
+title: Share a Testimonial
 permalink: /patient-reviews/
-description: Share feedback about working with Jennifer Nickell, RD, at Body Connection Nutrition.
+description: Share what you loved about working with Jennifer Nickell, RD, at Body Connection Nutrition.
 ---
 <section aria-labelledby="review-heading" style="max-width:42rem;margin:0 auto">
-  <h2 id="review-heading">What was it like working together?</h2>
-  <p>I’d like to hear what helped, what could have been better, and what you wish we’d spent more time on. Sharing feedback is optional and won’t affect your care.</p>
+  <h2 id="review-heading">What did you love about working together?</h2>
+  <p>If our work together made a difference in your life, I’d love to hear your story in your own words. Your experience can help someone who’s wondering what it would be like to work with me. Sharing is entirely optional.</p>
   <p>If you’d like a starting point, try one of these prompts.</p>
   <ul>
-    <li>What, if anything, felt useful in our work together?</li>
-    <li>How well did our conversations fit the realities of your day?</li>
-    <li>What could I have done differently to better support you?</li>
+    <li>Was there a moment in our work together when something clicked?</li>
+    <li>What feels different in your day-to-day life because of our work together?</li>
+    <li>What would you tell someone who’s thinking about working with me?</li>
   </ul>
-  <label for="review-draft"><strong>Draft your review</strong></label>
+  <label for="review-draft"><strong>Draft your testimonial</strong></label>
   <p id="review-help">This draft stays on this page until you copy it. Please leave out names, diagnoses, and other identifying details.</p>
   <textarea id="review-draft" aria-describedby="review-help" rows="7" maxlength="3000" autocomplete="off" style="display:block;width:100%;box-sizing:border-box;margin-bottom:1rem;font:inherit;padding:.75rem"></textarea>
-  <button id="copy-review" type="button" hidden>Copy my review</button>
+  <button id="copy-review" type="button" hidden>Copy my testimonial</button>
   <p id="copy-status" role="status"></p>
-  <h2>Send your feedback privately</h2>
-  <p>Paste your review into the secure messaging channel you normally use to contact me about your care. You can also write it directly there. If we work together through Nourish, use the messaging option in your Nourish account if available.</p>
-  <p>I’ll treat what you send as private feedback. If I’d like to quote any part of it publicly, I’ll contact you separately about permission.</p>
+  <h2>Send your testimonial</h2>
+  <p>Paste your testimonial into the secure messaging channel you normally use to contact me about your care. You can also write it directly there. If we work together through Nourish, use the messaging option in your Nourish account if available.</p>
+  <p>If I’d like to feature your testimonial on the website, I’ll ask your permission and confirm the exact wording and how you’d like to be credited.</p>
 </section>
 <script>
   const draft = document.getElementById('review-draft');
@@ -36,7 +36,7 @@ description: Share feedback about working with Jennifer Nickell, RD, at Body Con
     copy.addEventListener('click', async () => {
       try {
         await navigator.clipboard.writeText(draft.value.trim());
-        status.textContent = 'Copied. Paste your review into your secure message.';
+        status.textContent = 'Copied. Paste your testimonial into your secure message.';
       } catch {
         draft.select();
         status.textContent = 'Select and copy the draft manually.';
